@@ -1,0 +1,388 @@
+{
+	"info": {
+		"name": "Material Desain",
+		"_postman_id": "ef250454-1b86-5d44-c494-b9d034e4dfc8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Wordpress Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://public-api.wordpress.com/rest/v1.1/sites/en.blog.wordpress.com/posts/?number=10",
+					"protocol": "https",
+					"host": [
+						"public-api",
+						"wordpress",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1.1",
+						"sites",
+						"en.blog.wordpress.com",
+						"posts",
+						""
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "10",
+							"equals": true
+						}
+					]
+				},
+				"description": "url wordpress = en.blog.wordpress.com"
+			},
+			"response": []
+		},
+		{
+			"name": "youtube Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLOU2XLYxmsIJqntMn36kS3y_lxKmQiaAS&maxResults=10&key=AIzaSyBQjpE3RBtPm9PyquAMbhNCMkaYzhHpjbI",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"playlistItems"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet",
+							"equals": true
+						},
+						{
+							"key": "playlistId",
+							"value": "PLOU2XLYxmsIJqntMn36kS3y_lxKmQiaAS",
+							"equals": true
+						},
+						{
+							"key": "maxResults",
+							"value": "10",
+							"equals": true
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyBQjpE3RBtPm9PyquAMbhNCMkaYzhHpjbI",
+							"equals": true
+						}
+					]
+				},
+				"description": "youtube_api_key = AIzaSyBQjpE3RBtPm9PyquAMbhNCMkaYzhHpjbI\n\nplaylistId = PLOU2XLYxmsIJqntMn36kS3y_lxKmQiaAS"
+			},
+			"response": []
+		},
+		{
+			"name": "Tublr Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.tumblr.com/v2/blog/technigadgets.tumblr.com/posts/photo?api_key=57gBN0owYvjhhe0uMnAXin64vnZlHECqgTTXZyxWy7b94WyGyH&notes_info=true&limit=25",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tumblr",
+						"com"
+					],
+					"path": [
+						"v2",
+						"blog",
+						"technigadgets.tumblr.com",
+						"posts",
+						"photo"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "57gBN0owYvjhhe0uMnAXin64vnZlHECqgTTXZyxWy7b94WyGyH",
+							"equals": true
+						},
+						{
+							"key": "notes_info",
+							"value": "true",
+							"equals": true
+						},
+						{
+							"key": "limit",
+							"value": "25",
+							"equals": true
+						}
+					]
+				},
+				"description": "url Tublr = technigadgets.tumblr.com\n\ntumblr_api_key = 57gBN0owYvjhhe0uMnAXin64vnZlHECqgTTXZyxWy7b94WyGyH"
+			},
+			"response": []
+		},
+		{
+			"name": "Instagram Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.instagram.com/v1/users/self/media/recent?access_token=6937770572.1677ed0.d99130ebc47f4a25b05deda03b251e07",
+					"protocol": "https",
+					"host": [
+						"api",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"self",
+						"media",
+						"recent"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "6937770572.1677ed0.d99130ebc47f4a25b05deda03b251e07",
+							"equals": true
+						}
+					]
+				},
+				"description": "generad access_token = http://instagram.pixelunion.net/"
+			},
+			"response": []
+		},
+		{
+			"name": "Tweeter Api Get Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic eWFuaEZZc3VSaEJZb0hpelEyOTRhT1h6ajp0bUlCNjBLQ3ZGN2RCa3NWNG5xU2NsRllBSUYwcUU4bHRGT2hyb3pzY2ZONjk1bDg5Vw=="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded;charset=UTF-8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.twitter.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				},
+				"description": "https://www.base64encode.org/\nAuthorization = basic encodeBase64(Consumer Key:Consumer Secret)\nContent-Type = application/x-www-form-urlencoded;charset=UTF-8\ngrant_type = client_credentials"
+			},
+			"response": []
+		},
+		{
+			"name": "Tweeter Api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer AAAAAAAAAAAAAAAAAAAAAOOe4AAAAAAA3phkXG8IgtjFv7DGYysGBBJG2OY%3DSWUxT6Q6Mxv4FmV6V3soHJ0supZCNyGgSguLo5NSpWbUfGxPij"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"1.1",
+						"statuses",
+						"user_timeline.json"
+					],
+					"query": [
+						{
+							"key": "screen_name",
+							"value": "twitterapi",
+							"equals": true
+						},
+						{
+							"key": "count",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": "token = token_type + access_token"
+			},
+			"response": []
+		},
+		{
+			"name": "Pinterest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.pinterest.com/v1/boards/anapinskywalker/wanderlust/pins/?access_token=AZcm_F6LmXeHWJbbd7ZcpNjpbxvxFQyosyM-N4pEpmk4QaAoggAAAAA&limit=10&fields=image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"v1",
+						"boards",
+						"anapinskywalker",
+						"wanderlust",
+						"pins",
+						""
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "AZcm_F6LmXeHWJbbd7ZcpNjpbxvxFQyosyM-N4pEpmk4QaAoggAAAAA",
+							"equals": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"equals": true
+						},
+						{
+							"key": "fields",
+							"value": "image",
+							"equals": true
+						}
+					]
+				},
+				"description": "access_token = https://developers.pinterest.com/tools/access_token/?"
+			},
+			"response": []
+		},
+		{
+			"name": "Facebook Api Get Access Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/oauth/access_token?client_id=2141321786126896&client_secret=7eb7c5a9d32fc36075d62972d1d7cb9a&grant_type=client_credentials",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"access_token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "2141321786126896",
+							"equals": true
+						},
+						{
+							"key": "client_secret",
+							"value": "7eb7c5a9d32fc36075d62972d1d7cb9a",
+							"equals": true
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Facebook Api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "bearer 2141321786126896|B_JULSayL1Y4tV4x6p3DmZdQPzE"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/me?access_token=EAAebhVRpcjABACDOIaL4A2aa2ufXrD20lIQZAOsIuRkzWi0sRnGWS8YdHWAMoTqeALDWZCj3eHRCeYpEJ65xwpMikU67KHnyOB74qZAAikMzPB7HIHwlBRJa7HjFnUPYmLKK6ZCozQO8KULJZBZCkZBS4FeGRMeS0UDNecZAxxyOeZAcZAdIDU6eZCemcwc1AASPwUZD&fields=id,name,picture,posts",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAebhVRpcjABACDOIaL4A2aa2ufXrD20lIQZAOsIuRkzWi0sRnGWS8YdHWAMoTqeALDWZCj3eHRCeYpEJ65xwpMikU67KHnyOB74qZAAikMzPB7HIHwlBRJa7HjFnUPYmLKK6ZCozQO8KULJZBZCkZBS4FeGRMeS0UDNecZAxxyOeZAcZAdIDU6eZCemcwc1AASPwUZD",
+							"equals": true
+						},
+						{
+							"key": "fields",
+							"value": "id,name,picture,posts",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

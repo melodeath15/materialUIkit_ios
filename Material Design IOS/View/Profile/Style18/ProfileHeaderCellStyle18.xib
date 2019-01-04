@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeaderCellStyle18" id="HaS-oO-uPI" customClass="ProfileHeaderCellStyle18" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wyE-Mb-rpJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="iPd-xf-P9z">
+                    <rect key="frame" x="146" y="31" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3qM-gd-bxw"/>
+                        <constraint firstAttribute="height" constant="80" id="W9d-ke-TL2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5L-6Q-K7K">
+                    <rect key="frame" x="8" y="130" width="358" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iPd-xf-P9z" firstAttribute="centerY" secondItem="HaS-oO-uPI" secondAttribute="centerY" constant="-19" id="4xC-gQ-xSC"/>
+                <constraint firstItem="b5L-6Q-K7K" firstAttribute="leading" secondItem="HaS-oO-uPI" secondAttribute="leading" constant="8" id="8KX-gQ-2D6"/>
+                <constraint firstItem="wyE-Mb-rpJ" firstAttribute="top" secondItem="HaS-oO-uPI" secondAttribute="top" id="AbL-lO-bov"/>
+                <constraint firstItem="wyE-Mb-rpJ" firstAttribute="leading" secondItem="HaS-oO-uPI" secondAttribute="leading" id="FCQ-D0-dog"/>
+                <constraint firstAttribute="bottom" secondItem="wyE-Mb-rpJ" secondAttribute="bottom" id="Pex-qp-rxd"/>
+                <constraint firstItem="b5L-6Q-K7K" firstAttribute="top" secondItem="iPd-xf-P9z" secondAttribute="bottom" constant="19" id="bVI-MK-5Yk"/>
+                <constraint firstAttribute="trailing" secondItem="b5L-6Q-K7K" secondAttribute="trailing" constant="9" id="emu-Lv-xoz"/>
+                <constraint firstItem="iPd-xf-P9z" firstAttribute="centerX" secondItem="HaS-oO-uPI" secondAttribute="centerX" constant="-1.5" id="tPh-My-ppC"/>
+                <constraint firstAttribute="trailing" secondItem="wyE-Mb-rpJ" secondAttribute="trailing" id="x6s-JU-55j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bg" destination="wyE-Mb-rpJ" id="lch-eT-Xcn"/>
+                <outlet property="name" destination="b5L-6Q-K7K" id="oNq-y4-Qe7"/>
+                <outlet property="profile" destination="iPd-xf-P9z" id="cNg-6r-dsY"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="-66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

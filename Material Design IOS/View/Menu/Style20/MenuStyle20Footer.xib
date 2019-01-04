@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle20Footer" id="Oty-Qy-nRW" customClass="MenuStyle20Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-lI-BMb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Logout" image="iconLogoutRed"/>
+                    <connections>
+                        <action selector="pushBtnLogout:" destination="Oty-Qy-nRW" eventType="touchUpInside" id="XLj-Vd-mGX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13865303993225098" green="0.19557356834411621" blue="0.22387480735778809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7NS-lI-BMb" firstAttribute="top" secondItem="Oty-Qy-nRW" secondAttribute="top" id="Ci0-Bo-CRA"/>
+                <constraint firstAttribute="bottom" secondItem="7NS-lI-BMb" secondAttribute="bottom" id="oTU-it-pne"/>
+                <constraint firstAttribute="trailing" secondItem="7NS-lI-BMb" secondAttribute="trailing" id="rOP-Rm-SaN"/>
+                <constraint firstItem="7NS-lI-BMb" firstAttribute="leading" secondItem="Oty-Qy-nRW" secondAttribute="leading" id="rbg-z8-V62"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLogout" destination="7NS-lI-BMb" id="KZx-iy-ft9"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="-260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconLogoutRed" width="26" height="27"/>
+    </resources>
+</document>

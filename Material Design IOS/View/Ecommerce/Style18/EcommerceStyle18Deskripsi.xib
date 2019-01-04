@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle18Deskripsi" selectionStyle="default" indentationWidth="10" id="GYK-fh-Xrr" customClass="EcommerceStyle18Deskripsi" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GYK-fh-Xrr" id="SrB-gQ-iXP">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-E0-5pz">
+                        <rect key="frame" x="8" y="15" width="359" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="nKl-E0-5pz" secondAttribute="leading" id="5vx-uG-8h7"/>
+                    <constraint firstItem="nKl-E0-5pz" firstAttribute="top" secondItem="SrB-gQ-iXP" secondAttribute="topMargin" constant="7" id="Lcu-lp-oqc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nKl-E0-5pz" secondAttribute="trailing" id="ikp-7i-9ad"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="des" destination="nKl-E0-5pz" id="FaD-34-Lcy"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-17"/>
+        </tableViewCell>
+    </objects>
+</document>

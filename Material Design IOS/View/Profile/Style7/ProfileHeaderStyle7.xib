@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeaderStyle7" id="o83-aj-Xyw" customClass="ProfileHeaderStyle7" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="GlG-Sz-1k7">
+                    <rect key="frame" x="16" y="15" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7Du-gr-aqG"/>
+                        <constraint firstAttribute="width" constant="50" id="Oai-vp-qs5"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzN-Nw-nDG">
+                    <rect key="frame" x="329" y="25" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.26184427739999999" green="0.7358443737" blue="0.25419378279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="HsF-bp-JPJ"/>
+                        <constraint firstAttribute="height" constant="30" id="nJ2-bu-OdU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnPlush:" destination="o83-aj-Xyw" eventType="touchUpInside" id="Wem-Yr-8nH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-Hl-504">
+                    <rect key="frame" x="74" y="23" width="247" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-bI-SJB">
+                    <rect key="frame" x="74" y="42" width="247" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O9F-bI-SJB" secondAttribute="trailing" constant="54" id="1Ze-iF-Z1Q"/>
+                <constraint firstItem="O9F-bI-SJB" firstAttribute="leading" secondItem="GlG-Sz-1k7" secondAttribute="trailing" constant="8" id="4E7-a7-tfP"/>
+                <constraint firstItem="cs0-Hl-504" firstAttribute="centerY" secondItem="o83-aj-Xyw" secondAttribute="centerY" constant="-7" id="67j-Qr-CW6"/>
+                <constraint firstItem="GlG-Sz-1k7" firstAttribute="centerY" secondItem="o83-aj-Xyw" secondAttribute="centerY" id="9Ru-b9-aD3"/>
+                <constraint firstAttribute="trailing" secondItem="MzN-Nw-nDG" secondAttribute="trailing" constant="16" id="Gpj-MG-DfU"/>
+                <constraint firstItem="cs0-Hl-504" firstAttribute="leading" secondItem="GlG-Sz-1k7" secondAttribute="trailing" constant="8" id="PUi-dX-4EK"/>
+                <constraint firstAttribute="trailing" secondItem="cs0-Hl-504" secondAttribute="trailing" constant="54" id="Z0G-gd-4fy"/>
+                <constraint firstItem="O9F-bI-SJB" firstAttribute="top" secondItem="cs0-Hl-504" secondAttribute="bottom" constant="-1" id="ltT-XM-wxn"/>
+                <constraint firstItem="GlG-Sz-1k7" firstAttribute="leading" secondItem="o83-aj-Xyw" secondAttribute="leading" constant="16" id="ubD-Of-810"/>
+                <constraint firstItem="MzN-Nw-nDG" firstAttribute="centerY" secondItem="o83-aj-Xyw" secondAttribute="centerY" id="vof-bs-AgJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnPlush" destination="MzN-Nw-nDG" id="5mf-Bv-rtq"/>
+                <outlet property="img" destination="GlG-Sz-1k7" id="eak-fi-Y3A"/>
+                <outlet property="name" destination="cs0-Hl-504" id="zml-6f-BNr"/>
+                <outlet property="title" destination="O9F-bI-SJB" id="NwW-qa-ocj"/>
+            </connections>
+            <point key="canvasLocation" x="89" y="-403"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

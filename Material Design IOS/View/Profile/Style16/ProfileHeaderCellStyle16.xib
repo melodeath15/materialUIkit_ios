@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProfileHeaderCellStyle16" selectionStyle="default" indentationWidth="10" id="vM0-Ft-QhN" customClass="ProfileHeaderCellStyle16" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vM0-Ft-QhN" id="56o-2D-MV3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZf-Im-9UD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="zlP-ot-Eu2">
+                        <rect key="frame" x="15" y="115" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="iS6-0o-K8Y"/>
+                            <constraint firstAttribute="width" constant="50" id="idA-KW-hub"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBF-bB-nAx">
+                        <rect key="frame" x="73" y="122" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dY-cS-4Pv">
+                        <rect key="frame" x="73" y="142" width="294" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dBF-bB-nAx" firstAttribute="top" secondItem="zlP-ot-Eu2" secondAttribute="top" constant="7" id="CpI-It-dA7"/>
+                    <constraint firstItem="zlP-ot-Eu2" firstAttribute="leading" secondItem="56o-2D-MV3" secondAttribute="leading" constant="15" id="IWJ-G1-C5b"/>
+                    <constraint firstAttribute="trailing" secondItem="7dY-cS-4Pv" secondAttribute="trailing" constant="8" id="UB5-1f-MBQ"/>
+                    <constraint firstItem="dBF-bB-nAx" firstAttribute="leading" secondItem="zlP-ot-Eu2" secondAttribute="trailing" constant="8" id="URv-Wt-9GV"/>
+                    <constraint firstItem="7dY-cS-4Pv" firstAttribute="leading" secondItem="zlP-ot-Eu2" secondAttribute="trailing" constant="8" id="e6P-WL-6Zb"/>
+                    <constraint firstItem="NZf-Im-9UD" firstAttribute="leading" secondItem="56o-2D-MV3" secondAttribute="leading" id="gPX-Et-KPj"/>
+                    <constraint firstAttribute="bottom" secondItem="NZf-Im-9UD" secondAttribute="bottom" constant="-0.5" id="h9d-Ge-LPY"/>
+                    <constraint firstAttribute="trailing" secondItem="dBF-bB-nAx" secondAttribute="trailing" constant="8" id="k4i-S9-DZ0"/>
+                    <constraint firstItem="7dY-cS-4Pv" firstAttribute="top" secondItem="dBF-bB-nAx" secondAttribute="bottom" constant="3" id="mbr-WZ-WVt"/>
+                    <constraint firstAttribute="bottom" secondItem="zlP-ot-Eu2" secondAttribute="bottom" constant="15" id="qcp-az-YWy"/>
+                    <constraint firstAttribute="trailing" secondItem="NZf-Im-9UD" secondAttribute="trailing" id="vdt-mC-1dz"/>
+                    <constraint firstItem="NZf-Im-9UD" firstAttribute="top" secondItem="56o-2D-MV3" secondAttribute="top" id="w2e-c4-xhO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="follow" destination="7dY-cS-4Pv" id="s62-3a-SuG"/>
+                <outlet property="imgBG" destination="NZf-Im-9UD" id="H89-ZI-6nQ"/>
+                <outlet property="name" destination="dBF-bB-nAx" id="hB9-wD-YBA"/>
+                <outlet property="profile" destination="zlP-ot-Eu2" id="mm3-7h-L1h"/>
+            </connections>
+            <point key="canvasLocation" x="-103" y="-24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle7View" id="lIO-I3-kJ2" customClass="EcommerceStyle7View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="344"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8N-hJ-ieg">
+                    <rect key="frame" x="5" y="7" width="240" height="331"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgI-O4-Wtg">
+                            <rect key="frame" x="16" y="29" width="140" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Ecommerce-7" translatesAutoresizingMaskIntoConstraints="NO" id="EQL-Fr-vmt">
+                            <rect key="frame" x="0.0" y="58" width="240" height="273"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34D-Lp-iYl">
+                            <rect key="frame" x="16" y="8" width="208" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD6-Zb-fMa">
+                            <rect key="frame" x="207.5" y="29" width="24.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="0.99746423959732056" green="0.63631826639175415" blue="0.091655857861042023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0I-bA-7px">
+                            <rect key="frame" x="184.5" y="30" width="17" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EQL-Fr-vmt" secondAttribute="bottom" id="1bP-rr-ezU"/>
+                        <constraint firstItem="34D-Lp-iYl" firstAttribute="leading" secondItem="B8N-hJ-ieg" secondAttribute="leading" constant="16" id="9c6-oe-UcS"/>
+                        <constraint firstAttribute="trailing" secondItem="bD6-Zb-fMa" secondAttribute="trailing" constant="8" id="AQ9-Ex-0sP"/>
+                        <constraint firstItem="EQL-Fr-vmt" firstAttribute="top" secondItem="QgI-O4-Wtg" secondAttribute="bottom" constant="14" id="F0D-SG-rce"/>
+                        <constraint firstItem="QgI-O4-Wtg" firstAttribute="top" secondItem="34D-Lp-iYl" secondAttribute="bottom" constant="4" id="VPu-vC-rzl"/>
+                        <constraint firstItem="bD6-Zb-fMa" firstAttribute="top" secondItem="34D-Lp-iYl" secondAttribute="bottom" constant="4" id="XgL-8g-NcU"/>
+                        <constraint firstItem="EQL-Fr-vmt" firstAttribute="leading" secondItem="B8N-hJ-ieg" secondAttribute="leading" id="Xtn-W0-fne"/>
+                        <constraint firstItem="34D-Lp-iYl" firstAttribute="top" secondItem="B8N-hJ-ieg" secondAttribute="top" constant="8" id="ZuH-Ib-2jN"/>
+                        <constraint firstAttribute="trailing" secondItem="QgI-O4-Wtg" secondAttribute="trailing" constant="84" id="eiD-rR-bOO"/>
+                        <constraint firstItem="bD6-Zb-fMa" firstAttribute="leading" secondItem="u0I-bA-7px" secondAttribute="trailing" constant="6" id="enb-a2-X6m"/>
+                        <constraint firstItem="u0I-bA-7px" firstAttribute="top" secondItem="34D-Lp-iYl" secondAttribute="bottom" constant="5" id="g5B-26-ZHu"/>
+                        <constraint firstAttribute="trailing" secondItem="EQL-Fr-vmt" secondAttribute="trailing" id="kar-l3-0CL"/>
+                        <constraint firstItem="QgI-O4-Wtg" firstAttribute="leading" secondItem="B8N-hJ-ieg" secondAttribute="leading" constant="16" id="rrC-0d-J8d"/>
+                        <constraint firstAttribute="trailing" secondItem="34D-Lp-iYl" secondAttribute="trailing" constant="16" id="yUh-2T-Htr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="B8N-hJ-ieg" secondAttribute="bottom" constant="6" id="B6M-Ig-Ix1"/>
+                <constraint firstItem="B8N-hJ-ieg" firstAttribute="leading" secondItem="lIO-I3-kJ2" secondAttribute="leading" constant="5" id="VN7-mN-YpI"/>
+                <constraint firstItem="B8N-hJ-ieg" firstAttribute="top" secondItem="lIO-I3-kJ2" secondAttribute="top" constant="7" id="W6J-He-DTP"/>
+                <constraint firstAttribute="trailing" secondItem="B8N-hJ-ieg" secondAttribute="trailing" constant="5" id="ZC5-DL-0IB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="QgI-O4-Wtg" id="0yi-Vl-I5k"/>
+                <outlet property="img" destination="EQL-Fr-vmt" id="08l-wl-cX4"/>
+                <outlet property="title" destination="34D-Lp-iYl" id="L9s-W1-UP5"/>
+                <outlet property="valueNew" destination="bD6-Zb-fMa" id="M5Q-z6-ODr"/>
+                <outlet property="valueOld" destination="u0I-bA-7px" id="0hc-Op-fip"/>
+            </connections>
+            <point key="canvasLocation" x="-1615" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ecommerce-7" width="912" height="923"/>
+    </resources>
+</document>

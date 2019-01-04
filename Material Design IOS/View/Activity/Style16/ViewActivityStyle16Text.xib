@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewActivityStyle16Text" id="bcr-sZ-9Vs" customClass="ViewActivityStyle16Text" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFE-AY-P2j">
+                    <rect key="frame" x="10" y="0.0" width="354" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="shQ-sJ-gjA">
+                            <rect key="frame" x="8" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="flg-ar-bVQ"/>
+                                <constraint firstAttribute="width" constant="40" id="mqz-dY-2wD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMp-fm-inQ">
+                            <rect key="frame" x="56" y="14" width="290" height="15"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-IG-K6Y">
+                            <rect key="frame" x="56" y="30" width="290" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bVA-IG-K6Y" secondAttribute="trailing" constant="8" id="E7f-aL-tP0"/>
+                        <constraint firstItem="shQ-sJ-gjA" firstAttribute="leading" secondItem="dFE-AY-P2j" secondAttribute="leading" constant="8" id="F6v-Qm-wA6"/>
+                        <constraint firstItem="nMp-fm-inQ" firstAttribute="leading" secondItem="shQ-sJ-gjA" secondAttribute="trailing" constant="8" id="PDl-0k-baR"/>
+                        <constraint firstAttribute="trailing" secondItem="nMp-fm-inQ" secondAttribute="trailing" constant="8" id="QN9-YW-9iV"/>
+                        <constraint firstItem="bVA-IG-K6Y" firstAttribute="leading" secondItem="shQ-sJ-gjA" secondAttribute="trailing" constant="8" id="Yei-9J-ga2"/>
+                        <constraint firstItem="nMp-fm-inQ" firstAttribute="top" secondItem="dFE-AY-P2j" secondAttribute="top" constant="14" id="ahn-GQ-g5h"/>
+                        <constraint firstItem="shQ-sJ-gjA" firstAttribute="top" secondItem="dFE-AY-P2j" secondAttribute="top" constant="8" id="pvf-Pa-nd1"/>
+                        <constraint firstItem="bVA-IG-K6Y" firstAttribute="top" secondItem="nMp-fm-inQ" secondAttribute="bottom" constant="1" id="qcu-GE-2Xp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dFE-AY-P2j" firstAttribute="leading" secondItem="bcr-sZ-9Vs" secondAttribute="leading" constant="10" id="DWz-q3-TCm"/>
+                <constraint firstAttribute="trailing" secondItem="dFE-AY-P2j" secondAttribute="trailing" constant="11" id="PYo-O7-wN7"/>
+                <constraint firstItem="dFE-AY-P2j" firstAttribute="top" secondItem="bcr-sZ-9Vs" secondAttribute="top" id="Ryw-G5-dZd"/>
+                <constraint firstAttribute="bottom" secondItem="dFE-AY-P2j" secondAttribute="bottom" constant="1" id="wBZ-rH-5aO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgProfile" destination="shQ-sJ-gjA" id="BJs-TV-hXP"/>
+                <outlet property="time" destination="bVA-IG-K6Y" id="YMA-9D-4vq"/>
+                <outlet property="titile" destination="nMp-fm-inQ" id="5ZY-Jb-F96"/>
+            </connections>
+            <point key="canvasLocation" x="-157.5" y="-432"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile" width="120" height="120"/>
+    </resources>
+</document>

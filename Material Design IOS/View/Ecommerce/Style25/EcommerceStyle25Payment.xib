@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle25Payment" selectionStyle="default" indentationWidth="10" rowHeight="159" id="N9m-m0-5kb" customClass="EcommerceStyle25Payment" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N9m-m0-5kb" id="G04-bs-yeg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v86-1T-B0y">
+                        <rect key="frame" x="8" y="10" width="359" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-11-sQz">
+                        <rect key="frame" x="8" y="34" width="359" height="157.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHV-NA-8Zx" customClass="AKRadioButton" customModule="Material_Design_IOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="15" width="28" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="NtK-wE-Yir"/>
+                                    <constraint firstAttribute="height" constant="28" id="k7v-PM-8PS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-25-logo-paypal" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-Nh-STo">
+                                <rect key="frame" x="44" y="9" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7ct-aP-bVv"/>
+                                    <constraint firstAttribute="width" constant="100" id="m8b-Ao-tVy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D86-Zl-bBr">
+                                <rect key="frame" x="316" y="23" width="21.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iWh-hp-XuX">
+                                <rect key="frame" x="346" y="23" width="5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="Uxa-3B-565"/>
+                                    <constraint firstAttribute="height" constant="12" id="t4J-1j-fQf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igy-SF-BOx" customClass="AKRadioButton" customModule="Material_Design_IOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="63" width="28" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="bEF-bm-Ntk"/>
+                                    <constraint firstAttribute="height" constant="28" id="y9h-CP-efV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-25-logo-google-wallet" translatesAutoresizingMaskIntoConstraints="NO" id="v31-xK-aSd">
+                                <rect key="frame" x="44" y="57" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K0U-SC-g6i"/>
+                                    <constraint firstAttribute="width" constant="100" id="t2u-8F-Ob9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcC-OX-AwI">
+                                <rect key="frame" x="316" y="71" width="21.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextIcon" translatesAutoresizingMaskIntoConstraints="NO" id="M8S-Fo-d6R">
+                                <rect key="frame" x="346" y="72" width="5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Kff-1F-HkY"/>
+                                    <constraint firstAttribute="width" constant="5" id="SqK-ri-6KI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ru2-rr-6sH" customClass="AKRadioButton" customModule="Material_Design_IOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="111" width="28" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="3jL-In-a7I"/>
+                                    <constraint firstAttribute="height" constant="28" id="llb-pq-eSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-25-logo-cc" translatesAutoresizingMaskIntoConstraints="NO" id="QEX-cz-qWG">
+                                <rect key="frame" x="44" y="105" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B3Q-aF-DbB"/>
+                                    <constraint firstAttribute="height" constant="40" id="jxa-20-jlN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mbL-Gp-eEk">
+                                <rect key="frame" x="346" y="119" width="5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="43Q-IG-yPU"/>
+                                    <constraint firstAttribute="height" constant="12" id="XID-xW-rNO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smf-cj-heO">
+                                <rect key="frame" x="316" y="119" width="21.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ru2-rr-6sH" firstAttribute="leading" secondItem="gvV-11-sQz" secondAttribute="leading" constant="8" id="4Q3-WB-rzI"/>
+                            <constraint firstItem="v31-xK-aSd" firstAttribute="leading" secondItem="igy-SF-BOx" secondAttribute="trailing" constant="8" id="5oF-Nb-vsL"/>
+                            <constraint firstItem="v31-xK-aSd" firstAttribute="centerY" secondItem="igy-SF-BOx" secondAttribute="centerY" id="9Sj-fI-sjw"/>
+                            <constraint firstItem="iWh-hp-XuX" firstAttribute="leading" secondItem="D86-Zl-bBr" secondAttribute="trailing" constant="8.5" id="AVE-Jb-heV"/>
+                            <constraint firstItem="igy-SF-BOx" firstAttribute="top" secondItem="iHV-NA-8Zx" secondAttribute="bottom" constant="20" id="CdC-bc-l1v"/>
+                            <constraint firstItem="iHV-NA-8Zx" firstAttribute="leading" secondItem="gvV-11-sQz" secondAttribute="leading" constant="8" id="Cdi-Qz-Hcz"/>
+                            <constraint firstItem="iHV-NA-8Zx" firstAttribute="top" secondItem="gvV-11-sQz" secondAttribute="top" constant="15" id="D78-aD-9qL"/>
+                            <constraint firstItem="igy-SF-BOx" firstAttribute="leading" secondItem="gvV-11-sQz" secondAttribute="leading" constant="8" id="GXp-WY-rEA"/>
+                            <constraint firstAttribute="trailing" secondItem="M8S-Fo-d6R" secondAttribute="trailing" constant="8" id="I7s-Pt-lJx"/>
+                            <constraint firstItem="mbL-Gp-eEk" firstAttribute="top" secondItem="M8S-Fo-d6R" secondAttribute="bottom" constant="35" id="K0L-bg-Qxc"/>
+                            <constraint firstItem="M8S-Fo-d6R" firstAttribute="leading" secondItem="HcC-OX-AwI" secondAttribute="trailing" constant="8.5" id="KaC-i9-bZY"/>
+                            <constraint firstAttribute="trailing" secondItem="mbL-Gp-eEk" secondAttribute="trailing" constant="8" id="TEG-3C-N8r"/>
+                            <constraint firstAttribute="trailing" secondItem="iWh-hp-XuX" secondAttribute="trailing" constant="8" id="Vrt-xz-Fby"/>
+                            <constraint firstItem="mbL-Gp-eEk" firstAttribute="leading" secondItem="smf-cj-heO" secondAttribute="trailing" constant="8.5" id="Z94-6g-iO1"/>
+                            <constraint firstItem="D86-Zl-bBr" firstAttribute="centerY" secondItem="iHV-NA-8Zx" secondAttribute="centerY" id="auu-hu-qQH"/>
+                            <constraint firstItem="YZs-Nh-STo" firstAttribute="leading" secondItem="iHV-NA-8Zx" secondAttribute="trailing" constant="8" id="bnY-cO-0yc"/>
+                            <constraint firstItem="M8S-Fo-d6R" firstAttribute="top" secondItem="iWh-hp-XuX" secondAttribute="bottom" constant="37" id="dQM-FM-vaT"/>
+                            <constraint firstItem="YZs-Nh-STo" firstAttribute="centerY" secondItem="iHV-NA-8Zx" secondAttribute="centerY" id="g5c-mZ-hl6"/>
+                            <constraint firstItem="smf-cj-heO" firstAttribute="centerY" secondItem="ru2-rr-6sH" secondAttribute="centerY" id="oxZ-5t-PmW"/>
+                            <constraint firstItem="HcC-OX-AwI" firstAttribute="centerY" secondItem="igy-SF-BOx" secondAttribute="centerY" id="sRO-mB-meQ"/>
+                            <constraint firstItem="QEX-cz-qWG" firstAttribute="leading" secondItem="ru2-rr-6sH" secondAttribute="trailing" constant="8" id="tFa-4I-h9u"/>
+                            <constraint firstItem="iWh-hp-XuX" firstAttribute="centerY" secondItem="iHV-NA-8Zx" secondAttribute="centerY" id="uNf-vM-I4y"/>
+                            <constraint firstItem="QEX-cz-qWG" firstAttribute="centerY" secondItem="ru2-rr-6sH" secondAttribute="centerY" id="wqz-Dk-rhq"/>
+                            <constraint firstItem="ru2-rr-6sH" firstAttribute="top" secondItem="igy-SF-BOx" secondAttribute="bottom" constant="20" id="zkI-RC-NeS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="gvV-11-sQz" secondAttribute="trailing" id="3OU-55-Agx"/>
+                    <constraint firstItem="gvV-11-sQz" firstAttribute="top" secondItem="v86-1T-B0y" secondAttribute="bottom" constant="8" id="F0H-GC-ao0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gvV-11-sQz" secondAttribute="bottom" id="T8J-GW-35e"/>
+                    <constraint firstItem="v86-1T-B0y" firstAttribute="top" secondItem="G04-bs-yeg" secondAttribute="topMargin" constant="2" id="aSC-yt-I2O"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="gvV-11-sQz" secondAttribute="leading" id="bo6-Pk-xAO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v86-1T-B0y" secondAttribute="trailing" id="qp4-p0-9e6"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="v86-1T-B0y" secondAttribute="leading" id="sh5-Dd-GfS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cek1" destination="iHV-NA-8Zx" id="dNJ-qc-WCn"/>
+                <outlet property="cek2" destination="igy-SF-BOx" id="gHZ-1c-95V"/>
+                <outlet property="cek3" destination="ru2-rr-6sH" id="g6q-CU-zb9"/>
+                <outlet property="next1" destination="iWh-hp-XuX" id="HNX-KH-lGL"/>
+                <outlet property="next2" destination="M8S-Fo-d6R" id="6Ch-hJ-D1v"/>
+                <outlet property="next3" destination="mbL-Gp-eEk" id="Ou0-lK-uXs"/>
+                <outlet property="title" destination="v86-1T-B0y" id="uiC-D8-SIA"/>
+                <outlet property="title1" destination="D86-Zl-bBr" id="SnD-VJ-VbB"/>
+                <outlet property="title2" destination="HcC-OX-AwI" id="bqp-k7-n43"/>
+                <outlet property="title3" destination="smf-cj-heO" id="G4F-X9-U76"/>
+                <outletCollection property="arrayRadioButtons" destination="iHV-NA-8Zx" collectionClass="NSMutableArray" id="aKb-Jb-2WP"/>
+                <outletCollection property="arrayRadioButtons" destination="igy-SF-BOx" collectionClass="NSMutableArray" id="cik-lz-3DE"/>
+                <outletCollection property="arrayRadioButtons" destination="ru2-rr-6sH" collectionClass="NSMutableArray" id="4t9-NV-Dxy"/>
+            </connections>
+            <point key="canvasLocation" x="-1713" y="57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-25-logo-cc" width="347" height="115"/>
+        <image name="Ecommerce-25-logo-google-wallet" width="313" height="82"/>
+        <image name="Ecommerce-25-logo-paypal" width="277" height="72"/>
+        <image name="nextIcon" width="8" height="17"/>
+    </resources>
+</document>

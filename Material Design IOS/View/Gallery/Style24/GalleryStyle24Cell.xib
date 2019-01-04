@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="GalleryStyle24Cell" selectionStyle="default" indentationWidth="10" id="gHD-YO-nes" customClass="GalleryStyle24Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gHD-YO-nes" id="BVN-ga-tOP">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-NJ-p7B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v06-k6-KqE">
+                        <rect key="frame" x="162" y="73" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.30122601989999997" green="0.58635634179999996" blue="0.97629350420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="P79-39-1Tj"/>
+                            <constraint firstAttribute="height" constant="50" id="vXV-rw-DBY"/>
+                        </constraints>
+                        <state key="normal" image="share"/>
+                        <connections>
+                            <action selector="pushBtnShare:" destination="gHD-YO-nes" eventType="touchUpInside" id="iIo-cd-shV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-0B-2V9">
+                        <rect key="frame" x="8" y="131" width="359" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-Nc-mM1">
+                        <rect key="frame" x="8" y="160" width="359" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="rS3-NJ-p7B" secondAttribute="bottom" constant="-8.5" id="0SB-7P-vfM"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="qgT-0B-2V9" secondAttribute="leading" id="GWp-tj-auc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qgT-0B-2V9" secondAttribute="trailing" id="HCx-o9-Uea"/>
+                    <constraint firstItem="rS3-NJ-p7B" firstAttribute="top" secondItem="BVN-ga-tOP" secondAttribute="topMargin" constant="-8" id="NxG-Fs-xDb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dbe-Nc-mM1" secondAttribute="trailing" id="WPU-pZ-jzC"/>
+                    <constraint firstItem="Dbe-Nc-mM1" firstAttribute="top" secondItem="qgT-0B-2V9" secondAttribute="bottom" constant="8" id="ar4-4n-CjR"/>
+                    <constraint firstItem="rS3-NJ-p7B" firstAttribute="leading" secondItem="BVN-ga-tOP" secondAttribute="leadingMargin" constant="-8" id="dhI-X5-V4Q"/>
+                    <constraint firstItem="qgT-0B-2V9" firstAttribute="top" secondItem="v06-k6-KqE" secondAttribute="bottom" constant="8" id="lXy-at-1bP"/>
+                    <constraint firstItem="v06-k6-KqE" firstAttribute="centerX" secondItem="BVN-ga-tOP" secondAttribute="centerX" id="qXU-OC-B43"/>
+                    <constraint firstItem="v06-k6-KqE" firstAttribute="centerY" secondItem="BVN-ga-tOP" secondAttribute="centerY" constant="-26.75" id="sOo-rU-BrM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rS3-NJ-p7B" secondAttribute="trailing" constant="-8" id="sd4-9n-U4L"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Dbe-Nc-mM1" secondAttribute="leading" id="urU-Lg-4vS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnShare" destination="v06-k6-KqE" id="yoh-to-2S3"/>
+                <outlet property="count" destination="Dbe-Nc-mM1" id="7O3-Xx-gtr"/>
+                <outlet property="img" destination="rS3-NJ-p7B" id="QZi-1w-yI0"/>
+                <outlet property="title" destination="qgT-0B-2V9" id="I6d-6s-EfZ"/>
+            </connections>
+            <point key="canvasLocation" x="-398" y="-58"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="share" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MenuStyle5Cell" selectionStyle="default" indentationWidth="10" id="5SK-78-EhT" customClass="MenuStyle5Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5SK-78-EhT" id="VNT-MZ-x7s">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-9C-Rjl">
+                        <rect key="frame" x="30" y="13.5" width="67.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCQ-An-VU6">
+                        <rect key="frame" x="105" y="9" width="25" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpX-Mw-105">
+                                <rect key="frame" x="2" y="4.5" width="21" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20810079570000001" green="0.56931036710000005" blue="0.98171311620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rpX-Mw-105" firstAttribute="centerX" secondItem="UCQ-An-VU6" secondAttribute="centerX" id="1x4-vl-xC7"/>
+                            <constraint firstAttribute="width" constant="25" id="3lt-1F-jbe"/>
+                            <constraint firstAttribute="trailing" secondItem="rpX-Mw-105" secondAttribute="trailing" constant="2" id="GwI-1q-byg"/>
+                            <constraint firstAttribute="height" constant="25" id="HNO-Mr-PMm"/>
+                            <constraint firstItem="rpX-Mw-105" firstAttribute="centerY" secondItem="UCQ-An-VU6" secondAttribute="centerY" id="cVO-Ri-P9L"/>
+                            <constraint firstItem="rpX-Mw-105" firstAttribute="leading" secondItem="UCQ-An-VU6" secondAttribute="leading" constant="2" id="rjH-qi-uVv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyc-1N-VIl">
+                        <rect key="frame" x="346" y="0.0" width="21" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="QjF-Fa-huj"/>
+                            <constraint firstAttribute="width" constant="21" id="r36-mB-0M4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UCQ-An-VU6" firstAttribute="centerY" secondItem="VNT-MZ-x7s" secondAttribute="centerY" id="3Ed-Dh-lhV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uyc-1N-VIl" secondAttribute="trailing" id="Bfx-ZV-5hS"/>
+                    <constraint firstItem="OP6-9C-Rjl" firstAttribute="leading" secondItem="VNT-MZ-x7s" secondAttribute="leadingMargin" constant="22" id="Xhs-V9-xtf"/>
+                    <constraint firstItem="UCQ-An-VU6" firstAttribute="leading" secondItem="OP6-9C-Rjl" secondAttribute="trailing" constant="7.5" id="egu-h5-831"/>
+                    <constraint firstItem="uyc-1N-VIl" firstAttribute="centerY" secondItem="VNT-MZ-x7s" secondAttribute="centerY" id="ozo-Dl-pFe"/>
+                    <constraint firstItem="OP6-9C-Rjl" firstAttribute="centerY" secondItem="VNT-MZ-x7s" secondAttribute="centerY" id="sgD-qk-ePD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconNext" destination="uyc-1N-VIl" id="dQK-1y-rDD"/>
+                <outlet property="nameCell" destination="OP6-9C-Rjl" id="wbq-D4-wuQ"/>
+                <outlet property="valueNumber" destination="rpX-Mw-105" id="T9Q-l6-4so"/>
+                <outlet property="viewNumber" destination="UCQ-An-VU6" id="4TT-rS-f3o"/>
+            </connections>
+            <point key="canvasLocation" x="-2034" y="-392"/>
+        </tableViewCell>
+    </objects>
+</document>

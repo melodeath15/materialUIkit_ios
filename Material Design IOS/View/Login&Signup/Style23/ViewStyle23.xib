@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewStyle23" id="x51-hr-eY0" customClass="ViewStyle23" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset your Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-td-xvm">
+                    <rect key="frame" x="16" y="29" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weasel the jeeper goodness inconsiderately spelled so ubuquitous amused knitted and alturuistic amiable far musch toward" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZH-Jf-Fuz">
+                    <rect key="frame" x="16" y="58" width="343" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpZ-dl-ZNd">
+                    <rect key="frame" x="16" y="133" width="343" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4Z9-li-JM3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-Yw-Uvs">
+                    <rect key="frame" x="16" y="181" width="343" height="40"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.33725490200000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dLC-7v-QNx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="Reset Password">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushReset:" destination="x51-hr-eY0" eventType="touchUpInside" id="wDC-Dm-rsY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hcu-td-xvm" firstAttribute="leading" secondItem="x51-hr-eY0" secondAttribute="leading" constant="16" id="BrY-xz-ElZ"/>
+                <constraint firstItem="Ppq-Yw-Uvs" firstAttribute="leading" secondItem="x51-hr-eY0" secondAttribute="leading" constant="16" id="Q5p-9u-Tyg"/>
+                <constraint firstItem="CZH-Jf-Fuz" firstAttribute="leading" secondItem="x51-hr-eY0" secondAttribute="leading" constant="16" id="Qee-xl-XQ3"/>
+                <constraint firstAttribute="trailing" secondItem="Ppq-Yw-Uvs" secondAttribute="trailing" constant="16" id="WRR-ID-lhP"/>
+                <constraint firstItem="Ppq-Yw-Uvs" firstAttribute="top" secondItem="cpZ-dl-ZNd" secondAttribute="bottom" constant="8" id="YqF-0h-79q"/>
+                <constraint firstAttribute="trailing" secondItem="CZH-Jf-Fuz" secondAttribute="trailing" constant="16" id="Zvl-XQ-YQc"/>
+                <constraint firstAttribute="trailing" secondItem="cpZ-dl-ZNd" secondAttribute="trailing" constant="16" id="e0w-08-Xdy"/>
+                <constraint firstItem="CZH-Jf-Fuz" firstAttribute="top" secondItem="hcu-td-xvm" secondAttribute="bottom" constant="9.5" id="ei6-fI-Xco"/>
+                <constraint firstItem="cpZ-dl-ZNd" firstAttribute="leading" secondItem="x51-hr-eY0" secondAttribute="leading" constant="16" id="inK-mm-6qS"/>
+                <constraint firstItem="hcu-td-xvm" firstAttribute="top" secondItem="x51-hr-eY0" secondAttribute="top" constant="29" id="nox-KM-wcc"/>
+                <constraint firstAttribute="trailing" secondItem="hcu-td-xvm" secondAttribute="trailing" constant="16" id="obt-BH-bEd"/>
+                <constraint firstItem="cpZ-dl-ZNd" firstAttribute="top" secondItem="CZH-Jf-Fuz" secondAttribute="bottom" constant="24.5" id="vO8-Dm-woK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnReset" destination="Ppq-Yw-Uvs" id="oaR-wC-7CH"/>
+                <outlet property="des" destination="CZH-Jf-Fuz" id="tY8-Sp-jU5"/>
+                <outlet property="email" destination="cpZ-dl-ZNd" id="rET-CS-XWr"/>
+                <outlet property="title" destination="hcu-td-xvm" id="TTO-uO-vMo"/>
+            </connections>
+            <point key="canvasLocation" x="-167" y="-94"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle3View" id="ZcR-21-dK8" customClass="EcommerceStyle3View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwE-24-63z">
+                    <rect key="frame" x="58" y="1.5" width="31" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9F-Kd-ifa">
+                    <rect key="frame" x="91" y="1.5" width="268" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98234444856643677" green="0.64519065618515015" blue="0.095086462795734406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I9F-Kd-ifa" firstAttribute="centerY" secondItem="ZcR-21-dK8" secondAttribute="centerY" constant="-6" id="FaO-EH-gpa"/>
+                <constraint firstItem="FwE-24-63z" firstAttribute="centerY" secondItem="ZcR-21-dK8" secondAttribute="centerY" constant="-6" id="GR1-H4-m86"/>
+                <constraint firstAttribute="trailing" secondItem="I9F-Kd-ifa" secondAttribute="trailing" constant="16" id="Mj2-f6-Vhz"/>
+                <constraint firstItem="I9F-Kd-ifa" firstAttribute="leading" secondItem="FwE-24-63z" secondAttribute="trailing" constant="2" id="WJv-R9-Wtq"/>
+                <constraint firstItem="FwE-24-63z" firstAttribute="leading" secondItem="ZcR-21-dK8" secondAttribute="leading" constant="58" id="dvn-CB-bFI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleActive" destination="I9F-Kd-ifa" id="V0d-2d-hYk"/>
+                <outlet property="titleHidden" destination="FwE-24-63z" id="TqJ-at-vug"/>
+            </connections>
+            <point key="canvasLocation" x="-202" y="-169"/>
+        </view>
+    </objects>
+</document>

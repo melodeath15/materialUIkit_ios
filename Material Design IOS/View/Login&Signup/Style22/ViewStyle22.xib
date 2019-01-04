@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewStyle22" id="Ej2-JB-JMD" customClass="ViewStyle22" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-Ui-28i">
+                    <rect key="frame" x="152" y="22" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="lih-7u-IlG"/>
+                        <constraint firstAttribute="height" constant="70" id="wwq-s5-XXL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Guest!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-nu-NNk">
+                    <rect key="frame" x="16" y="100" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weasel the jeeper goodness inconsiderately spelled so ubuquitous amused knitted and alturuistic amiable far musch toward" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRr-UA-2gJ">
+                    <rect key="frame" x="16" y="129" width="343" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t0N-nu-NNk" secondAttribute="trailing" constant="16" id="3Ob-Kh-VgV"/>
+                <constraint firstAttribute="trailing" secondItem="pRr-UA-2gJ" secondAttribute="trailing" constant="16" id="9Hg-eY-UCb"/>
+                <constraint firstItem="t0N-nu-NNk" firstAttribute="leading" secondItem="Ej2-JB-JMD" secondAttribute="leading" constant="16" id="PXZ-GO-211"/>
+                <constraint firstItem="8Yc-Ui-28i" firstAttribute="top" secondItem="Ej2-JB-JMD" secondAttribute="top" constant="22" id="Swb-bh-XNP"/>
+                <constraint firstItem="pRr-UA-2gJ" firstAttribute="leading" secondItem="Ej2-JB-JMD" secondAttribute="leading" constant="16" id="T3h-kD-1rE"/>
+                <constraint firstItem="pRr-UA-2gJ" firstAttribute="top" secondItem="t0N-nu-NNk" secondAttribute="bottom" constant="9.5" id="hSc-OV-7Vz"/>
+                <constraint firstItem="8Yc-Ui-28i" firstAttribute="centerX" secondItem="Ej2-JB-JMD" secondAttribute="centerX" id="q9G-L0-f6A"/>
+                <constraint firstItem="t0N-nu-NNk" firstAttribute="top" secondItem="8Yc-Ui-28i" secondAttribute="bottom" constant="8" id="sHs-Ey-sq8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="pRr-UA-2gJ" id="IPu-nH-3ee"/>
+                <outlet property="logo" destination="8Yc-Ui-28i" id="p0e-SG-BLZ"/>
+                <outlet property="title" destination="t0N-nu-NNk" id="rtY-ng-RGC"/>
+            </connections>
+            <point key="canvasLocation" x="-175" y="-262"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo2" width="120" height="120"/>
+    </resources>
+</document>

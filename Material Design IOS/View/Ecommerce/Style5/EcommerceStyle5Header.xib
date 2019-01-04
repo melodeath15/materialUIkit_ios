@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle5Header" selectionStyle="default" indentationWidth="10" id="je8-dh-qkE" customClass="EcommerceStyle5Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="je8-dh-qkE" id="cJG-sl-LTT">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-5-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="P9w-XS-4RE">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATALOG" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK9-0S-Lgc">
+                        <rect key="frame" x="8" y="39" width="329" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-gZ-f0X">
+                        <rect key="frame" x="8" y="64" width="329" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEI-QL-pMi">
+                        <rect key="frame" x="213" y="111" width="124" height="40"/>
+                        <color key="backgroundColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2LD-12-ojx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="SHOP NOW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnShop:" destination="je8-dh-qkE" eventType="touchUpInside" id="bcm-Yd-k8i"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FK9-0S-Lgc" firstAttribute="centerY" secondItem="cJG-sl-LTT" secondAttribute="centerY" constant="-52.75" id="4gZ-rj-9ps"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FK9-0S-Lgc" secondAttribute="trailing" constant="5" id="7Fm-jZ-ozp"/>
+                    <constraint firstItem="gEI-QL-pMi" firstAttribute="top" secondItem="6Nn-gZ-f0X" secondAttribute="bottom" constant="11" id="8AH-dm-1NT"/>
+                    <constraint firstItem="P9w-XS-4RE" firstAttribute="top" secondItem="cJG-sl-LTT" secondAttribute="topMargin" constant="-8" id="8LW-Ft-1JN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="P9w-XS-4RE" secondAttribute="bottom" constant="-8.5" id="9t3-La-Kl3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gEI-QL-pMi" secondAttribute="trailing" constant="5" id="Bbu-hX-LOf"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="FK9-0S-Lgc" secondAttribute="leading" id="Hma-KI-x5G"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="P9w-XS-4RE" secondAttribute="trailing" constant="-8" id="Uit-kN-1nZ"/>
+                    <constraint firstItem="P9w-XS-4RE" firstAttribute="leading" secondItem="cJG-sl-LTT" secondAttribute="leadingMargin" constant="-8" id="V2a-h5-b7a"/>
+                    <constraint firstItem="6Nn-gZ-f0X" firstAttribute="top" secondItem="FK9-0S-Lgc" secondAttribute="bottom" constant="8.5" id="cAP-Nu-ZQt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6Nn-gZ-f0X" secondAttribute="trailing" constant="5" id="cKj-pm-Ysd"/>
+                    <constraint firstItem="gEI-QL-pMi" firstAttribute="leading" secondItem="cJG-sl-LTT" secondAttribute="leadingMargin" constant="205" id="sSn-sp-hTC"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="6Nn-gZ-f0X" secondAttribute="leading" id="tbr-ts-RnX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnShop" destination="gEI-QL-pMi" id="1gJ-9f-x5h"/>
+                <outlet property="img" destination="P9w-XS-4RE" id="mT3-Ey-ZaE"/>
+                <outlet property="nameCatalog" destination="FK9-0S-Lgc" id="B9i-a9-S2c"/>
+                <outlet property="title" destination="6Nn-gZ-f0X" id="5Ws-lF-Hd9"/>
+            </connections>
+            <point key="canvasLocation" x="-715" y="51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-5-img-1" width="1080" height="613"/>
+    </resources>
+</document>

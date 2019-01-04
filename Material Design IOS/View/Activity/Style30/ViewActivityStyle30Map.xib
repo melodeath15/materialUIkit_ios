@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewActivityStyle30Map" id="gnD-kN-yzn" customClass="ViewActivityStyle30Map" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-WV-jnC">
+                    <rect key="frame" x="20" y="10" width="300" height="261"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xdw-z5-Fsa">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        </mapView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPh-2p-bq0">
+                            <rect key="frame" x="269" y="232" width="23" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDs-Dc-OHf">
+                            <rect key="frame" x="12" y="211" width="276" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xdw-z5-Fsa" firstAttribute="leading" secondItem="DEg-WV-jnC" secondAttribute="leading" id="7YS-YT-bVf"/>
+                        <constraint firstAttribute="trailing" secondItem="YPh-2p-bq0" secondAttribute="trailing" constant="8" id="9qm-4M-RHB"/>
+                        <constraint firstItem="MDs-Dc-OHf" firstAttribute="leading" secondItem="DEg-WV-jnC" secondAttribute="leading" constant="12" id="DGx-Vf-3Q7"/>
+                        <constraint firstItem="MDs-Dc-OHf" firstAttribute="top" secondItem="Xdw-z5-Fsa" secondAttribute="bottom" constant="11" id="GSa-j5-kxt"/>
+                        <constraint firstItem="YPh-2p-bq0" firstAttribute="top" secondItem="MDs-Dc-OHf" secondAttribute="bottom" constant="4" id="KJF-jQ-KWY"/>
+                        <constraint firstItem="Xdw-z5-Fsa" firstAttribute="top" secondItem="DEg-WV-jnC" secondAttribute="top" id="Pig-ez-wYX"/>
+                        <constraint firstAttribute="bottom" secondItem="Xdw-z5-Fsa" secondAttribute="bottom" constant="61" id="RuQ-jx-wLy"/>
+                        <constraint firstAttribute="trailing" secondItem="MDs-Dc-OHf" secondAttribute="trailing" constant="12" id="nxq-VT-7PW"/>
+                        <constraint firstAttribute="trailing" secondItem="Xdw-z5-Fsa" secondAttribute="trailing" id="r29-cS-01x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DEg-WV-jnC" firstAttribute="top" secondItem="gnD-kN-yzn" secondAttribute="top" constant="10" id="bSd-BR-ETX"/>
+                <constraint firstAttribute="trailing" secondItem="DEg-WV-jnC" secondAttribute="trailing" constant="55" id="nAc-k0-rNv"/>
+                <constraint firstItem="DEg-WV-jnC" firstAttribute="leading" secondItem="gnD-kN-yzn" secondAttribute="leading" constant="20" id="tpP-mr-E6Z"/>
+                <constraint firstAttribute="bottom" secondItem="DEg-WV-jnC" secondAttribute="bottom" constant="9" id="xxL-4b-pxJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="MDs-Dc-OHf" id="dS1-Fn-PCT"/>
+                <outlet property="map" destination="Xdw-z5-Fsa" id="yjU-kz-z4T"/>
+                <outlet property="time" destination="YPh-2p-bq0" id="Who-pC-XGD"/>
+            </connections>
+            <point key="canvasLocation" x="109.5" y="-396"/>
+        </view>
+    </objects>
+</document>

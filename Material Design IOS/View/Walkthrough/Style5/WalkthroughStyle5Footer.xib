@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle5Footer" id="j1j-bB-fRX" customClass="WalkthroughStyle5Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jM7-Kw-MfL">
+                    <rect key="frame" x="12" y="5" width="350" height="50"/>
+                    <color key="backgroundColor" red="0.90741622447967529" green="0.19982704520225525" blue="0.43107765913009644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="GET STARTED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnStarted:" destination="j1j-bB-fRX" eventType="touchUpInside" id="Q0T-bt-4CJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jM7-Kw-MfL" firstAttribute="top" secondItem="j1j-bB-fRX" secondAttribute="top" constant="5" id="18X-WM-vgf"/>
+                <constraint firstItem="jM7-Kw-MfL" firstAttribute="leading" secondItem="j1j-bB-fRX" secondAttribute="leading" constant="12" id="9b2-5F-Qj2"/>
+                <constraint firstAttribute="bottom" secondItem="jM7-Kw-MfL" secondAttribute="bottom" constant="5" id="GG5-43-q9i"/>
+                <constraint firstAttribute="trailing" secondItem="jM7-Kw-MfL" secondAttribute="trailing" constant="13" id="M7a-ie-ihx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnGetStarted" destination="jM7-Kw-MfL" id="85t-gO-Pgh"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="-345"/>
+        </view>
+    </objects>
+</document>

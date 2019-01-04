@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle6Cell" selectionStyle="default" indentationWidth="10" rowHeight="350" id="gT5-rP-IT4" customClass="EcommerceStyle6Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT5-rP-IT4" id="YFM-Ui-QiJ">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29U-Ny-lTy">
+                        <rect key="frame" x="8" y="8" width="284" height="334"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFe-Oq-DTl">
+                                <rect key="frame" x="8" y="16" width="220" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-6-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="N87-vJ-rOn">
+                                <rect key="frame" x="0.0" y="45" width="284" height="289"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfV-YN-4rZ">
+                                <rect key="frame" x="251" y="8" width="25" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH4-cL-9Si">
+                                        <rect key="frame" x="0.0" y="6" width="25" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dH4-cL-9Si" firstAttribute="leading" secondItem="kfV-YN-4rZ" secondAttribute="leading" id="7al-eB-yLl"/>
+                                    <constraint firstAttribute="width" constant="25" id="9Ik-A7-dFe"/>
+                                    <constraint firstAttribute="trailing" secondItem="dH4-cL-9Si" secondAttribute="trailing" id="IhP-1b-VsA"/>
+                                    <constraint firstAttribute="bottom" secondItem="dH4-cL-9Si" secondAttribute="bottom" constant="7" id="PJf-2c-srU"/>
+                                    <constraint firstItem="dH4-cL-9Si" firstAttribute="top" secondItem="kfV-YN-4rZ" secondAttribute="top" constant="6" id="Wjw-yN-yfE"/>
+                                    <constraint firstAttribute="height" constant="25" id="fec-jd-RYH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="N87-vJ-rOn" secondAttribute="bottom" id="0FH-1N-xnT"/>
+                            <constraint firstAttribute="trailing" secondItem="N87-vJ-rOn" secondAttribute="trailing" id="1mF-Ph-IWY"/>
+                            <constraint firstItem="N87-vJ-rOn" firstAttribute="leading" secondItem="29U-Ny-lTy" secondAttribute="leading" id="VsA-cd-eLF"/>
+                            <constraint firstItem="DFe-Oq-DTl" firstAttribute="leading" secondItem="29U-Ny-lTy" secondAttribute="leading" constant="8" id="bRk-jO-qIH"/>
+                            <constraint firstAttribute="trailing" secondItem="kfV-YN-4rZ" secondAttribute="trailing" constant="8" id="hee-TW-54H"/>
+                            <constraint firstItem="DFe-Oq-DTl" firstAttribute="top" secondItem="29U-Ny-lTy" secondAttribute="top" constant="16" id="noE-hB-NWT"/>
+                            <constraint firstItem="kfV-YN-4rZ" firstAttribute="top" secondItem="29U-Ny-lTy" secondAttribute="top" constant="8" id="sHW-ty-C5N"/>
+                            <constraint firstItem="kfV-YN-4rZ" firstAttribute="leading" secondItem="DFe-Oq-DTl" secondAttribute="trailing" constant="23" id="thL-VG-1eH"/>
+                            <constraint firstItem="N87-vJ-rOn" firstAttribute="top" secondItem="29U-Ny-lTy" secondAttribute="top" constant="45" id="veI-vR-GTf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="29U-Ny-lTy" secondAttribute="top" id="E9Y-XO-YK8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="29U-Ny-lTy" secondAttribute="trailing" id="PPE-Db-Gt7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="29U-Ny-lTy" secondAttribute="bottom" id="oqM-kM-G2S"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="29U-Ny-lTy" secondAttribute="leading" id="zh4-cZ-vmd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="N87-vJ-rOn" id="CMS-QT-FPG"/>
+                <outlet property="title" destination="DFe-Oq-DTl" id="vhk-IT-EK6"/>
+                <outlet property="value" destination="dH4-cL-9Si" id="yRr-3x-se9"/>
+                <outlet property="viewValue" destination="kfV-YN-4rZ" id="hJn-9j-Dlc"/>
+            </connections>
+            <point key="canvasLocation" x="-978" y="-74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-6-img-1" width="495" height="595"/>
+    </resources>
+</document>

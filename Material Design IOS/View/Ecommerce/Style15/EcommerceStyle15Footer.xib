@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle15Footer" id="sdR-Ap-DnL" customClass="EcommerceStyle15Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcO-0V-MFe">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6H-np-Kvd">
+                            <rect key="frame" x="8" y="18.5" width="104" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="b6H-np-Kvd" firstAttribute="leading" secondItem="jcO-0V-MFe" secondAttribute="leading" constant="8" id="61Q-FS-60L"/>
+                        <constraint firstItem="b6H-np-Kvd" firstAttribute="centerY" secondItem="jcO-0V-MFe" secondAttribute="centerY" id="a8r-Oy-Kgf"/>
+                        <constraint firstAttribute="trailing" secondItem="b6H-np-Kvd" secondAttribute="trailing" constant="8" id="sLK-Y8-NOD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n23-hX-90W">
+                    <rect key="frame" x="120" y="0.0" width="255" height="50"/>
+                    <color key="backgroundColor" red="0.98090499639999995" green="0.63993924859999995" blue="0.092553786930000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="u03-ru-xyE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="Add to Cart">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnAddCart:" destination="sdR-Ap-DnL" eventType="touchUpInside" id="3Np-eg-bOb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jcO-0V-MFe" secondAttribute="trailing" constant="255" id="3bp-30-VQg"/>
+                <constraint firstItem="n23-hX-90W" firstAttribute="leading" secondItem="jcO-0V-MFe" secondAttribute="trailing" id="Lit-Hy-ivO"/>
+                <constraint firstAttribute="bottom" secondItem="jcO-0V-MFe" secondAttribute="bottom" id="PF8-xW-C2k"/>
+                <constraint firstItem="n23-hX-90W" firstAttribute="centerY" secondItem="sdR-Ap-DnL" secondAttribute="centerY" id="U4G-RS-PIx"/>
+                <constraint firstAttribute="trailing" secondItem="n23-hX-90W" secondAttribute="trailing" id="Vne-Y2-fkl"/>
+                <constraint firstItem="jcO-0V-MFe" firstAttribute="top" secondItem="sdR-Ap-DnL" secondAttribute="top" id="YNt-ul-6bs"/>
+                <constraint firstItem="jcO-0V-MFe" firstAttribute="leading" secondItem="sdR-Ap-DnL" secondAttribute="leading" id="sxv-Er-RIp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAddCart" destination="n23-hX-90W" id="bli-6F-9xY"/>
+                <outlet property="valuePrice" destination="b6H-np-Kvd" id="lh6-bP-mbl"/>
+                <outlet property="viewPrice" destination="jcO-0V-MFe" id="cgC-JS-7Je"/>
+            </connections>
+            <point key="canvasLocation" x="-147" y="-482"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeaderStyle5" id="rg8-wX-iDt" customClass="ProfileHeaderStyle5" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="lNp-cP-EIg">
+                    <rect key="frame" x="16" y="10" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="JFN-an-tlg"/>
+                        <constraint firstAttribute="width" constant="80" id="dl6-H4-tog"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVr-xa-5k9">
+                    <rect key="frame" x="104" y="10" width="255" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRZ-xQ-r2C">
+                    <rect key="frame" x="104" y="50" width="90" height="40"/>
+                    <color key="backgroundColor" red="0.26184427738189697" green="0.73584437370300293" blue="0.25419378280639648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HTv-3S-Eko"/>
+                        <constraint firstAttribute="width" constant="90" id="esz-a4-BhK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Follow">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnFollow:" destination="rg8-wX-iDt" eventType="touchUpInside" id="T22-m4-XPm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJw-fF-MbE">
+                    <rect key="frame" x="202" y="50" width="90" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZVm-hg-OT3"/>
+                        <constraint firstAttribute="width" constant="90" id="azV-pK-sBq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Share">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnShare:" destination="rg8-wX-iDt" eventType="touchUpInside" id="nkz-Yf-9H2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94321912527084351" green="0.96280890703201294" blue="0.97274559736251831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DVr-xa-5k9" secondAttribute="trailing" constant="16" id="HZb-mY-gn8"/>
+                <constraint firstItem="DVr-xa-5k9" firstAttribute="leading" secondItem="lNp-cP-EIg" secondAttribute="trailing" constant="8" id="J3h-8n-thB"/>
+                <constraint firstItem="FJw-fF-MbE" firstAttribute="bottom" secondItem="lNp-cP-EIg" secondAttribute="bottom" id="Vn6-0V-ozg"/>
+                <constraint firstItem="lNp-cP-EIg" firstAttribute="centerY" secondItem="rg8-wX-iDt" secondAttribute="centerY" id="eUL-Wl-F8L"/>
+                <constraint firstItem="lNp-cP-EIg" firstAttribute="leading" secondItem="rg8-wX-iDt" secondAttribute="leading" constant="16" id="mo0-fh-wBt"/>
+                <constraint firstItem="DVr-xa-5k9" firstAttribute="top" secondItem="lNp-cP-EIg" secondAttribute="top" id="q2A-c9-umS"/>
+                <constraint firstItem="FJw-fF-MbE" firstAttribute="leading" secondItem="NRZ-xQ-r2C" secondAttribute="trailing" constant="8" id="xED-eg-9Uh"/>
+                <constraint firstItem="NRZ-xQ-r2C" firstAttribute="bottom" secondItem="lNp-cP-EIg" secondAttribute="bottom" id="yAx-eY-0wk"/>
+                <constraint firstItem="NRZ-xQ-r2C" firstAttribute="leading" secondItem="lNp-cP-EIg" secondAttribute="trailing" constant="8" id="zC0-dG-4ak"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="follow" destination="NRZ-xQ-r2C" id="nYE-qN-JTq"/>
+                <outlet property="img" destination="lNp-cP-EIg" id="2hT-q0-SkD"/>
+                <outlet property="share" destination="FJw-fF-MbE" id="Q9i-q8-DHr"/>
+                <outlet property="title" destination="DVr-xa-5k9" id="bHd-54-4sg"/>
+            </connections>
+            <point key="canvasLocation" x="-469" y="-309"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

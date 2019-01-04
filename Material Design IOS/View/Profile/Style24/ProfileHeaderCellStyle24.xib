@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProfileHeaderCellStyle24" selectionStyle="default" indentationWidth="10" id="xLW-63-lDb" customClass="ProfileHeaderCellStyle24" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xLW-63-lDb" id="DL0-dY-i05">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4M3-bd-Adp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-Qu-vY7">
+                        <rect key="frame" x="147" y="111" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="glj-J2-euk"/>
+                            <constraint firstAttribute="height" constant="80" id="nx0-Nw-1hl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mta-Dj-IrB">
+                        <rect key="frame" x="8" y="24" width="359" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWZ-MM-SXk">
+                        <rect key="frame" x="8" y="53" width="359" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mta-Dj-IrB" firstAttribute="leading" secondItem="DL0-dY-i05" secondAttribute="leading" constant="8" id="2bi-DW-PU5"/>
+                    <constraint firstItem="aLV-Qu-vY7" firstAttribute="centerX" secondItem="DL0-dY-i05" secondAttribute="centerX" id="657-4w-Rw9"/>
+                    <constraint firstItem="4M3-bd-Adp" firstAttribute="top" secondItem="DL0-dY-i05" secondAttribute="top" id="6Bk-fF-5vB"/>
+                    <constraint firstItem="mta-Dj-IrB" firstAttribute="top" secondItem="DL0-dY-i05" secondAttribute="top" constant="24" id="7fV-g3-HNk"/>
+                    <constraint firstItem="TWZ-MM-SXk" firstAttribute="top" secondItem="mta-Dj-IrB" secondAttribute="bottom" constant="8" id="9Cu-nJ-Z9u"/>
+                    <constraint firstAttribute="trailing" secondItem="4M3-bd-Adp" secondAttribute="trailing" id="D85-oY-tPa"/>
+                    <constraint firstItem="TWZ-MM-SXk" firstAttribute="leading" secondItem="DL0-dY-i05" secondAttribute="leading" constant="8" id="DHv-Zi-5d0"/>
+                    <constraint firstAttribute="bottom" secondItem="4M3-bd-Adp" secondAttribute="bottom" constant="49.5" id="efR-Sj-W5c"/>
+                    <constraint firstItem="aLV-Qu-vY7" firstAttribute="top" secondItem="DL0-dY-i05" secondAttribute="top" constant="111" id="pQu-Dw-IaQ"/>
+                    <constraint firstAttribute="trailing" secondItem="TWZ-MM-SXk" secondAttribute="trailing" constant="8" id="pRx-cn-Fq9"/>
+                    <constraint firstItem="4M3-bd-Adp" firstAttribute="leading" secondItem="DL0-dY-i05" secondAttribute="leading" id="x0o-73-ZcA"/>
+                    <constraint firstAttribute="trailing" secondItem="mta-Dj-IrB" secondAttribute="trailing" constant="8" id="y6G-Um-6tc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bg" destination="4M3-bd-Adp" id="NHu-8S-WQu"/>
+                <outlet property="city" destination="TWZ-MM-SXk" id="vbG-UG-MIb"/>
+                <outlet property="name" destination="mta-Dj-IrB" id="MQv-AM-qTF"/>
+                <outlet property="profile" destination="aLV-Qu-vY7" id="oCh-zt-1ZF"/>
+            </connections>
+            <point key="canvasLocation" x="-216" y="70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewActivityStyle1NewFriendsCell" id="rmS-86-0cG" customClass="ViewActivityStyle1NewFriendsCell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-Ld-Umb">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ugG-Ld-Umb" firstAttribute="leading" secondItem="rmS-86-0cG" secondAttribute="leading" id="4DA-Zb-gab"/>
+                <constraint firstAttribute="trailing" secondItem="ugG-Ld-Umb" secondAttribute="trailing" id="Xa2-R2-AWr"/>
+                <constraint firstAttribute="bottom" secondItem="ugG-Ld-Umb" secondAttribute="bottom" id="pVd-Ko-ae4"/>
+                <constraint firstItem="ugG-Ld-Umb" firstAttribute="top" secondItem="rmS-86-0cG" secondAttribute="top" id="x9t-rh-467"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgCell" destination="ugG-Ld-Umb" id="fbD-pV-9tJ"/>
+            </connections>
+            <point key="canvasLocation" x="-629" y="-212"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile1" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuHeader" id="ZYo-QO-Sit" customClass="MenuHeader" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-xv-ewT">
+                    <rect key="frame" x="16" y="24" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GFh-Uy-mEl"/>
+                        <constraint firstAttribute="width" constant="50" id="yM4-H4-8cl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Material Desain IOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXg-ul-pFe">
+                    <rect key="frame" x="74" y="39" width="285" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.088741295039653778" green="0.098548196256160736" blue="0.13873016834259033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oXg-ul-pFe" secondAttribute="trailing" constant="16" id="Daz-oF-4KD"/>
+                <constraint firstItem="hd7-xv-ewT" firstAttribute="leading" secondItem="ZYo-QO-Sit" secondAttribute="leading" constant="16" id="FGr-lo-4G1"/>
+                <constraint firstItem="hd7-xv-ewT" firstAttribute="centerY" secondItem="ZYo-QO-Sit" secondAttribute="centerY" constant="9" id="asU-x9-FBN"/>
+                <constraint firstItem="oXg-ul-pFe" firstAttribute="leading" secondItem="hd7-xv-ewT" secondAttribute="trailing" constant="8" id="bq4-M1-Tuh"/>
+                <constraint firstItem="oXg-ul-pFe" firstAttribute="centerY" secondItem="ZYo-QO-Sit" secondAttribute="centerY" constant="8.5" id="qE4-OG-Ycr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1317" y="-250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo1" width="96" height="96"/>
+    </resources>
+</document>

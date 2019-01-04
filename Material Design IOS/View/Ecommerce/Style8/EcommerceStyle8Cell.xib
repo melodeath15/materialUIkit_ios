@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EcommerceStyle8Cell" id="f7J-BT-xir" customClass="EcommerceStyle8Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Ecommerce-8-img-2" translatesAutoresizingMaskIntoConstraints="NO" id="qv4-PP-AWA">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="338"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzE-uL-6jX">
+                        <rect key="frame" x="7" y="343" width="236" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-gb-XOV" customClass="AARatingBar" customModule="Material_Design_IOS" customModuleProvider="target">
+                        <rect key="frame" x="7" y="358" width="63" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="0Ok-9A-Cdg"/>
+                            <constraint firstAttribute="width" constant="63" id="lny-ZH-ya8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.99746423959999997" green="0.6363182664" blue="0.091655857859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-4A-YHA">
+                        <rect key="frame" x="7" y="381" width="236" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.99746423959999997" green="0.6363182664" blue="0.091655857859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qv4-PP-AWA" firstAttribute="leading" secondItem="f7J-BT-xir" secondAttribute="leading" id="8Am-bX-omx"/>
+                <constraint firstItem="RbN-gb-XOV" firstAttribute="top" secondItem="GzE-uL-6jX" secondAttribute="bottom" id="G9k-Uw-08m"/>
+                <constraint firstAttribute="trailing" secondItem="GzE-uL-6jX" secondAttribute="trailing" constant="7" id="HOq-V4-e0a"/>
+                <constraint firstItem="MIm-4A-YHA" firstAttribute="top" secondItem="RbN-gb-XOV" secondAttribute="bottom" constant="5" id="HXF-dk-faW"/>
+                <constraint firstAttribute="trailing" secondItem="qv4-PP-AWA" secondAttribute="trailing" id="INW-VZ-jEc"/>
+                <constraint firstItem="qv4-PP-AWA" firstAttribute="top" secondItem="f7J-BT-xir" secondAttribute="top" id="Jvm-lM-xEE"/>
+                <constraint firstItem="GzE-uL-6jX" firstAttribute="top" secondItem="qv4-PP-AWA" secondAttribute="bottom" constant="5" id="Tu1-xo-0Hu"/>
+                <constraint firstItem="MIm-4A-YHA" firstAttribute="leading" secondItem="f7J-BT-xir" secondAttribute="leading" constant="7" id="Wsa-SW-ugh"/>
+                <constraint firstItem="GzE-uL-6jX" firstAttribute="leading" secondItem="f7J-BT-xir" secondAttribute="leading" constant="7" id="atb-CR-Iy2"/>
+                <constraint firstAttribute="trailing" secondItem="MIm-4A-YHA" secondAttribute="trailing" constant="7" id="eKP-QC-fxK"/>
+                <constraint firstAttribute="bottom" secondItem="MIm-4A-YHA" secondAttribute="bottom" constant="4" id="mWf-ni-vnS"/>
+                <constraint firstItem="RbN-gb-XOV" firstAttribute="leading" secondItem="f7J-BT-xir" secondAttribute="leading" constant="7" id="qIZ-V6-JMP"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="qv4-PP-AWA" id="OG3-kH-0ZQ"/>
+                <outlet property="price" destination="MIm-4A-YHA" id="1nI-Nf-tSQ"/>
+                <outlet property="rating" destination="RbN-gb-XOV" id="kfC-aV-DQu"/>
+                <outlet property="title" destination="GzE-uL-6jX" id="szo-3q-wL2"/>
+            </connections>
+            <point key="canvasLocation" x="-704" y="-49"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-8-img-2" width="494" height="525"/>
+    </resources>
+</document>

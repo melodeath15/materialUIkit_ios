@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle12Profile" id="laD-UI-IE5" customClass="MenuStyle12Profile" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Tr-GLg">
+                    <rect key="frame" x="152" y="5" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="dJg-bT-82I"/>
+                        <constraint firstAttribute="width" constant="70" id="dSI-Ee-arn"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ad-hP-yXc">
+                    <rect key="frame" x="203" y="7" width="25" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfD-Wm-eRL">
+                            <rect key="frame" x="3" y="4" width="19" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20810079570000001" green="0.56931036710000005" blue="0.98171311620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vfD-Wm-eRL" secondAttribute="trailing" constant="3" id="Cf7-4P-tey"/>
+                        <constraint firstItem="vfD-Wm-eRL" firstAttribute="centerY" secondItem="2ad-hP-yXc" secondAttribute="centerY" id="Mtw-D2-0Gz"/>
+                        <constraint firstItem="vfD-Wm-eRL" firstAttribute="leading" secondItem="2ad-hP-yXc" secondAttribute="leading" constant="3" id="OYV-1m-g5V"/>
+                        <constraint firstAttribute="height" constant="25" id="ShT-Tf-ZxI"/>
+                        <constraint firstItem="vfD-Wm-eRL" firstAttribute="centerX" secondItem="2ad-hP-yXc" secondAttribute="centerX" id="VMU-8R-WBS"/>
+                        <constraint firstAttribute="width" constant="25" id="mLy-pE-jk7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2ad-hP-yXc" firstAttribute="leading" secondItem="bRC-Tr-GLg" secondAttribute="trailing" constant="-19" id="3zk-FR-B5O"/>
+                <constraint firstItem="bRC-Tr-GLg" firstAttribute="centerX" secondItem="laD-UI-IE5" secondAttribute="centerX" id="Bg2-l8-gsu"/>
+                <constraint firstItem="bRC-Tr-GLg" firstAttribute="centerY" secondItem="laD-UI-IE5" secondAttribute="centerY" id="Fq2-4r-jho"/>
+                <constraint firstItem="2ad-hP-yXc" firstAttribute="top" secondItem="laD-UI-IE5" secondAttribute="top" constant="7" id="tUE-wh-tfe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img" destination="bRC-Tr-GLg" id="Mgi-Xe-mIC"/>
+                <outlet property="valueNotif" destination="vfD-Wm-eRL" id="uUb-5G-k4b"/>
+                <outlet property="viewNotif" destination="2ad-hP-yXc" id="jqN-q4-EQv"/>
+            </connections>
+            <point key="canvasLocation" x="-144" y="-445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

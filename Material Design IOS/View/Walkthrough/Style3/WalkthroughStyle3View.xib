@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle3View" id="ySk-bR-TRe" customClass="WalkthroughStyle3View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo3" translatesAutoresizingMaskIntoConstraints="NO" id="NGs-tm-Rj9">
+                    <rect key="frame" x="88" y="50" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="4KK-ud-mgH"/>
+                        <constraint firstAttribute="height" constant="200" id="knP-Gp-Xtt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-2F-8O3">
+                    <rect key="frame" x="16" y="279" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X65-VD-yx2">
+                    <rect key="frame" x="16" y="304" width="343" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NGs-tm-Rj9" firstAttribute="centerY" secondItem="ySk-bR-TRe" secondAttribute="centerY" constant="-50" id="3d2-Mb-jjo"/>
+                <constraint firstItem="w5g-2F-8O3" firstAttribute="leading" secondItem="ySk-bR-TRe" secondAttribute="leading" constant="16" id="CmB-Dq-IQU"/>
+                <constraint firstAttribute="trailing" secondItem="X65-VD-yx2" secondAttribute="trailing" constant="16" id="Rpv-d8-o4g"/>
+                <constraint firstAttribute="trailing" secondItem="w5g-2F-8O3" secondAttribute="trailing" constant="16" id="chO-eI-M3f"/>
+                <constraint firstItem="X65-VD-yx2" firstAttribute="leading" secondItem="ySk-bR-TRe" secondAttribute="leading" constant="16" id="exb-fe-LdA"/>
+                <constraint firstItem="w5g-2F-8O3" firstAttribute="top" secondItem="NGs-tm-Rj9" secondAttribute="bottom" constant="29" id="h6L-kR-Any"/>
+                <constraint firstItem="NGs-tm-Rj9" firstAttribute="centerX" secondItem="ySk-bR-TRe" secondAttribute="centerX" id="j3I-6O-E1b"/>
+                <constraint firstItem="X65-VD-yx2" firstAttribute="top" secondItem="w5g-2F-8O3" secondAttribute="bottom" constant="8" id="s4I-V5-mD5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="X65-VD-yx2" id="Sxa-y6-Fea"/>
+                <outlet property="img" destination="NGs-tm-Rj9" id="Jn9-Tf-HkZ"/>
+                <outlet property="title" destination="w5g-2F-8O3" id="15K-nB-vTU"/>
+            </connections>
+            <point key="canvasLocation" x="-241" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo3" width="684" height="673"/>
+    </resources>
+</document>

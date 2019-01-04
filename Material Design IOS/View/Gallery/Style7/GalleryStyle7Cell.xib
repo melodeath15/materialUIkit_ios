@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GalleryStyle7Cell" id="vBQ-Lw-1wf" customClass="GalleryStyle7Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rLb-vU-lnR">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-mp-rA3">
+                        <rect key="frame" x="35" y="35" width="50" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centangPutih" translatesAutoresizingMaskIntoConstraints="NO" id="jTe-hh-xA6">
+                                <rect key="frame" x="13.5" y="16" width="24" height="18"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18980228900000001" green="0.5804085135" blue="0.99190098049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jTe-hh-xA6" firstAttribute="centerX" secondItem="EmL-mp-rA3" secondAttribute="centerX" id="6BD-a1-9G0"/>
+                            <constraint firstAttribute="height" constant="50" id="bov-Fp-WaD"/>
+                            <constraint firstAttribute="width" constant="50" id="uy5-dw-Imp"/>
+                            <constraint firstItem="jTe-hh-xA6" firstAttribute="centerY" secondItem="EmL-mp-rA3" secondAttribute="centerY" id="wbf-aS-faQ"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gallery-8-video-icon" translatesAutoresizingMaskIntoConstraints="NO" id="wnY-ZY-Xvl">
+                        <rect key="frame" x="25" y="25" width="70" height="70"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sl-Ww-IY2">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <connections>
+                            <action selector="pushBtnCell:" destination="vBQ-Lw-1wf" eventType="touchUpInside" id="Lxe-ki-aun"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rLb-vU-lnR" secondAttribute="bottom" id="16t-al-4dg"/>
+                <constraint firstItem="wnY-ZY-Xvl" firstAttribute="leading" secondItem="vBQ-Lw-1wf" secondAttribute="leading" constant="25" id="5D2-Lp-KYx"/>
+                <constraint firstItem="rLb-vU-lnR" firstAttribute="top" secondItem="vBQ-Lw-1wf" secondAttribute="top" id="Ag7-Xs-zKq"/>
+                <constraint firstAttribute="trailing" secondItem="3Sl-Ww-IY2" secondAttribute="trailing" id="DFw-Wl-Npr"/>
+                <constraint firstAttribute="bottom" secondItem="wnY-ZY-Xvl" secondAttribute="bottom" constant="25" id="E5c-uR-vWJ"/>
+                <constraint firstItem="wnY-ZY-Xvl" firstAttribute="top" secondItem="vBQ-Lw-1wf" secondAttribute="top" constant="25" id="Ffl-xd-VDG"/>
+                <constraint firstItem="rLb-vU-lnR" firstAttribute="leading" secondItem="vBQ-Lw-1wf" secondAttribute="leading" id="KS4-or-ugi"/>
+                <constraint firstAttribute="bottom" secondItem="3Sl-Ww-IY2" secondAttribute="bottom" id="NaY-DU-96B"/>
+                <constraint firstItem="EmL-mp-rA3" firstAttribute="centerX" secondItem="vBQ-Lw-1wf" secondAttribute="centerX" id="Pob-Gw-hYs"/>
+                <constraint firstAttribute="trailing" secondItem="wnY-ZY-Xvl" secondAttribute="trailing" constant="25" id="UUe-js-Z81"/>
+                <constraint firstAttribute="trailing" secondItem="rLb-vU-lnR" secondAttribute="trailing" id="V0Q-O6-C5w"/>
+                <constraint firstItem="EmL-mp-rA3" firstAttribute="centerY" secondItem="vBQ-Lw-1wf" secondAttribute="centerY" id="bJn-WO-Tfm"/>
+                <constraint firstItem="3Sl-Ww-IY2" firstAttribute="leading" secondItem="vBQ-Lw-1wf" secondAttribute="leading" id="nKG-PG-ZWY"/>
+                <constraint firstItem="3Sl-Ww-IY2" firstAttribute="top" secondItem="vBQ-Lw-1wf" secondAttribute="top" id="s6S-MH-Twn"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCell" destination="3Sl-Ww-IY2" id="xZO-Nj-eVN"/>
+                <outlet property="centangPutih" destination="jTe-hh-xA6" id="7go-dp-7e4"/>
+                <outlet property="img" destination="rLb-vU-lnR" id="zVQ-65-GEc"/>
+                <outlet property="video" destination="wnY-ZY-Xvl" id="T7d-Xw-AiH"/>
+                <outlet property="viewCentang" destination="EmL-mp-rA3" id="nKy-RC-1gO"/>
+            </connections>
+            <point key="canvasLocation" x="-1559" y="-658"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Gallery-8-video-icon" width="147" height="147"/>
+        <image name="centangPutih" width="24" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle2Footer" id="XoR-K6-DvW" customClass="WalkthroughStyle2Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTS-xh-e3E">
+                    <rect key="frame" x="179" y="0.0" width="17" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="UYI-9p-Scl"/>
+                        <constraint firstAttribute="width" constant="17" id="fKO-A2-1D6"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-ES-yfY">
+                    <rect key="frame" x="196" y="5" width="163" height="40"/>
+                    <color key="backgroundColor" red="0.90741622450000003" green="0.1998270452" blue="0.43107765910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="oHP-a8-DaN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="SIGN IN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushSignIn:" destination="XoR-K6-DvW" eventType="touchUpInside" id="Xhy-qK-0sz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC7-hT-qQJ">
+                    <rect key="frame" x="16" y="5" width="163" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6fX-lJ-dD2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="SIGN UP">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushSignUp:" destination="XoR-K6-DvW" eventType="touchUpInside" id="2hJ-Fo-wxy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ffG-ES-yfY" firstAttribute="centerY" secondItem="iTS-xh-e3E" secondAttribute="centerY" id="1lB-2R-u7d"/>
+                <constraint firstAttribute="trailing" secondItem="ffG-ES-yfY" secondAttribute="trailing" constant="16" id="9tE-Wf-zbG"/>
+                <constraint firstItem="iTS-xh-e3E" firstAttribute="centerY" secondItem="XoR-K6-DvW" secondAttribute="centerY" id="AcJ-ak-t0w"/>
+                <constraint firstItem="iTS-xh-e3E" firstAttribute="leading" secondItem="lC7-hT-qQJ" secondAttribute="trailing" id="Q6E-BN-t7s"/>
+                <constraint firstItem="lC7-hT-qQJ" firstAttribute="leading" secondItem="XoR-K6-DvW" secondAttribute="leading" constant="16" id="RdO-we-qxU"/>
+                <constraint firstItem="lC7-hT-qQJ" firstAttribute="centerY" secondItem="iTS-xh-e3E" secondAttribute="centerY" id="Tg1-Ft-PxR"/>
+                <constraint firstItem="iTS-xh-e3E" firstAttribute="centerX" secondItem="XoR-K6-DvW" secondAttribute="centerX" id="eOM-YD-yp8"/>
+                <constraint firstItem="ffG-ES-yfY" firstAttribute="leading" secondItem="iTS-xh-e3E" secondAttribute="trailing" id="o9i-7x-yjo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSignIn" destination="ffG-ES-yfY" id="uco-WU-Z2f"/>
+                <outlet property="btnSignUp" destination="lC7-hT-qQJ" id="b85-P3-RNG"/>
+            </connections>
+            <point key="canvasLocation" x="-151" y="-594"/>
+        </view>
+    </objects>
+</document>

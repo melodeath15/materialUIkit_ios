@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ChatAcitivityStyle26Image" id="bqI-uu-XCf" customClass="ChatAcitivityStyle26Image" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="As12" translatesAutoresizingMaskIntoConstraints="NO" id="bls-lg-eli">
+                    <rect key="frame" x="18" y="11" width="305" height="177"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bls-lg-eli" firstAttribute="top" secondItem="bqI-uu-XCf" secondAttribute="top" constant="11" id="AWe-uy-9cV"/>
+                <constraint firstAttribute="trailing" secondItem="bls-lg-eli" secondAttribute="trailing" constant="52" id="eMt-CO-mRX"/>
+                <constraint firstItem="bls-lg-eli" firstAttribute="leading" secondItem="bqI-uu-XCf" secondAttribute="leading" constant="18" id="kWQ-nB-vLg"/>
+                <constraint firstAttribute="bottom" secondItem="bls-lg-eli" secondAttribute="bottom" constant="12" id="xSY-9n-rQc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgChat" destination="bls-lg-eli" id="0KW-tO-V1j"/>
+            </connections>
+            <point key="canvasLocation" x="-192.5" y="-111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="As12" width="435" height="224"/>
+    </resources>
+</document>

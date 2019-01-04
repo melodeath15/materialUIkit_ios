@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle8Footer" id="IZr-zp-gh5" customClass="WalkthroughStyle8Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifH-7O-f0T">
+                    <rect key="frame" x="182" y="37" width="10" height="46"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="S5h-BX-COs"/>
+                        <constraint firstAttribute="height" constant="46" id="uhy-wi-OEi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1co-mh-aik">
+                    <rect key="frame" x="12" y="9" width="169" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KOD-h5-lqR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushSignUp:" destination="IZr-zp-gh5" eventType="touchUpInside" id="ruM-XZ-aRA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-Pe-IUQ">
+                    <rect key="frame" x="198" y="9" width="164" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Jw9-Ul-ITZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushSignIn:" destination="IZr-zp-gh5" eventType="touchUpInside" id="5V7-vg-GrM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1D-yt-pnQ">
+                    <rect key="frame" x="12" y="63" width="350" height="50"/>
+                    <color key="backgroundColor" red="0.28247150778770447" green="0.37830209732055664" blue="0.64371246099472046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PhU-ku-rwE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <state key="normal" title="Sign Up with Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnFB:" destination="IZr-zp-gh5" eventType="touchUpInside" id="4Pp-Y3-GKt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1co-mh-aik" firstAttribute="leading" secondItem="IZr-zp-gh5" secondAttribute="leading" constant="12" id="6FW-R8-ZeD"/>
+                <constraint firstAttribute="trailing" secondItem="N1D-yt-pnQ" secondAttribute="trailing" constant="13" id="DCz-Vr-ePb"/>
+                <constraint firstItem="1co-mh-aik" firstAttribute="top" secondItem="IZr-zp-gh5" secondAttribute="top" constant="9" id="DZC-oK-LNi"/>
+                <constraint firstItem="uo3-Pe-IUQ" firstAttribute="leading" secondItem="ifH-7O-f0T" secondAttribute="trailing" constant="6" id="Hpb-Mi-gup"/>
+                <constraint firstItem="ifH-7O-f0T" firstAttribute="leading" secondItem="1co-mh-aik" secondAttribute="trailing" constant="1" id="IEB-v3-qmM"/>
+                <constraint firstAttribute="trailing" secondItem="uo3-Pe-IUQ" secondAttribute="trailing" constant="13" id="P43-Cb-06X"/>
+                <constraint firstItem="N1D-yt-pnQ" firstAttribute="leading" secondItem="IZr-zp-gh5" secondAttribute="leading" constant="12" id="WS3-pT-sdY"/>
+                <constraint firstItem="N1D-yt-pnQ" firstAttribute="top" secondItem="uo3-Pe-IUQ" secondAttribute="bottom" constant="4" id="am5-Gq-7ue"/>
+                <constraint firstItem="ifH-7O-f0T" firstAttribute="centerY" secondItem="IZr-zp-gh5" secondAttribute="centerY" id="qNn-Sx-t1A"/>
+                <constraint firstItem="uo3-Pe-IUQ" firstAttribute="top" secondItem="IZr-zp-gh5" secondAttribute="top" constant="9" id="s5f-MI-Uci"/>
+                <constraint firstItem="ifH-7O-f0T" firstAttribute="centerX" secondItem="IZr-zp-gh5" secondAttribute="centerX" id="w5x-nA-yYO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnFB" destination="N1D-yt-pnQ" id="M0h-QN-OVS"/>
+                <outlet property="btnSignIn" destination="uo3-Pe-IUQ" id="CVw-yx-bAt"/>
+                <outlet property="btnSignUp" destination="1co-mh-aik" id="YJs-H0-H8b"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="-194"/>
+        </view>
+    </objects>
+</document>

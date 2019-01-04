@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle15View" id="B1e-Yn-PjD" customClass="WalkthroughStyle15View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome14" translatesAutoresizingMaskIntoConstraints="NO" id="PH3-gR-gCp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-1G-KWv">
+                    <rect key="frame" x="65" y="77" width="244" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="WalkthroughStyle15" translatesAutoresizingMaskIntoConstraints="NO" id="j8F-HH-yXi">
+                    <rect key="frame" x="45" y="116" width="285" height="473"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PH3-gR-gCp" firstAttribute="top" secondItem="B1e-Yn-PjD" secondAttribute="top" id="DI9-lX-JYw"/>
+                <constraint firstItem="j8F-HH-yXi" firstAttribute="leading" secondItem="B1e-Yn-PjD" secondAttribute="leading" constant="45" id="Gv6-8x-2Dz"/>
+                <constraint firstItem="j8F-HH-yXi" firstAttribute="top" secondItem="BeL-1G-KWv" secondAttribute="bottom" constant="24" id="JIc-yN-09n"/>
+                <constraint firstItem="PH3-gR-gCp" firstAttribute="leading" secondItem="B1e-Yn-PjD" secondAttribute="leading" id="JOt-95-l06"/>
+                <constraint firstAttribute="bottom" secondItem="PH3-gR-gCp" secondAttribute="bottom" id="Qqb-eL-uLr"/>
+                <constraint firstAttribute="bottom" secondItem="j8F-HH-yXi" secondAttribute="bottom" constant="78" id="WAm-E2-8Wi"/>
+                <constraint firstAttribute="trailing" secondItem="PH3-gR-gCp" secondAttribute="trailing" id="WrS-e1-qTv"/>
+                <constraint firstAttribute="trailing" secondItem="BeL-1G-KWv" secondAttribute="trailing" constant="66" id="bdf-5h-43p"/>
+                <constraint firstAttribute="trailing" secondItem="j8F-HH-yXi" secondAttribute="trailing" constant="45" id="jJW-Ym-q4s"/>
+                <constraint firstItem="BeL-1G-KWv" firstAttribute="leading" secondItem="B1e-Yn-PjD" secondAttribute="leading" constant="65" id="qjn-9m-srl"/>
+                <constraint firstItem="BeL-1G-KWv" firstAttribute="top" secondItem="B1e-Yn-PjD" secondAttribute="top" constant="77" id="wpl-zz-RuT"/>
+            </constraints>
+            <connections>
+                <outlet property="bg" destination="PH3-gR-gCp" id="TE3-op-HL6"/>
+                <outlet property="des" destination="BeL-1G-KWv" id="IF8-jN-azP"/>
+                <outlet property="img" destination="j8F-HH-yXi" id="M09-9G-nTC"/>
+            </connections>
+            <point key="canvasLocation" x="-313" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WalkthroughStyle15" width="661" height="1304"/>
+        <image name="Welcome14" width="960" height="1600"/>
+    </resources>
+</document>

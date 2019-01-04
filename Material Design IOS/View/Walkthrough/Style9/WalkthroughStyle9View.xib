@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle9View" id="0le-L7-9kl" customClass="WalkthroughStyle9View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalkthroughStyle6" translatesAutoresizingMaskIntoConstraints="NO" id="5xi-Hn-fob">
+                    <rect key="frame" x="73" y="10" width="229" height="410"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05p-an-gHK">
+                    <rect key="frame" x="38" y="478" width="298" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahz-DU-fyg">
+                    <rect key="frame" x="38" y="453" width="298" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ahz-DU-fyg" firstAttribute="leading" secondItem="0le-L7-9kl" secondAttribute="leading" constant="38" id="26B-Yd-18H"/>
+                <constraint firstItem="05p-an-gHK" firstAttribute="leading" secondItem="0le-L7-9kl" secondAttribute="leading" constant="38" id="E80-oZ-meh"/>
+                <constraint firstItem="5xi-Hn-fob" firstAttribute="leading" secondItem="0le-L7-9kl" secondAttribute="leading" constant="73" id="HYY-kR-V1R"/>
+                <constraint firstItem="ahz-DU-fyg" firstAttribute="top" secondItem="5xi-Hn-fob" secondAttribute="bottom" constant="33" id="TxL-WB-ijR"/>
+                <constraint firstItem="5xi-Hn-fob" firstAttribute="centerY" secondItem="0le-L7-9kl" secondAttribute="centerY" constant="-50" id="WmQ-Np-9xW"/>
+                <constraint firstAttribute="trailing" secondItem="05p-an-gHK" secondAttribute="trailing" constant="39" id="kcN-BY-LQK"/>
+                <constraint firstAttribute="bottom" secondItem="5xi-Hn-fob" secondAttribute="bottom" constant="110" id="llI-fA-hgl"/>
+                <constraint firstAttribute="trailing" secondItem="ahz-DU-fyg" secondAttribute="trailing" constant="39" id="nye-QF-aeA"/>
+                <constraint firstItem="05p-an-gHK" firstAttribute="top" secondItem="ahz-DU-fyg" secondAttribute="bottom" constant="8" id="ogS-at-sFj"/>
+                <constraint firstAttribute="trailing" secondItem="5xi-Hn-fob" secondAttribute="trailing" constant="73" id="xqZ-CA-D1U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="05p-an-gHK" id="aeq-Ta-fM5"/>
+                <outlet property="img" destination="5xi-Hn-fob" id="nSo-yx-Ybz"/>
+                <outlet property="title" destination="ahz-DU-fyg" id="sXb-c6-U9N"/>
+            </connections>
+            <point key="canvasLocation" x="-1137" y="503"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WalkthroughStyle6" width="725" height="1270"/>
+    </resources>
+</document>

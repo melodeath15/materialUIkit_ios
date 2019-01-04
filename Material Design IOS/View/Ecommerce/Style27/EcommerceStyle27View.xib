@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle27View" id="B7Z-e9-PK7" customClass="EcommerceStyle27View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-nv-Czh">
+                    <rect key="frame" x="147" y="54" width="80" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="centangPutih" translatesAutoresizingMaskIntoConstraints="NO" id="tft-TL-eCc">
+                            <rect key="frame" x="14" y="21" width="53" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.34524184465408325" green="0.59023112058639526" blue="0.99229604005813599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="aor-yq-gjy"/>
+                        <constraint firstAttribute="width" constant="80" id="szY-a0-OeD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owY-fm-3j2">
+                    <rect key="frame" x="16" y="158" width="343" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckG-jF-7Ly">
+                    <rect key="frame" x="51" y="184" width="273" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TJV-nv-Czh" firstAttribute="centerY" secondItem="B7Z-e9-PK7" secondAttribute="centerY" constant="-31" id="6WS-oC-hVB"/>
+                <constraint firstItem="owY-fm-3j2" firstAttribute="top" secondItem="TJV-nv-Czh" secondAttribute="bottom" constant="24" id="JeC-7X-MCR"/>
+                <constraint firstItem="ckG-jF-7Ly" firstAttribute="leading" secondItem="B7Z-e9-PK7" secondAttribute="leading" constant="51" id="Lo0-CA-gr7"/>
+                <constraint firstItem="ckG-jF-7Ly" firstAttribute="top" secondItem="owY-fm-3j2" secondAttribute="bottom" constant="-0.5" id="QUh-27-G6l"/>
+                <constraint firstAttribute="trailing" secondItem="ckG-jF-7Ly" secondAttribute="trailing" constant="51" id="WBg-Bi-gVB"/>
+                <constraint firstAttribute="trailing" secondItem="owY-fm-3j2" secondAttribute="trailing" constant="16" id="WwL-yj-dUp"/>
+                <constraint firstItem="TJV-nv-Czh" firstAttribute="centerX" secondItem="B7Z-e9-PK7" secondAttribute="centerX" id="Zg7-8p-Ce6"/>
+                <constraint firstItem="owY-fm-3j2" firstAttribute="leading" secondItem="B7Z-e9-PK7" secondAttribute="leading" constant="16" id="mIf-XN-TCR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="ckG-jF-7Ly" id="7k1-zC-6R8"/>
+                <outlet property="imgCentang" destination="tft-TL-eCc" id="mpH-FD-X7v"/>
+                <outlet property="title" destination="owY-fm-3j2" id="jJ3-oc-GbE"/>
+                <outlet property="viewCentang" destination="TJV-nv-Czh" id="DbK-Tf-dGt"/>
+            </connections>
+            <point key="canvasLocation" x="-70.5" y="-61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="centangPutih" width="24" height="18"/>
+    </resources>
+</document>

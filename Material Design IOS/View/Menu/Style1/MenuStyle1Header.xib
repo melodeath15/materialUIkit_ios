@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle1Header" id="bEs-HU-2Xo" customClass="MenuStyle1Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNZ-VH-Bol">
+                    <rect key="frame" x="7" y="10" width="40" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="3ca-UZ-viK"/>
+                        <constraint firstAttribute="height" constant="70" id="vNd-pz-Aag"/>
+                    </constraints>
+                    <state key="normal" image="menu1"/>
+                    <connections>
+                        <action selector="pushBtnMenu:" destination="bEs-HU-2Xo" eventType="touchUpInside" id="WiZ-QC-84X"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDD-sX-kzr">
+                    <rect key="frame" x="281" y="10" width="40" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="CmV-NF-LmY"/>
+                        <constraint firstAttribute="width" constant="40" id="elr-kA-2Nc"/>
+                    </constraints>
+                    <state key="normal" image="search1"/>
+                    <connections>
+                        <action selector="pushBtnSearch:" destination="bEs-HU-2Xo" eventType="touchUpInside" id="ctc-hR-oO3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCl-C4-2G1">
+                    <rect key="frame" x="329" y="10" width="40" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="awA-ab-1hE"/>
+                        <constraint firstAttribute="width" constant="40" id="eGR-pM-gP9"/>
+                    </constraints>
+                    <state key="normal" image="overflowIcon1"/>
+                    <connections>
+                        <action selector="pushBtnOptional:" destination="bEs-HU-2Xo" eventType="touchUpInside" id="hJ9-aP-sB9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNI-Pf-r7o">
+                    <rect key="frame" x="55" y="35" width="203" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.5992162823677063" green="0.16582721471786499" blue="0.70248943567276001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SNZ-VH-Bol" secondAttribute="bottom" id="0dA-lG-GlA"/>
+                <constraint firstAttribute="bottom" secondItem="JCl-C4-2G1" secondAttribute="bottom" id="D4c-Ud-hSe"/>
+                <constraint firstItem="JCl-C4-2G1" firstAttribute="leading" secondItem="yDD-sX-kzr" secondAttribute="trailing" constant="8" id="GPa-1O-5iy"/>
+                <constraint firstItem="SNZ-VH-Bol" firstAttribute="leading" secondItem="bEs-HU-2Xo" secondAttribute="leading" constant="7" id="KTF-l7-yK2"/>
+                <constraint firstItem="yDD-sX-kzr" firstAttribute="leading" secondItem="uNI-Pf-r7o" secondAttribute="trailing" constant="23" id="T0S-1I-VwA"/>
+                <constraint firstAttribute="trailing" secondItem="JCl-C4-2G1" secondAttribute="trailing" constant="6" id="VdF-kw-zDI"/>
+                <constraint firstItem="uNI-Pf-r7o" firstAttribute="leading" secondItem="SNZ-VH-Bol" secondAttribute="trailing" constant="8" id="XLY-tB-J46"/>
+                <constraint firstItem="uNI-Pf-r7o" firstAttribute="centerY" secondItem="SNZ-VH-Bol" secondAttribute="centerY" id="muC-It-YBM"/>
+                <constraint firstAttribute="bottom" secondItem="yDD-sX-kzr" secondAttribute="bottom" id="nqU-el-685"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMenu" destination="SNZ-VH-Bol" id="VIF-0M-q1m"/>
+                <outlet property="btnOptional" destination="JCl-C4-2G1" id="SwF-3y-4At"/>
+                <outlet property="btnSearch" destination="yDD-sX-kzr" id="cJo-yL-h3b"/>
+                <outlet property="title" destination="uNI-Pf-r7o" id="f3F-M0-Aqo"/>
+            </connections>
+            <point key="canvasLocation" x="-237" y="-105"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu1" width="18" height="12"/>
+        <image name="overflowIcon1" width="4" height="18"/>
+        <image name="search1" width="18" height="18"/>
+    </resources>
+</document>

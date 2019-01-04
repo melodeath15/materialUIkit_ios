@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeaderViewStyle27" id="gk3-UG-AMy" customClass="ProfileHeaderViewStyle27" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-1n-Zm0">
+                    <rect key="frame" x="8" y="15" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Puf-mi-oaS"/>
+                        <constraint firstAttribute="height" constant="50" id="SVA-l8-P3N"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPL-hY-BAf">
+                    <rect key="frame" x="66" y="26" width="243" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-cT-idQ">
+                    <rect key="frame" x="66" y="42" width="243" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W89-m1-Wgz">
+                    <rect key="frame" x="317" y="15" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.2615983784" green="0.73653393980000004" blue="0.25409471989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="OWX-QN-Bm1"/>
+                        <constraint firstAttribute="height" constant="50" id="WUn-HV-34u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnPlush:" destination="gk3-UG-AMy" eventType="touchUpInside" id="UmA-BK-RIf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Tth-1n-Zm0" firstAttribute="centerY" secondItem="gk3-UG-AMy" secondAttribute="centerY" id="5Pq-Ut-xjz"/>
+                <constraint firstItem="Tth-1n-Zm0" firstAttribute="leading" secondItem="gk3-UG-AMy" secondAttribute="leading" constant="8" id="85F-b6-gwT"/>
+                <constraint firstAttribute="trailing" secondItem="YPL-hY-BAf" secondAttribute="trailing" constant="66" id="WgK-aX-Y28"/>
+                <constraint firstItem="oU1-cT-idQ" firstAttribute="top" secondItem="YPL-hY-BAf" secondAttribute="bottom" constant="-0.5" id="Z7o-5Q-qWS"/>
+                <constraint firstItem="YPL-hY-BAf" firstAttribute="centerY" secondItem="Tth-1n-Zm0" secondAttribute="centerY" constant="-6" id="dOn-Rd-AqY"/>
+                <constraint firstItem="YPL-hY-BAf" firstAttribute="leading" secondItem="Tth-1n-Zm0" secondAttribute="trailing" constant="8" id="mkG-uX-7ym"/>
+                <constraint firstItem="oU1-cT-idQ" firstAttribute="leading" secondItem="Tth-1n-Zm0" secondAttribute="trailing" constant="8" id="ngS-eX-Gn9"/>
+                <constraint firstAttribute="trailing" secondItem="oU1-cT-idQ" secondAttribute="trailing" constant="66" id="nlg-88-yeS"/>
+                <constraint firstItem="W89-m1-Wgz" firstAttribute="centerY" secondItem="gk3-UG-AMy" secondAttribute="centerY" id="vWN-aQ-tsX"/>
+                <constraint firstAttribute="trailing" secondItem="W89-m1-Wgz" secondAttribute="trailing" constant="8" id="xu2-m8-EbA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnPlush" destination="W89-m1-Wgz" id="wDc-bq-PRA"/>
+                <outlet property="name" destination="YPL-hY-BAf" id="u6y-Y1-lL8"/>
+                <outlet property="profesi" destination="oU1-cT-idQ" id="8Zd-eJ-AEi"/>
+                <outlet property="profile" destination="Tth-1n-Zm0" id="TaG-Vw-k5d"/>
+            </connections>
+            <point key="canvasLocation" x="-766" y="348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

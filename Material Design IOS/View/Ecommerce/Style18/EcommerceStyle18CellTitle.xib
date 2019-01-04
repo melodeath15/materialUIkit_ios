@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle18CellTitle" selectionStyle="default" indentationWidth="10" id="dQu-Yn-eKK" customClass="EcommerceStyle18CellTitle" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dQu-Yn-eKK" id="GLB-j3-owa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtc-8X-sk0">
+                        <rect key="frame" x="11" y="8" width="306" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3u6-Q2-gID">
+                        <rect key="frame" x="11" y="23" width="16" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdh-Mn-ziJ">
+                        <rect key="frame" x="319" y="12" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.98090499639999995" green="0.63993924859999995" blue="0.092553786930000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tdh-Mn-ziJ" firstAttribute="top" secondItem="GLB-j3-owa" secondAttribute="topMargin" constant="4" id="2lL-NX-lrN"/>
+                    <constraint firstAttribute="topMargin" secondItem="Vtc-8X-sk0" secondAttribute="top" id="IQv-DN-A5G"/>
+                    <constraint firstItem="3u6-Q2-gID" firstAttribute="leading" secondItem="GLB-j3-owa" secondAttribute="leadingMargin" constant="3" id="WeP-mP-5xK"/>
+                    <constraint firstItem="3u6-Q2-gID" firstAttribute="top" secondItem="Vtc-8X-sk0" secondAttribute="bottom" constant="-2" id="gLm-DB-j2N"/>
+                    <constraint firstItem="Vtc-8X-sk0" firstAttribute="leading" secondItem="GLB-j3-owa" secondAttribute="leadingMargin" constant="3" id="lHo-B1-OTg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tdh-Mn-ziJ" secondAttribute="trailing" constant="13" id="uSu-2W-cqu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vtc-8X-sk0" secondAttribute="trailing" constant="50" id="yeS-Fw-r4k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="price" destination="tdh-Mn-ziJ" id="j20-dZ-Qqt"/>
+                <outlet property="tagTitle" destination="3u6-Q2-gID" id="7NW-ik-PxJ"/>
+                <outlet property="title" destination="Vtc-8X-sk0" id="uba-4u-K5P"/>
+            </connections>
+            <point key="canvasLocation" x="212" y="-355"/>
+        </tableViewCell>
+    </objects>
+</document>

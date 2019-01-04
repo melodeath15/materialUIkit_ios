@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle2CellRight" selectionStyle="default" indentationWidth="10" id="WuE-SU-Dj5" customClass="EcommerceStyle2CellRight" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WuE-SU-Dj5" id="N3l-8P-B3i">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hl-qF-duJ">
+                        <rect key="frame" x="8" y="8" width="384" height="184"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-2-img-2" translatesAutoresizingMaskIntoConstraints="NO" id="mgh-cb-0fH">
+                                <rect key="frame" x="0.0" y="0.0" width="384" height="184"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klY-Kq-Ajx">
+                                <rect key="frame" x="16" y="77" width="351" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-FD-1TZ">
+                                <rect key="frame" x="16" y="94" width="206" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="klY-Kq-Ajx" secondAttribute="trailing" constant="17" id="527-ev-rlV"/>
+                            <constraint firstItem="mgh-cb-0fH" firstAttribute="leading" secondItem="7hl-qF-duJ" secondAttribute="leading" id="62P-8K-0Nq"/>
+                            <constraint firstItem="klY-Kq-Ajx" firstAttribute="centerY" secondItem="7hl-qF-duJ" secondAttribute="centerY" constant="-6.5" id="ELw-lk-Ki6"/>
+                            <constraint firstAttribute="bottom" secondItem="mgh-cb-0fH" secondAttribute="bottom" id="FAt-w5-DhP"/>
+                            <constraint firstItem="mgh-cb-0fH" firstAttribute="top" secondItem="7hl-qF-duJ" secondAttribute="top" id="JPo-79-UE6"/>
+                            <constraint firstItem="Abf-FD-1TZ" firstAttribute="top" secondItem="klY-Kq-Ajx" secondAttribute="bottom" id="NRK-4o-Vnv"/>
+                            <constraint firstItem="Abf-FD-1TZ" firstAttribute="leading" secondItem="7hl-qF-duJ" secondAttribute="leading" constant="16" id="S1f-wr-Gie"/>
+                            <constraint firstAttribute="trailing" secondItem="mgh-cb-0fH" secondAttribute="trailing" id="coA-kB-6QX"/>
+                            <constraint firstAttribute="trailing" secondItem="Abf-FD-1TZ" secondAttribute="trailing" constant="162" id="crB-QR-LkF"/>
+                            <constraint firstItem="klY-Kq-Ajx" firstAttribute="leading" secondItem="7hl-qF-duJ" secondAttribute="leading" constant="16" id="tN5-SX-dge"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="7hl-qF-duJ" secondAttribute="bottom" id="NKz-qm-5lG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7hl-qF-duJ" secondAttribute="trailing" id="T8J-O9-I1f"/>
+                    <constraint firstAttribute="topMargin" secondItem="7hl-qF-duJ" secondAttribute="top" id="kIM-Td-sAM"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="7hl-qF-duJ" secondAttribute="leading" id="pf3-Ab-WEr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="count" destination="Abf-FD-1TZ" id="RXH-8K-wYn"/>
+                <outlet property="img" destination="mgh-cb-0fH" id="DjZ-Yr-EFc"/>
+                <outlet property="title" destination="klY-Kq-Ajx" id="AOo-Rk-Bq7"/>
+            </connections>
+            <point key="canvasLocation" x="-282" y="-144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-2-img-2" width="1022" height="565"/>
+    </resources>
+</document>

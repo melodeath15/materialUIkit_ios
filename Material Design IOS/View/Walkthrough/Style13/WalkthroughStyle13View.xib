@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle13View" id="XeO-mv-ZhO" customClass="WalkthroughStyle13View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalkthroughStyle13" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-cB-Pjt">
+                    <rect key="frame" x="137" y="50" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4A9-WW-FY8"/>
+                        <constraint firstAttribute="height" constant="100" id="kBo-kF-T1A"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezm-cE-7rO">
+                    <rect key="frame" x="65" y="177" width="244" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6D-FU-flD">
+                    <rect key="frame" x="65" y="202" width="244" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ezm-cE-7rO" firstAttribute="top" secondItem="OxK-cB-Pjt" secondAttribute="bottom" constant="27" id="Dxp-2X-Do1"/>
+                <constraint firstItem="OxK-cB-Pjt" firstAttribute="centerY" secondItem="XeO-mv-ZhO" secondAttribute="centerY" constant="-50" id="H2V-t7-Yri"/>
+                <constraint firstItem="Ezm-cE-7rO" firstAttribute="leading" secondItem="XeO-mv-ZhO" secondAttribute="leading" constant="65" id="I6p-pf-Wsw"/>
+                <constraint firstAttribute="trailing" secondItem="s6D-FU-flD" secondAttribute="trailing" constant="66" id="Vkw-Da-hUU"/>
+                <constraint firstItem="s6D-FU-flD" firstAttribute="top" secondItem="Ezm-cE-7rO" secondAttribute="bottom" constant="8" id="aDq-Qq-XbA"/>
+                <constraint firstAttribute="trailing" secondItem="Ezm-cE-7rO" secondAttribute="trailing" constant="66" id="hIC-Pp-pLR"/>
+                <constraint firstItem="OxK-cB-Pjt" firstAttribute="centerX" secondItem="XeO-mv-ZhO" secondAttribute="centerX" id="oVS-DT-XYc"/>
+                <constraint firstItem="s6D-FU-flD" firstAttribute="leading" secondItem="XeO-mv-ZhO" secondAttribute="leading" constant="65" id="yvK-cv-irt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="s6D-FU-flD" id="D0X-SK-ltj"/>
+                <outlet property="img" destination="OxK-cB-Pjt" id="YH5-55-2eV"/>
+                <outlet property="title" destination="Ezm-cE-7rO" id="CCK-3o-ZiR"/>
+            </connections>
+            <point key="canvasLocation" x="-321" y="-293"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WalkthroughStyle13" width="314" height="307"/>
+    </resources>
+</document>

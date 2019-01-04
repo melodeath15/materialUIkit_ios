@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileCellStyle15" id="uZ4-cR-hMk" customClass="ProfileCellStyle15" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XK5-5J-BSm">
+                        <rect key="frame" x="0.0" y="48" width="50" height="2"/>
+                        <color key="backgroundColor" red="0.55567348003387451" green="0.15490025281906128" blue="0.6671222448348999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="IRt-49-wWd"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDashboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Nhr-Fq-Nxv">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Xat-Eh-5gB"/>
+                            <constraint firstAttribute="width" constant="20" id="xzg-VF-yyb"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Nhr-Fq-Nxv" firstAttribute="centerX" secondItem="uZ4-cR-hMk" secondAttribute="centerX" id="VRj-Tx-s4d"/>
+                <constraint firstItem="XK5-5J-BSm" firstAttribute="leading" secondItem="uZ4-cR-hMk" secondAttribute="leading" id="cut-qH-o5v"/>
+                <constraint firstAttribute="bottom" secondItem="XK5-5J-BSm" secondAttribute="bottom" id="h3O-T9-5j4"/>
+                <constraint firstItem="Nhr-Fq-Nxv" firstAttribute="centerY" secondItem="uZ4-cR-hMk" secondAttribute="centerY" id="hBu-KG-Dki"/>
+                <constraint firstAttribute="trailing" secondItem="XK5-5J-BSm" secondAttribute="trailing" id="t2L-L2-YMM"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="Nhr-Fq-Nxv" id="BDR-dv-CIa"/>
+                <outlet property="view" destination="XK5-5J-BSm" id="xWY-1G-eMr"/>
+            </connections>
+            <point key="canvasLocation" x="-675" y="-90"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconDashboardBlack" width="27" height="27"/>
+    </resources>
+</document>

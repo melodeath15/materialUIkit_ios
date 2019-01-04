@@ -1,0 +1,26 @@
+//
+//  ProfileHeaderStyle4.swift
+//  Material Design IOS
+//
+//  Created by Denis Tirta Prada on 11/2/17.
+//  Copyright © 2017 Mediatechindo. All rights reserved.
+//
+
+import UIKit
+
+class ProfileHeaderStyle4: UIView {
+    
+    @IBOutlet var img: UIImageView!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var jabatan: UILabel!
+    @IBOutlet var deskripsi: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        img.layer.cornerRadius = img.frame.size.width/2
+        img.clipsToBounds = true
+        
+    }
+    
+}

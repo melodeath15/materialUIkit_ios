@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle11Header" id="ixo-rr-1xH" customClass="MenuStyle11Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmW-Wi-A9D">
+                    <rect key="frame" x="7" y="10" width="40" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="FdE-qu-WNc"/>
+                        <constraint firstAttribute="height" constant="70" id="MEx-bS-vVE"/>
+                    </constraints>
+                    <state key="normal" image="menu1"/>
+                    <connections>
+                        <action selector="pushBtnMenu:" destination="ixo-rr-1xH" eventType="touchUpInside" id="Mmy-7p-1XL"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="T8x-xx-ohR">
+                    <rect key="frame" x="47" y="23" width="312" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.59921628240000002" green="0.1658272147" blue="0.7024894357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dmW-Wi-A9D" firstAttribute="leading" secondItem="ixo-rr-1xH" secondAttribute="leading" constant="7" id="8Op-Nw-DXU"/>
+                <constraint firstAttribute="bottom" secondItem="dmW-Wi-A9D" secondAttribute="bottom" id="8mR-Ps-TvO"/>
+                <constraint firstItem="T8x-xx-ohR" firstAttribute="leading" secondItem="dmW-Wi-A9D" secondAttribute="trailing" id="NGL-zp-dFi"/>
+                <constraint firstAttribute="bottom" secondItem="T8x-xx-ohR" secondAttribute="bottom" constant="13" id="Yek-mi-N2E"/>
+                <constraint firstAttribute="trailing" secondItem="T8x-xx-ohR" secondAttribute="trailing" constant="16" id="nzl-0A-oib"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMenu" destination="dmW-Wi-A9D" id="wkW-SG-DdA"/>
+                <outlet property="searchBarCustom" destination="T8x-xx-ohR" id="ekU-Jj-5sA"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="-87"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu1" width="18" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeader" id="oFd-0K-TyV" customClass="ProfileHeader" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikQ-Mo-sJe">
+                    <rect key="frame" x="0.0" y="20" width="50" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Jne-3c-NTS"/>
+                        <constraint firstAttribute="height" constant="60" id="tvK-eC-xyc"/>
+                    </constraints>
+                    <state key="normal" image="menu1"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-h1-TYK">
+                    <rect key="frame" x="58" y="39.5" width="33.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-cl-Zfu">
+                    <rect key="frame" x="340" y="20" width="30" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="MAe-D2-WeJ"/>
+                        <constraint firstAttribute="width" constant="30" id="nal-RT-2QB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="overflowIcon1"/>
+                    <connections>
+                        <action selector="pushBtnOptional:" destination="oFd-0K-TyV" eventType="touchUpInside" id="opB-XQ-6Xr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIo-RB-lwU">
+                    <rect key="frame" x="302" y="20" width="30" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="LmW-df-kCy"/>
+                        <constraint firstAttribute="width" constant="30" id="sbL-KU-z8N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="search1"/>
+                    <connections>
+                        <action selector="pushBtnSearch:" destination="oFd-0K-TyV" eventType="touchUpInside" id="P45-XV-7Ha"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.55371445417404175" green="0.15622454881668091" blue="0.66588377952575684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="quv-cl-Zfu" firstAttribute="leading" secondItem="eIo-RB-lwU" secondAttribute="trailing" constant="8" id="0x2-s5-bT0"/>
+                <constraint firstItem="ikQ-Mo-sJe" firstAttribute="leading" secondItem="oFd-0K-TyV" secondAttribute="leading" id="Gz5-jv-j7G"/>
+                <constraint firstAttribute="trailing" secondItem="quv-cl-Zfu" secondAttribute="trailing" constant="5" id="LRO-gT-WmA"/>
+                <constraint firstAttribute="bottom" secondItem="quv-cl-Zfu" secondAttribute="bottom" id="Pav-KS-Dyh"/>
+                <constraint firstItem="5uC-h1-TYK" firstAttribute="leading" secondItem="ikQ-Mo-sJe" secondAttribute="trailing" constant="8" id="ROe-2T-H2F"/>
+                <constraint firstAttribute="bottom" secondItem="eIo-RB-lwU" secondAttribute="bottom" id="fJR-NK-Rzn"/>
+                <constraint firstAttribute="bottom" secondItem="5uC-h1-TYK" secondAttribute="bottom" constant="21" id="iVn-Ej-wgg"/>
+                <constraint firstAttribute="bottom" secondItem="ikQ-Mo-sJe" secondAttribute="bottom" id="jZL-T8-d3x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMenu" destination="ikQ-Mo-sJe" id="lRD-be-lPx"/>
+                <outlet property="btnOptional" destination="quv-cl-Zfu" id="uO7-sk-k9u"/>
+                <outlet property="btnSearch" destination="eIo-RB-lwU" id="hRM-qJ-aDW"/>
+                <outlet property="title" destination="5uC-h1-TYK" id="ppq-hG-zn6"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="-58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu1" width="18" height="12"/>
+        <image name="overflowIcon1" width="4" height="18"/>
+        <image name="search1" width="18" height="18"/>
+    </resources>
+</document>

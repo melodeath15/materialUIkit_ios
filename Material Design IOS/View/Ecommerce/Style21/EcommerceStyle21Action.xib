@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle21Action" id="5a7-RM-pxq" customClass="EcommerceStyle21Action" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvH-7W-a17">
+                    <rect key="frame" x="16" y="25" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cHv-1y-ku2"/>
+                        <constraint firstAttribute="width" constant="50" id="juW-MX-hqs"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNB-So-1Ya">
+                    <rect key="frame" x="84" y="25" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="I01-sH-vof"/>
+                        <constraint firstAttribute="height" constant="50" id="maR-65-7C2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WvH-7W-a17" firstAttribute="leading" secondItem="5a7-RM-pxq" secondAttribute="leading" constant="16" id="0Ts-PX-GAM"/>
+                <constraint firstItem="WvH-7W-a17" firstAttribute="centerY" secondItem="5a7-RM-pxq" secondAttribute="centerY" id="4FK-Yo-w2E"/>
+                <constraint firstItem="TNB-So-1Ya" firstAttribute="centerY" secondItem="5a7-RM-pxq" secondAttribute="centerY" id="DED-Ej-eQG"/>
+                <constraint firstAttribute="trailing" secondItem="TNB-So-1Ya" secondAttribute="trailing" constant="16" id="DrI-G2-eMS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-80" y="-56"/>
+        </view>
+    </objects>
+</document>

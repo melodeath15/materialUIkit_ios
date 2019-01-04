@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFill" restorationIdentifier="WalkthroughStyle6View" id="esk-iA-HjG" customClass="WalkthroughStyle6View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalkthroughStyle6" translatesAutoresizingMaskIntoConstraints="NO" id="95A-i2-ASf">
+                    <rect key="frame" x="27" y="27" width="247" height="346"/>
+                    <color key="backgroundColor" red="0.95304709672927856" green="0.96634405851364136" blue="0.9761313796043396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="95A-i2-ASf" secondAttribute="trailing" constant="26" id="1sC-HI-0ZG"/>
+                <constraint firstAttribute="bottom" secondItem="95A-i2-ASf" secondAttribute="bottom" constant="27" id="2dG-NI-hsK"/>
+                <constraint firstItem="95A-i2-ASf" firstAttribute="leading" secondItem="esk-iA-HjG" secondAttribute="leading" constant="27" id="HzM-YH-T63"/>
+                <constraint firstItem="95A-i2-ASf" firstAttribute="top" secondItem="esk-iA-HjG" secondAttribute="top" constant="27" id="wWY-IL-thA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img" destination="95A-i2-ASf" id="Ipw-HK-nkn"/>
+            </connections>
+            <point key="canvasLocation" x="-136" y="-511"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WalkthroughStyle6" width="725" height="1270"/>
+    </resources>
+</document>

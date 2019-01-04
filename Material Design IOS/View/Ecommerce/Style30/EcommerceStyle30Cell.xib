@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle30Cell" selectionStyle="default" indentationWidth="10" id="bkt-he-oPc" customClass="EcommerceStyle30Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkt-he-oPc" id="W1y-ag-LNi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-30-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="nhy-0G-Ggq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRL-Dm-flZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iq-qu-3nw">
+                        <rect key="frame" x="8" y="114" width="359" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwF-9c-Kz8">
+                        <rect key="frame" x="137" y="145" width="100" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="KsR-6q-qxs"/>
+                            <constraint firstAttribute="width" constant="100" id="xZh-hD-V8r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <state key="normal" title="SHOP NOW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnShopNow:" destination="bkt-he-oPc" eventType="touchUpInside" id="rXn-dn-rP9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wwF-9c-Kz8" firstAttribute="top" secondItem="2iq-qu-3nw" secondAttribute="bottom" constant="7" id="0xd-Si-qrF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mRL-Dm-flZ" secondAttribute="bottom" constant="-8.5" id="1YT-jn-zfx"/>
+                    <constraint firstItem="2iq-qu-3nw" firstAttribute="centerY" secondItem="W1y-ag-LNi" secondAttribute="centerY" constant="-23.75" id="4aU-Rm-dRK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mRL-Dm-flZ" secondAttribute="trailing" constant="-8" id="7ba-nL-ScM"/>
+                    <constraint firstItem="nhy-0G-Ggq" firstAttribute="leading" secondItem="W1y-ag-LNi" secondAttribute="leadingMargin" constant="-8" id="Edb-UM-Fne"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="2iq-qu-3nw" secondAttribute="leading" id="Gll-Fz-twg"/>
+                    <constraint firstItem="2iq-qu-3nw" firstAttribute="centerX" secondItem="W1y-ag-LNi" secondAttribute="centerX" id="R51-0f-kj2"/>
+                    <constraint firstItem="mRL-Dm-flZ" firstAttribute="top" secondItem="W1y-ag-LNi" secondAttribute="topMargin" constant="-8" id="SeQ-xB-3CU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nhy-0G-Ggq" secondAttribute="trailing" constant="-8" id="hTq-Pu-vCJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2iq-qu-3nw" secondAttribute="trailing" id="oLk-ck-ZfB"/>
+                    <constraint firstItem="wwF-9c-Kz8" firstAttribute="centerX" secondItem="W1y-ag-LNi" secondAttribute="centerX" id="oQC-SL-yfg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nhy-0G-Ggq" secondAttribute="bottom" constant="-8.5" id="p7z-nj-xJf"/>
+                    <constraint firstItem="nhy-0G-Ggq" firstAttribute="top" secondItem="W1y-ag-LNi" secondAttribute="topMargin" constant="-8" id="pf8-ha-JfA"/>
+                    <constraint firstItem="mRL-Dm-flZ" firstAttribute="leading" secondItem="W1y-ag-LNi" secondAttribute="leadingMargin" constant="-8" id="u3T-LG-2fI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnShopNow" destination="wwF-9c-Kz8" id="vrN-fu-08G"/>
+                <outlet property="img" destination="nhy-0G-Ggq" id="Fnn-ZW-yKx"/>
+                <outlet property="title" destination="2iq-qu-3nw" id="JIt-5c-hO0"/>
+            </connections>
+            <point key="canvasLocation" x="-486" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-30-img-1" width="1080" height="828"/>
+    </resources>
+</document>

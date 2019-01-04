@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EcommerceStyle20Cell" id="ZA2-bO-VN4" customClass="EcommerceStyle20Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5m-2C-Utg">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="pushCell:" destination="ZA2-bO-VN4" eventType="touchUpInside" id="awu-Dr-ytr"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFg-pH-DPG">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <state key="normal" image="centangPutih"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="f5m-2C-Utg" firstAttribute="leading" secondItem="ZA2-bO-VN4" secondAttribute="leading" id="0mv-Co-Z0e"/>
+                <constraint firstItem="f5m-2C-Utg" firstAttribute="top" secondItem="ZA2-bO-VN4" secondAttribute="top" id="4KL-ya-uIF"/>
+                <constraint firstAttribute="bottom" secondItem="XFg-pH-DPG" secondAttribute="bottom" id="A97-mD-UUZ"/>
+                <constraint firstItem="XFg-pH-DPG" firstAttribute="top" secondItem="ZA2-bO-VN4" secondAttribute="top" id="Hen-cO-UzD"/>
+                <constraint firstItem="XFg-pH-DPG" firstAttribute="leading" secondItem="ZA2-bO-VN4" secondAttribute="leading" id="Ke9-g8-4zB"/>
+                <constraint firstAttribute="bottom" secondItem="f5m-2C-Utg" secondAttribute="bottom" id="jQB-2K-NF1"/>
+                <constraint firstAttribute="trailing" secondItem="XFg-pH-DPG" secondAttribute="trailing" id="qzg-pG-iK2"/>
+                <constraint firstAttribute="trailing" secondItem="f5m-2C-Utg" secondAttribute="trailing" id="t3U-BH-pih"/>
+            </constraints>
+            <connections>
+                <outlet property="centang" destination="XFg-pH-DPG" id="eFo-rr-tpw"/>
+                <outlet property="viewColor" destination="f5m-2C-Utg" id="yWQ-59-Roo"/>
+            </connections>
+            <point key="canvasLocation" x="-1486" y="39"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="centangPutih" width="24" height="18"/>
+    </resources>
+</document>

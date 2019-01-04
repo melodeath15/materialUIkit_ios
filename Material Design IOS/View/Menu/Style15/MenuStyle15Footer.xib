@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle15Footer" id="IfW-tT-Vwr" customClass="MenuStyle15Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-Bf-k5x">
+                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6rc-el-kKf"/>
+                        <constraint firstAttribute="width" constant="60" id="Rdv-K1-TEB"/>
+                    </constraints>
+                    <state key="normal" image="iconSettingPutih"/>
+                    <connections>
+                        <action selector="pushBtnSetting:" destination="IfW-tT-Vwr" eventType="touchUpInside" id="bEM-8V-C5n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOA-5y-Mpw">
+                    <rect key="frame" x="157" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.35044285655021667" green="0.59578138589859009" blue="0.97818261384963989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4dU-rd-9DX"/>
+                        <constraint firstAttribute="width" constant="60" id="VN5-ld-qZB"/>
+                    </constraints>
+                    <state key="normal" image="iconProfile"/>
+                    <connections>
+                        <action selector="pushBtnProfile:" destination="IfW-tT-Vwr" eventType="touchUpInside" id="9uH-hO-kuZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-Wn-eRs">
+                    <rect key="frame" x="299" y="1" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="IfF-Wi-pKr"/>
+                        <constraint firstAttribute="width" constant="60" id="etY-MG-scp"/>
+                    </constraints>
+                    <state key="normal" image="iconLogoutRed"/>
+                    <connections>
+                        <action selector="pushBtnLogout:" destination="IfW-tT-Vwr" eventType="touchUpInside" id="AcT-r7-YZi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BVR-Bf-k5x" firstAttribute="top" secondItem="IfW-tT-Vwr" secondAttribute="top" id="2Cc-5u-N1f"/>
+                <constraint firstItem="lOA-5y-Mpw" firstAttribute="centerX" secondItem="IfW-tT-Vwr" secondAttribute="centerX" id="Glr-Ye-rag"/>
+                <constraint firstItem="c2r-Wn-eRs" firstAttribute="top" secondItem="IfW-tT-Vwr" secondAttribute="top" constant="1" id="OY5-Al-XhP"/>
+                <constraint firstAttribute="trailing" secondItem="c2r-Wn-eRs" secondAttribute="trailing" constant="16" id="ca5-YW-34m"/>
+                <constraint firstItem="BVR-Bf-k5x" firstAttribute="leading" secondItem="IfW-tT-Vwr" secondAttribute="leading" constant="16" id="nJw-Y7-vHR"/>
+                <constraint firstItem="lOA-5y-Mpw" firstAttribute="top" secondItem="IfW-tT-Vwr" secondAttribute="top" id="oul-4l-ic6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLogout" destination="c2r-Wn-eRs" id="mDG-ML-Nbq"/>
+                <outlet property="btnProflile" destination="lOA-5y-Mpw" id="aZZ-8s-yxO"/>
+                <outlet property="btnSetting" destination="BVR-Bf-k5x" id="ZXH-Su-KFs"/>
+            </connections>
+            <point key="canvasLocation" x="-39" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconLogoutRed" width="26" height="27"/>
+        <image name="iconProfile" width="24" height="24"/>
+        <image name="iconSettingPutih" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordpressHeader" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Whs-X5-ED4" customClass="WordpressHeader" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Whs-X5-ED4" id="2kP-7b-JTK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="As1" translatesAutoresizingMaskIntoConstraints="NO" id="x5j-fX-80m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-HF-sBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtJ-ZI-1VG">
+                        <rect key="frame" x="16" y="45.5" width="343" height="53"/>
+                        <string key="text">Beautiful WordPress Themes
+With Lots of Features</string>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWP-lR-dtm">
+                        <rect key="frame" x="16" y="106" width="343" height="34.5"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit, sed do eiusmod.</string>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9E-Qx-efM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                        <connections>
+                            <action selector="pushCell:" destination="Whs-X5-ED4" eventType="touchUpInside" id="PZt-V5-679"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="t9E-Qx-efM" secondAttribute="bottom" constant="-0.5" id="1nY-o0-3vw"/>
+                    <constraint firstItem="uhu-HF-sBA" firstAttribute="leading" secondItem="2kP-7b-JTK" secondAttribute="leading" id="37N-vI-Vz2"/>
+                    <constraint firstAttribute="trailing" secondItem="vWP-lR-dtm" secondAttribute="trailing" constant="16" id="5jb-U0-Kus"/>
+                    <constraint firstAttribute="trailing" secondItem="t9E-Qx-efM" secondAttribute="trailing" id="GcB-Aa-crX"/>
+                    <constraint firstItem="t9E-Qx-efM" firstAttribute="top" secondItem="2kP-7b-JTK" secondAttribute="top" id="Kw0-sz-wvv"/>
+                    <constraint firstItem="vWP-lR-dtm" firstAttribute="top" secondItem="DtJ-ZI-1VG" secondAttribute="bottom" constant="7.5" id="NXP-rn-dTV"/>
+                    <constraint firstItem="uhu-HF-sBA" firstAttribute="top" secondItem="2kP-7b-JTK" secondAttribute="top" id="Nm6-4x-LlU"/>
+                    <constraint firstItem="x5j-fX-80m" firstAttribute="top" secondItem="2kP-7b-JTK" secondAttribute="top" id="UTa-dc-yf9"/>
+                    <constraint firstAttribute="trailing" secondItem="DtJ-ZI-1VG" secondAttribute="trailing" constant="16" id="V4N-KY-KXA"/>
+                    <constraint firstItem="t9E-Qx-efM" firstAttribute="leading" secondItem="2kP-7b-JTK" secondAttribute="leading" id="W0e-QJ-88B"/>
+                    <constraint firstAttribute="bottom" secondItem="x5j-fX-80m" secondAttribute="bottom" constant="-0.5" id="cZe-jt-Ez2"/>
+                    <constraint firstAttribute="trailing" secondItem="uhu-HF-sBA" secondAttribute="trailing" id="gXe-KW-lFq"/>
+                    <constraint firstAttribute="bottom" secondItem="uhu-HF-sBA" secondAttribute="bottom" constant="-0.5" id="j4B-Xm-Sy4"/>
+                    <constraint firstItem="vWP-lR-dtm" firstAttribute="leading" secondItem="2kP-7b-JTK" secondAttribute="leading" constant="16" id="jQw-mx-2IS"/>
+                    <constraint firstItem="x5j-fX-80m" firstAttribute="leading" secondItem="2kP-7b-JTK" secondAttribute="leading" id="mqX-Dr-95g"/>
+                    <constraint firstItem="DtJ-ZI-1VG" firstAttribute="centerY" secondItem="2kP-7b-JTK" secondAttribute="centerY" constant="-21.25" id="tvG-qy-zvg"/>
+                    <constraint firstItem="DtJ-ZI-1VG" firstAttribute="leading" secondItem="2kP-7b-JTK" secondAttribute="leading" constant="16" id="uzY-eJ-m2n"/>
+                    <constraint firstAttribute="trailing" secondItem="x5j-fX-80m" secondAttribute="trailing" id="vrm-S2-8GH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BtnPush" destination="t9E-Qx-efM" id="XsC-zz-AtC"/>
+                <outlet property="img" destination="x5j-fX-80m" id="TeD-Xh-Hdu"/>
+                <outlet property="subtitle" destination="vWP-lR-dtm" id="Bkr-7k-3zM"/>
+                <outlet property="title" destination="DtJ-ZI-1VG" id="foa-ko-oPd"/>
+            </connections>
+            <point key="canvasLocation" x="-669" y="-35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="As1" width="864" height="320"/>
+    </resources>
+</document>

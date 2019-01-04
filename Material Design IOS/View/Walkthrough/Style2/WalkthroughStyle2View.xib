@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle2View" id="JHd-4Q-HL1" customClass="WalkthroughStyle2View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome2" translatesAutoresizingMaskIntoConstraints="NO" id="q3p-86-hzQ">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-NZ-TfP">
+                    <rect key="frame" x="33" y="266" width="235" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lk-6B-0t6">
+                    <rect key="frame" x="33" y="291" width="235" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="q3p-86-hzQ" firstAttribute="leading" secondItem="JHd-4Q-HL1" secondAttribute="leading" id="1Pc-MR-abu"/>
+                <constraint firstItem="5lk-6B-0t6" firstAttribute="top" secondItem="VSA-NZ-TfP" secondAttribute="bottom" constant="8" id="5FQ-ah-wfy"/>
+                <constraint firstItem="5lk-6B-0t6" firstAttribute="leading" secondItem="JHd-4Q-HL1" secondAttribute="leading" constant="33" id="9t9-OS-iqW"/>
+                <constraint firstItem="VSA-NZ-TfP" firstAttribute="top" secondItem="q3p-86-hzQ" secondAttribute="bottom" constant="26" id="Qmv-DD-yc7"/>
+                <constraint firstAttribute="trailing" secondItem="q3p-86-hzQ" secondAttribute="trailing" id="Xaq-KB-HCv"/>
+                <constraint firstItem="VSA-NZ-TfP" firstAttribute="leading" secondItem="JHd-4Q-HL1" secondAttribute="leading" constant="33" id="j1o-1x-3xi"/>
+                <constraint firstAttribute="trailing" secondItem="5lk-6B-0t6" secondAttribute="trailing" constant="32" id="oBE-QQ-nbM"/>
+                <constraint firstItem="q3p-86-hzQ" firstAttribute="top" secondItem="JHd-4Q-HL1" secondAttribute="top" id="oJl-cU-yVJ"/>
+                <constraint firstAttribute="bottom" secondItem="q3p-86-hzQ" secondAttribute="bottom" constant="110" id="ulT-cU-OZp"/>
+                <constraint firstAttribute="trailing" secondItem="VSA-NZ-TfP" secondAttribute="trailing" constant="32" id="w2h-pt-eic"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="5lk-6B-0t6" id="RF3-On-OZf"/>
+                <outlet property="img" destination="q3p-86-hzQ" id="b2M-r5-q15"/>
+                <outlet property="title" destination="VSA-NZ-TfP" id="JRz-Cx-Yge"/>
+            </connections>
+            <point key="canvasLocation" x="-83" y="-158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Welcome2" width="360" height="412"/>
+    </resources>
+</document>

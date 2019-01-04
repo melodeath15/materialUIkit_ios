@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewStyle21" id="ldV-sr-e4i" customClass="ViewStyle21" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lq-0W-Ade">
+                    <rect key="frame" x="8" y="8" width="360" height="184"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFl-6B-y3Q">
+                            <rect key="frame" x="8" y="136" width="344" height="40"/>
+                            <color key="backgroundColor" red="0.97254901959999995" green="0.33725490200000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Ms-Gy-PPT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Sign In">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pushSignIn:" destination="ldV-sr-e4i" eventType="touchUpInside" id="i7K-Mz-gKI"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="51b-PH-cDK">
+                            <rect key="frame" x="140" y="48" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="5Zw-MP-otb"/>
+                                <constraint firstAttribute="height" constant="80" id="vJS-7n-SiS"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OFl-6B-y3Q" secondAttribute="bottom" constant="8" id="ReF-0s-nRP"/>
+                        <constraint firstAttribute="trailing" secondItem="OFl-6B-y3Q" secondAttribute="trailing" constant="8" id="V47-kA-Ki4"/>
+                        <constraint firstItem="51b-PH-cDK" firstAttribute="top" secondItem="4lq-0W-Ade" secondAttribute="top" constant="48" id="oF3-wx-vL3"/>
+                        <constraint firstItem="OFl-6B-y3Q" firstAttribute="leading" secondItem="4lq-0W-Ade" secondAttribute="leading" constant="8" id="qgO-4D-gnU"/>
+                        <constraint firstItem="51b-PH-cDK" firstAttribute="centerX" secondItem="4lq-0W-Ade" secondAttribute="centerX" id="r7C-Cu-qJA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4lq-0W-Ade" secondAttribute="bottom" constant="8" id="093-eL-LKb"/>
+                <constraint firstAttribute="trailing" secondItem="4lq-0W-Ade" secondAttribute="trailing" constant="7" id="quy-Zh-zXJ"/>
+                <constraint firstItem="4lq-0W-Ade" firstAttribute="leading" secondItem="ldV-sr-e4i" secondAttribute="leading" constant="8" id="rbO-nb-d4u"/>
+                <constraint firstItem="4lq-0W-Ade" firstAttribute="top" secondItem="ldV-sr-e4i" secondAttribute="top" constant="8" id="vsk-fF-rBp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonSign" destination="OFl-6B-y3Q" id="FP6-0k-5sf"/>
+                <outlet property="logo" destination="51b-PH-cDK" id="yWL-Ps-pLO"/>
+            </connections>
+            <point key="canvasLocation" x="-403" y="-24"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo2" width="120" height="120"/>
+    </resources>
+</document>

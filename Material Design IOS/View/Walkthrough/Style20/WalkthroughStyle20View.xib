@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle20View" id="slt-ym-oX5" customClass="WalkthroughStyle20View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome20" translatesAutoresizingMaskIntoConstraints="NO" id="o8P-SP-l0M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti8-85-V4p">
+                    <rect key="frame" x="42" y="526" width="291" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXw-Xj-JKf">
+                    <rect key="frame" x="42" y="551" width="291" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ti8-85-V4p" firstAttribute="leading" secondItem="slt-ym-oX5" secondAttribute="leading" constant="42" id="2WF-g0-mTE"/>
+                <constraint firstAttribute="trailing" secondItem="kXw-Xj-JKf" secondAttribute="trailing" constant="42" id="BdA-TT-LXf"/>
+                <constraint firstAttribute="trailing" secondItem="o8P-SP-l0M" secondAttribute="trailing" id="D8j-rs-2Rj"/>
+                <constraint firstItem="o8P-SP-l0M" firstAttribute="top" secondItem="slt-ym-oX5" secondAttribute="top" id="Hv5-SN-eq7"/>
+                <constraint firstItem="kXw-Xj-JKf" firstAttribute="leading" secondItem="slt-ym-oX5" secondAttribute="leading" constant="42" id="RiU-et-FZZ"/>
+                <constraint firstItem="o8P-SP-l0M" firstAttribute="leading" secondItem="slt-ym-oX5" secondAttribute="leading" id="Tvo-8a-kg0"/>
+                <constraint firstAttribute="trailing" secondItem="Ti8-85-V4p" secondAttribute="trailing" constant="42" id="XmS-BX-zOd"/>
+                <constraint firstItem="kXw-Xj-JKf" firstAttribute="top" secondItem="o8P-SP-l0M" secondAttribute="bottom" constant="51" id="doD-Kb-hKO"/>
+                <constraint firstAttribute="bottom" secondItem="o8P-SP-l0M" secondAttribute="bottom" constant="97" id="qVQ-hp-VAf"/>
+                <constraint firstItem="Ti8-85-V4p" firstAttribute="top" secondItem="o8P-SP-l0M" secondAttribute="bottom" constant="26" id="sO9-UQ-CMp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="des" destination="kXw-Xj-JKf" id="4Ip-5b-uo5"/>
+                <outlet property="img" destination="o8P-SP-l0M" id="5w1-dy-h0l"/>
+                <outlet property="title" destination="Ti8-85-V4p" id="Ftm-rW-ci4"/>
+            </connections>
+            <point key="canvasLocation" x="-863.5" y="12.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Welcome20" width="960" height="1600"/>
+    </resources>
+</document>

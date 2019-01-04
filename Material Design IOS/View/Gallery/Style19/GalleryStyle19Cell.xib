@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GalleryStyle19Cell" id="lYW-uL-Lp9" customClass="GalleryStyle19Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcB-JE-sy1">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaj-MH-yAS">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXU-A7-fMt">
+                        <rect key="frame" x="60" y="60" width="30" height="30"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centangPutih" translatesAutoresizingMaskIntoConstraints="NO" id="cHv-ci-fQV">
+                                <rect key="frame" x="7" y="10" width="15" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="ipA-Kz-OiW"/>
+                                    <constraint firstAttribute="height" constant="10" id="ogR-8x-ZCO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30122601989999997" green="0.58635634179999996" blue="0.97629350420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="FIA-yS-Fwg"/>
+                            <constraint firstItem="cHv-ci-fQV" firstAttribute="centerY" secondItem="hXU-A7-fMt" secondAttribute="centerY" id="Wdf-C0-piV"/>
+                            <constraint firstItem="cHv-ci-fQV" firstAttribute="centerX" secondItem="hXU-A7-fMt" secondAttribute="centerX" id="gSV-m9-x2o"/>
+                            <constraint firstAttribute="width" constant="30" id="tiP-B0-27n"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="uWY-vk-9sC">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4T-iu-f9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <connections>
+                            <action selector="pushBtnCell:" destination="lYW-uL-Lp9" eventType="touchUpInside" id="5D8-7F-Bqe"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z4T-iu-f9Y" secondAttribute="trailing" id="CYZ-D9-Xfs"/>
+                <constraint firstAttribute="trailing" secondItem="fcB-JE-sy1" secondAttribute="trailing" id="D4P-Y4-QM8"/>
+                <constraint firstAttribute="bottom" secondItem="Z4T-iu-f9Y" secondAttribute="bottom" id="KH3-56-JKe"/>
+                <constraint firstAttribute="trailing" secondItem="uWY-vk-9sC" secondAttribute="trailing" id="PVl-HV-ZGv"/>
+                <constraint firstAttribute="bottom" secondItem="uWY-vk-9sC" secondAttribute="bottom" id="SkE-3U-5Wh"/>
+                <constraint firstItem="hXU-A7-fMt" firstAttribute="centerY" secondItem="lYW-uL-Lp9" secondAttribute="centerY" id="VRm-Yf-ATX"/>
+                <constraint firstItem="Zaj-MH-yAS" firstAttribute="top" secondItem="lYW-uL-Lp9" secondAttribute="top" id="XSO-Vi-wIN"/>
+                <constraint firstItem="Z4T-iu-f9Y" firstAttribute="leading" secondItem="lYW-uL-Lp9" secondAttribute="leading" id="YHb-jI-3uT"/>
+                <constraint firstAttribute="bottom" secondItem="fcB-JE-sy1" secondAttribute="bottom" id="bhd-G9-nsK"/>
+                <constraint firstItem="fcB-JE-sy1" firstAttribute="top" secondItem="lYW-uL-Lp9" secondAttribute="top" id="dCw-PN-L50"/>
+                <constraint firstItem="hXU-A7-fMt" firstAttribute="centerX" secondItem="lYW-uL-Lp9" secondAttribute="centerX" id="eMC-TD-ja5"/>
+                <constraint firstItem="uWY-vk-9sC" firstAttribute="leading" secondItem="lYW-uL-Lp9" secondAttribute="leading" id="gx3-go-EGz"/>
+                <constraint firstItem="Z4T-iu-f9Y" firstAttribute="top" secondItem="lYW-uL-Lp9" secondAttribute="top" id="i6Y-TG-5jG"/>
+                <constraint firstAttribute="bottom" secondItem="Zaj-MH-yAS" secondAttribute="bottom" id="jaH-X7-Fxz"/>
+                <constraint firstItem="Zaj-MH-yAS" firstAttribute="leading" secondItem="lYW-uL-Lp9" secondAttribute="leading" id="sxk-Bi-4Ze"/>
+                <constraint firstAttribute="trailing" secondItem="Zaj-MH-yAS" secondAttribute="trailing" id="ts5-IH-WPQ"/>
+                <constraint firstItem="uWY-vk-9sC" firstAttribute="top" secondItem="lYW-uL-Lp9" secondAttribute="top" id="v1R-3y-OmA"/>
+                <constraint firstItem="fcB-JE-sy1" firstAttribute="leading" secondItem="lYW-uL-Lp9" secondAttribute="leading" id="z5M-Ze-bQv"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCell" destination="Z4T-iu-f9Y" id="C5s-WD-ma6"/>
+                <outlet property="frameImg" destination="uWY-vk-9sC" id="hQi-ke-JTo"/>
+                <outlet property="img" destination="fcB-JE-sy1" id="hkh-D2-jZ3"/>
+                <outlet property="imgAlfa" destination="Zaj-MH-yAS" id="76O-Fz-VQb"/>
+                <outlet property="imgCentang" destination="cHv-ci-fQV" id="SM0-V3-dNF"/>
+                <outlet property="viewCentang" destination="hXU-A7-fMt" id="1Nx-8U-Cmr"/>
+            </connections>
+            <point key="canvasLocation" x="-1028" y="-307"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 1" width="1024" height="1024"/>
+        <image name="centangPutih" width="24" height="18"/>
+    </resources>
+</document>

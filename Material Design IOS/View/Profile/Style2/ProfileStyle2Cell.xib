@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileStyle2Cell" id="aaN-PJ-GCV" customClass="ProfileStyle2Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-tp-oMf">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="P7c-tp-oMf" secondAttribute="trailing" id="BpW-IK-9aM"/>
+                <constraint firstItem="P7c-tp-oMf" firstAttribute="leading" secondItem="aaN-PJ-GCV" secondAttribute="leading" id="aBu-cb-SWZ"/>
+                <constraint firstItem="P7c-tp-oMf" firstAttribute="top" secondItem="aaN-PJ-GCV" secondAttribute="top" id="hhS-Gt-BWW"/>
+                <constraint firstAttribute="bottom" secondItem="P7c-tp-oMf" secondAttribute="bottom" id="jAM-IE-5ei"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="P7c-tp-oMf" id="hxl-Gj-Aqc"/>
+            </connections>
+            <point key="canvasLocation" x="-279" y="-112"/>
+        </collectionViewCell>
+    </objects>
+</document>

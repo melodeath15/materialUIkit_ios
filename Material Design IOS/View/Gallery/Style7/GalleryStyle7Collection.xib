@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="GalleryStyle7Collection" selectionStyle="default" indentationWidth="10" id="Afz-nl-IDS" customClass="GalleryStyle7Collection" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Afz-nl-IDS" id="Ddd-Qb-kHV">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-Wc-X45">
+                        <rect key="frame" x="10" y="10" width="215" height="179"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-hO-Ag6">
+                                <rect key="frame" x="8" y="11" width="199" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-3Y-2BE">
+                                <rect key="frame" x="0.0" y="36" width="215" height="143"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n6s-v9-M6Q">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hM7-3Y-2BE" firstAttribute="leading" secondItem="TdF-Wc-X45" secondAttribute="leading" id="GP4-qE-FNP"/>
+                            <constraint firstItem="hM7-3Y-2BE" firstAttribute="top" secondItem="MgB-hO-Ag6" secondAttribute="bottom" constant="10" id="hYi-Va-vZ7"/>
+                            <constraint firstAttribute="bottom" secondItem="hM7-3Y-2BE" secondAttribute="bottom" id="iHU-KQ-Vm2"/>
+                            <constraint firstAttribute="trailing" secondItem="MgB-hO-Ag6" secondAttribute="trailing" constant="8" id="kwl-3d-6ta"/>
+                            <constraint firstAttribute="trailing" secondItem="hM7-3Y-2BE" secondAttribute="trailing" id="mdn-sm-2zc"/>
+                            <constraint firstItem="MgB-hO-Ag6" firstAttribute="leading" secondItem="TdF-Wc-X45" secondAttribute="leading" constant="8" id="rvc-iv-L8w"/>
+                            <constraint firstItem="MgB-hO-Ag6" firstAttribute="top" secondItem="TdF-Wc-X45" secondAttribute="top" constant="11" id="sAx-PK-Pyw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="TdF-Wc-X45" secondAttribute="bottom" constant="2.5" id="Df2-bd-8hT"/>
+                    <constraint firstItem="TdF-Wc-X45" firstAttribute="top" secondItem="Ddd-Qb-kHV" secondAttribute="topMargin" constant="2" id="GrK-CY-4EP"/>
+                    <constraint firstItem="TdF-Wc-X45" firstAttribute="leading" secondItem="Ddd-Qb-kHV" secondAttribute="leadingMargin" constant="2" id="OGX-VB-HhB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TdF-Wc-X45" secondAttribute="trailing" constant="3" id="pQt-gO-2J8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="collectionImg" destination="hM7-3Y-2BE" id="N5x-hj-bI8"/>
+                <outlet property="title" destination="MgB-hO-Ag6" id="reR-bI-e56"/>
+            </connections>
+            <point key="canvasLocation" x="-2072" y="-796"/>
+        </tableViewCell>
+    </objects>
+</document>

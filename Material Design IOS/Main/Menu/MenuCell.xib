@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuCell" id="KyQ-IK-KuF" customClass="MenuCell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tc-KR-d7t">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-pK-7zO">
+                    <rect key="frame" x="50" y="6" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TEc-1f-LeQ"/>
+                        <constraint firstAttribute="width" constant="50" id="c6L-5f-wI1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czO-h4-cfj">
+                    <rect key="frame" x="8" y="64" width="134" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnF-gQ-1ep">
+                    <rect key="frame" x="8" y="83" width="134" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    </variation>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3Tc-KR-d7t" firstAttribute="leading" secondItem="KyQ-IK-KuF" secondAttribute="leading" id="2QX-23-pEO"/>
+                <constraint firstItem="BnF-gQ-1ep" firstAttribute="leading" secondItem="KyQ-IK-KuF" secondAttribute="leading" constant="8" id="3VB-2h-La3"/>
+                <constraint firstItem="3Tc-KR-d7t" firstAttribute="top" secondItem="KyQ-IK-KuF" secondAttribute="top" id="EZQ-7i-sKH"/>
+                <constraint firstItem="BnF-gQ-1ep" firstAttribute="top" secondItem="czO-h4-cfj" secondAttribute="bottom" constant="2" id="Uic-lH-rvO"/>
+                <constraint firstItem="mAd-pK-7zO" firstAttribute="centerY" secondItem="KyQ-IK-KuF" secondAttribute="centerY" constant="-19" id="XvI-hC-TKP"/>
+                <constraint firstItem="mAd-pK-7zO" firstAttribute="centerX" secondItem="KyQ-IK-KuF" secondAttribute="centerX" id="iLL-Eb-y80"/>
+                <constraint firstItem="czO-h4-cfj" firstAttribute="leading" secondItem="KyQ-IK-KuF" secondAttribute="leading" constant="8" id="jLd-Rk-d8I"/>
+                <constraint firstAttribute="trailing" secondItem="czO-h4-cfj" secondAttribute="trailing" constant="8" id="jRB-2M-OMx"/>
+                <constraint firstAttribute="trailing" secondItem="3Tc-KR-d7t" secondAttribute="trailing" id="nNm-BS-ObJ"/>
+                <constraint firstAttribute="bottom" secondItem="3Tc-KR-d7t" secondAttribute="bottom" id="qdM-vY-0Op"/>
+                <constraint firstAttribute="trailing" secondItem="BnF-gQ-1ep" secondAttribute="trailing" constant="8" id="sri-nw-wqf"/>
+                <constraint firstItem="czO-h4-cfj" firstAttribute="top" secondItem="mAd-pK-7zO" secondAttribute="bottom" constant="8" id="wTV-Ye-RgA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="count" destination="BnF-gQ-1ep" id="Chp-go-jOL"/>
+                <outlet property="img" destination="mAd-pK-7zO" id="vIi-3t-HRg"/>
+                <outlet property="title" destination="czO-h4-cfj" id="kfR-sg-lIZ"/>
+                <outlet property="viewBG" destination="3Tc-KR-d7t" id="hhR-dF-5Xb"/>
+            </connections>
+            <point key="canvasLocation" x="-1124" y="-446"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo2" width="120" height="120"/>
+    </resources>
+</document>

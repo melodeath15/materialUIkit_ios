@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EcommerceStyle1Cell" id="oCa-X6-Rhu" customClass="EcommerceStyle1Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9v-fj-4gx">
+                        <rect key="frame" x="8" y="8" width="183" height="255"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ecommerce-1-img-post-1" translatesAutoresizingMaskIntoConstraints="NO" id="LjI-KD-cUG">
+                                <rect key="frame" x="0.0" y="0.0" width="183" height="208"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xm-U2-bA3">
+                                <rect key="frame" x="8" y="216" width="167" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjV-Gm-wLW">
+                                <rect key="frame" x="8" y="235" width="167" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <color key="textColor" red="0.98042887449264526" green="0.63860487937927246" blue="0.09115099161863327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LjI-KD-cUG" secondAttribute="bottom" constant="47" id="Cha-bW-iUG"/>
+                            <constraint firstItem="8xm-U2-bA3" firstAttribute="top" secondItem="LjI-KD-cUG" secondAttribute="bottom" constant="8" id="F53-mf-ALP"/>
+                            <constraint firstItem="UjV-Gm-wLW" firstAttribute="top" secondItem="8xm-U2-bA3" secondAttribute="bottom" constant="4" id="GIw-6p-sEK"/>
+                            <constraint firstItem="LjI-KD-cUG" firstAttribute="top" secondItem="R9v-fj-4gx" secondAttribute="top" id="RrK-7k-5zy"/>
+                            <constraint firstAttribute="trailing" secondItem="UjV-Gm-wLW" secondAttribute="trailing" constant="8" id="SOj-dc-YaD"/>
+                            <constraint firstItem="UjV-Gm-wLW" firstAttribute="leading" secondItem="R9v-fj-4gx" secondAttribute="leading" constant="8" id="VfO-CD-gBo"/>
+                            <constraint firstAttribute="trailing" secondItem="8xm-U2-bA3" secondAttribute="trailing" constant="8" id="c2v-VB-aIM"/>
+                            <constraint firstItem="LjI-KD-cUG" firstAttribute="leading" secondItem="R9v-fj-4gx" secondAttribute="leading" id="et6-Qv-ie2"/>
+                            <constraint firstItem="8xm-U2-bA3" firstAttribute="leading" secondItem="R9v-fj-4gx" secondAttribute="leading" constant="8" id="sQ3-0t-ked"/>
+                            <constraint firstAttribute="trailing" secondItem="LjI-KD-cUG" secondAttribute="trailing" id="vU5-a8-jl7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="R9v-fj-4gx" firstAttribute="top" secondItem="oCa-X6-Rhu" secondAttribute="top" constant="8" id="1yY-A4-YQ7"/>
+                <constraint firstItem="R9v-fj-4gx" firstAttribute="leading" secondItem="oCa-X6-Rhu" secondAttribute="leading" constant="8" id="8G5-LA-i3P"/>
+                <constraint firstAttribute="trailing" secondItem="R9v-fj-4gx" secondAttribute="trailing" constant="9" id="NeX-U1-fPr"/>
+                <constraint firstAttribute="bottom" secondItem="R9v-fj-4gx" secondAttribute="bottom" constant="7" id="Sco-tl-TSi"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="LjI-KD-cUG" id="kfu-qm-hxM"/>
+                <outlet property="price" destination="UjV-Gm-wLW" id="fMQ-jC-bLv"/>
+                <outlet property="title" destination="8xm-U2-bA3" id="5VM-mH-L6T"/>
+            </connections>
+            <point key="canvasLocation" x="-256" y="-97"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ecommerce-1-img-post-1" width="494" height="525"/>
+    </resources>
+</document>

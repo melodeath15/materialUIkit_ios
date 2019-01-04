@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle18Footer" selectionStyle="default" indentationWidth="10" id="KuR-yv-O6G" customClass="EcommerceStyle18Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KuR-yv-O6G" id="ANK-oX-2XH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slW-e9-xdj">
+                        <rect key="frame" x="8" y="8" width="359" height="50"/>
+                        <color key="backgroundColor" red="0.98090499639999995" green="0.63993924859999995" blue="0.092553786930000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="lQH-Cn-9DP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <state key="normal" title="Add to Cart">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnAddCart:" destination="KuR-yv-O6G" eventType="touchUpInside" id="8cg-5i-E2o"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-aS-WcU">
+                        <rect key="frame" x="8" y="61" width="359" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9G1-Mw-lRH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <state key="normal" title="Add to Wishlist">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnAddWishlist:" destination="KuR-yv-O6G" eventType="touchUpInside" id="AtK-ZR-BOV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="slW-e9-xdj" secondAttribute="trailing" id="8lr-tq-mJn"/>
+                    <constraint firstAttribute="topMargin" secondItem="slW-e9-xdj" secondAttribute="top" id="Bcm-95-GkY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GR9-aS-WcU" secondAttribute="trailing" id="Pm5-xq-vj4"/>
+                    <constraint firstItem="GR9-aS-WcU" firstAttribute="top" secondItem="slW-e9-xdj" secondAttribute="bottom" constant="3" id="dgk-Xq-hpd"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="slW-e9-xdj" secondAttribute="leading" id="l6w-Ip-KvI"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="GR9-aS-WcU" secondAttribute="leading" id="s8C-za-oVN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnAddCart" destination="slW-e9-xdj" id="48M-To-B7b"/>
+                <outlet property="btnAddWishlist" destination="GR9-aS-WcU" id="32z-SJ-IhK"/>
+            </connections>
+            <point key="canvasLocation" x="-146" y="-5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileFooterStyle10" id="JoJ-pW-Fnk" customClass="ProfileFooterStyle10" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-l1-SVl">
+                    <rect key="frame" x="16" y="15" width="343" height="50"/>
+                    <color key="backgroundColor" red="0.2615983784198761" green="0.73653393983840942" blue="0.25409471988677979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Follow Me">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnFollow:" destination="JoJ-pW-Fnk" eventType="touchUpInside" id="FjZ-0E-Wgt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BiE-l1-SVl" firstAttribute="leading" secondItem="JoJ-pW-Fnk" secondAttribute="leading" constant="16" id="5Uc-bi-iRv"/>
+                <constraint firstAttribute="bottom" secondItem="BiE-l1-SVl" secondAttribute="bottom" constant="15" id="KmI-BN-ExG"/>
+                <constraint firstAttribute="trailing" secondItem="BiE-l1-SVl" secondAttribute="trailing" constant="16" id="TBB-4d-fcg"/>
+                <constraint firstItem="BiE-l1-SVl" firstAttribute="top" secondItem="JoJ-pW-Fnk" secondAttribute="top" constant="15" id="Yh6-4g-7XG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnFollow" destination="BiE-l1-SVl" id="WSI-2b-bue"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="-443"/>
+        </view>
+    </objects>
+</document>

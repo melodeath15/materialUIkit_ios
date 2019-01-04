@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TumblrCell" id="abe-UZ-fT4" customClass="TumblrCell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-7x-yq7">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc5-lg-kgf">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <connections>
+                            <action selector="pushBtnCell:" destination="abe-UZ-fT4" eventType="touchUpInside" id="wbC-of-uE8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SLi-7x-yq7" secondAttribute="bottom" id="CYT-6M-0eo"/>
+                <constraint firstAttribute="bottom" secondItem="nc5-lg-kgf" secondAttribute="bottom" id="KqX-r3-gmM"/>
+                <constraint firstItem="nc5-lg-kgf" firstAttribute="top" secondItem="abe-UZ-fT4" secondAttribute="top" id="LaL-w5-ymU"/>
+                <constraint firstAttribute="trailing" secondItem="nc5-lg-kgf" secondAttribute="trailing" id="csS-e7-whU"/>
+                <constraint firstItem="nc5-lg-kgf" firstAttribute="leading" secondItem="abe-UZ-fT4" secondAttribute="leading" id="fQm-Tf-dFQ"/>
+                <constraint firstAttribute="trailing" secondItem="SLi-7x-yq7" secondAttribute="trailing" id="gGi-h0-rsc"/>
+                <constraint firstItem="SLi-7x-yq7" firstAttribute="leading" secondItem="abe-UZ-fT4" secondAttribute="leading" id="oIr-Ii-bIS"/>
+                <constraint firstItem="SLi-7x-yq7" firstAttribute="top" secondItem="abe-UZ-fT4" secondAttribute="top" id="rnh-fn-odh"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCell" destination="nc5-lg-kgf" id="l5P-jI-xF3"/>
+                <outlet property="img" destination="SLi-7x-yq7" id="dlu-s4-74P"/>
+            </connections>
+            <point key="canvasLocation" x="-1457" y="-425"/>
+        </collectionViewCell>
+    </objects>
+</document>

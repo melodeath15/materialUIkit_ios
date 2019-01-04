@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle17Header" selectionStyle="default" indentationWidth="10" id="TfB-Ts-0U0" customClass="EcommerceStyle17Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TfB-Ts-0U0" id="osd-a7-qxr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vF-ho-jeW" customClass="CPImageSlider" customModule="Material_Design_IOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="1vF-ho-jeW" secondAttribute="trailing" constant="-8" id="64y-nj-zY5"/>
+                    <constraint firstItem="1vF-ho-jeW" firstAttribute="leading" secondItem="osd-a7-qxr" secondAttribute="leadingMargin" constant="-8" id="7lL-Qr-ear"/>
+                    <constraint firstItem="1vF-ho-jeW" firstAttribute="top" secondItem="osd-a7-qxr" secondAttribute="topMargin" constant="-8" id="EfE-wO-5sr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1vF-ho-jeW" secondAttribute="bottom" constant="-8.5" id="x22-fW-qD7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="slider" destination="1vF-ho-jeW" id="mBh-zw-UqB"/>
+            </connections>
+            <point key="canvasLocation" x="-293" y="-426"/>
+        </tableViewCell>
+    </objects>
+</document>

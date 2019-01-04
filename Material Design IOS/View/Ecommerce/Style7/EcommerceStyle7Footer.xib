@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle7Footer" id="ana-d8-qNq" customClass="EcommerceStyle7Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbI-9K-1gD">
+                    <rect key="frame" x="187" y="27.5" width="1" height="5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="drI-lF-Q8h"/>
+                        <constraint firstAttribute="width" constant="1" id="vR4-Ha-a5c"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrU-Nn-tbl">
+                    <rect key="frame" x="16" y="10" width="163" height="40"/>
+                    <color key="backgroundColor" red="0.99589842557907104" green="0.63781148195266724" blue="0.089690722525119781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RKD-ZC-dgv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Buy Now">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnBuy:" destination="ana-d8-qNq" eventType="touchUpInside" id="vl3-zy-jt9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSP-zo-o5I">
+                    <rect key="frame" x="198" y="10" width="161" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1ne-9z-0qY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="Add to Cart" image="buyBlack">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnAdd:" destination="ana-d8-qNq" eventType="touchUpInside" id="0dd-VO-FHG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PSP-zo-o5I" firstAttribute="centerY" secondItem="ana-d8-qNq" secondAttribute="centerY" id="1AZ-0k-NZI"/>
+                <constraint firstItem="DbI-9K-1gD" firstAttribute="leading" secondItem="RrU-Nn-tbl" secondAttribute="trailing" constant="8" id="3Nf-wU-N6I"/>
+                <constraint firstAttribute="trailing" secondItem="PSP-zo-o5I" secondAttribute="trailing" constant="16" id="ECa-fh-1TJ"/>
+                <constraint firstItem="RrU-Nn-tbl" firstAttribute="centerY" secondItem="ana-d8-qNq" secondAttribute="centerY" id="LJt-xs-A4S"/>
+                <constraint firstItem="PSP-zo-o5I" firstAttribute="leading" secondItem="DbI-9K-1gD" secondAttribute="trailing" constant="10" id="Snv-en-Mke"/>
+                <constraint firstItem="DbI-9K-1gD" firstAttribute="centerX" secondItem="ana-d8-qNq" secondAttribute="centerX" id="ax6-S2-VQ4"/>
+                <constraint firstItem="RrU-Nn-tbl" firstAttribute="leading" secondItem="ana-d8-qNq" secondAttribute="leading" constant="16" id="sIx-rd-7Cl"/>
+                <constraint firstItem="DbI-9K-1gD" firstAttribute="centerY" secondItem="ana-d8-qNq" secondAttribute="centerY" id="vqN-VV-Qkl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAdd" destination="PSP-zo-o5I" id="36F-8V-oFy"/>
+                <outlet property="btnBuy" destination="RrU-Nn-tbl" id="fB7-mn-pai"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="-111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buyBlack" width="24" height="24"/>
+    </resources>
+</document>

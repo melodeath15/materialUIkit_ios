@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderStyle8" id="36T-zN-Ihr" customClass="HeaderStyle8" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" translatesAutoresizingMaskIntoConstraints="NO" id="QwD-yd-orb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-0r-JSr">
+                    <rect key="frame" x="162" y="32" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7X4-7K-2LV"/>
+                        <constraint firstAttribute="width" constant="50" id="EL4-Z5-w4p"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Guest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTc-4y-0Ho">
+                    <rect key="frame" x="16" y="100" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YTc-4y-0Ho" firstAttribute="leading" secondItem="36T-zN-Ihr" secondAttribute="leading" constant="16" id="2zd-lv-tYY"/>
+                <constraint firstItem="QwD-yd-orb" firstAttribute="top" secondItem="36T-zN-Ihr" secondAttribute="top" id="6bo-im-3fv"/>
+                <constraint firstAttribute="bottom" secondItem="QwD-yd-orb" secondAttribute="bottom" constant="-4" id="jCC-PW-U0O"/>
+                <constraint firstItem="QwD-yd-orb" firstAttribute="leading" secondItem="36T-zN-Ihr" secondAttribute="leading" id="jLh-ve-QH1"/>
+                <constraint firstItem="YTc-4y-0Ho" firstAttribute="top" secondItem="LrA-0r-JSr" secondAttribute="bottom" constant="18" id="lSp-T0-rSP"/>
+                <constraint firstAttribute="trailing" secondItem="QwD-yd-orb" secondAttribute="trailing" id="lpl-sB-3et"/>
+                <constraint firstItem="LrA-0r-JSr" firstAttribute="centerY" secondItem="36T-zN-Ihr" secondAttribute="centerY" constant="-18" id="odJ-xR-srA"/>
+                <constraint firstAttribute="trailing" secondItem="YTc-4y-0Ho" secondAttribute="trailing" constant="16" id="pQd-Aa-hf7"/>
+                <constraint firstItem="LrA-0r-JSr" firstAttribute="centerX" secondItem="36T-zN-Ihr" secondAttribute="centerX" id="zz9-Gi-9gO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImage" destination="QwD-yd-orb" id="rFz-40-H02"/>
+                <outlet property="logo" destination="LrA-0r-JSr" id="SN2-tR-MQ6"/>
+                <outlet property="title" destination="YTc-4y-0Ho" id="LeT-Z3-esv"/>
+            </connections>
+            <point key="canvasLocation" x="-215" y="-389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg4" width="360" height="204"/>
+        <image name="camera" width="120" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewStyle25" id="SCj-lU-d9r" customClass="ViewStyle25" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Dw-UP-uoE">
+                    <rect key="frame" x="0.0" y="51" width="375" height="249"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Guest!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-Ej-vwM">
+                            <rect key="frame" x="8" y="38" width="359" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weasel the jeeper goodness inconsiderately spelled so ubuquitous amused knitted and alturuistic amiable far musch toward" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-Lw-XL3">
+                            <rect key="frame" x="8" y="66" width="359" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJQ-JD-PbB">
+                            <rect key="frame" x="8" y="157" width="359" height="40"/>
+                            <color key="backgroundColor" red="0.97254901959999995" green="0.33725490200000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mp1-us-dhr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Sign In">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pushSignIn:" destination="SCj-lU-d9r" eventType="touchUpInside" id="790-X0-Lco"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naB-oB-vvP">
+                            <rect key="frame" x="8" y="205" width="359" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1LE-Mn-bVf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Sign Up">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pushSignUp:" destination="SCj-lU-d9r" eventType="touchUpInside" id="Egs-vM-ZxW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="naB-oB-vvP" firstAttribute="leading" secondItem="0Dw-UP-uoE" secondAttribute="leading" constant="8" id="42s-cG-He3"/>
+                        <constraint firstItem="0Ux-Ej-vwM" firstAttribute="top" secondItem="0Dw-UP-uoE" secondAttribute="top" constant="38" id="Bdn-ES-fOa"/>
+                        <constraint firstItem="dJQ-JD-PbB" firstAttribute="top" secondItem="ix0-Lw-XL3" secondAttribute="bottom" constant="40.5" id="CeZ-Sq-IhT"/>
+                        <constraint firstAttribute="trailing" secondItem="ix0-Lw-XL3" secondAttribute="trailing" constant="8" id="FXv-o6-cIQ"/>
+                        <constraint firstItem="0Ux-Ej-vwM" firstAttribute="leading" secondItem="0Dw-UP-uoE" secondAttribute="leading" constant="8" id="QuU-aP-fpf"/>
+                        <constraint firstItem="naB-oB-vvP" firstAttribute="top" secondItem="dJQ-JD-PbB" secondAttribute="bottom" constant="8" id="UjS-o4-nGb"/>
+                        <constraint firstAttribute="trailing" secondItem="0Ux-Ej-vwM" secondAttribute="trailing" constant="8" id="YrL-hw-t8Q"/>
+                        <constraint firstAttribute="trailing" secondItem="dJQ-JD-PbB" secondAttribute="trailing" constant="8" id="awx-D6-1AU"/>
+                        <constraint firstAttribute="height" constant="249" id="g6z-Fh-HAx"/>
+                        <constraint firstItem="ix0-Lw-XL3" firstAttribute="leading" secondItem="0Dw-UP-uoE" secondAttribute="leading" constant="8" id="l2t-0m-VSz"/>
+                        <constraint firstItem="dJQ-JD-PbB" firstAttribute="leading" secondItem="0Dw-UP-uoE" secondAttribute="leading" constant="8" id="qNV-Ir-jze"/>
+                        <constraint firstAttribute="trailing" secondItem="naB-oB-vvP" secondAttribute="trailing" constant="8" id="rJg-dj-iXF"/>
+                        <constraint firstItem="ix0-Lw-XL3" firstAttribute="top" secondItem="0Ux-Ej-vwM" secondAttribute="bottom" constant="8" id="xMr-7b-5fd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="t7S-0b-2wg">
+                    <rect key="frame" x="147" y="9" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2R3-4T-Kht"/>
+                        <constraint firstAttribute="height" constant="80" id="wUO-6T-sDE"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Dw-UP-uoE" secondAttribute="trailing" id="5pK-VH-1zf"/>
+                <constraint firstItem="0Dw-UP-uoE" firstAttribute="leading" secondItem="SCj-lU-d9r" secondAttribute="leading" id="9iS-lD-nbx"/>
+                <constraint firstItem="t7S-0b-2wg" firstAttribute="centerX" secondItem="SCj-lU-d9r" secondAttribute="centerX" id="Nta-IW-F5Q"/>
+                <constraint firstItem="0Dw-UP-uoE" firstAttribute="top" secondItem="SCj-lU-d9r" secondAttribute="top" constant="51" id="uXZ-NU-NcK"/>
+                <constraint firstItem="t7S-0b-2wg" firstAttribute="top" secondItem="SCj-lU-d9r" secondAttribute="top" constant="9" id="vai-SB-hCS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSignIn" destination="dJQ-JD-PbB" id="TBQ-h7-bl1"/>
+                <outlet property="btnSignUp" destination="naB-oB-vvP" id="nIH-HD-t3u"/>
+                <outlet property="des" destination="ix0-Lw-XL3" id="6S6-nX-p4n"/>
+                <outlet property="logo" destination="t7S-0b-2wg" id="rUb-gx-vHu"/>
+                <outlet property="title" destination="0Ux-Ej-vwM" id="rLg-bN-lIq"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo2" width="120" height="120"/>
+    </resources>
+</document>

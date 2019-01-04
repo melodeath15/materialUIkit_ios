@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle16Header" id="Epf-VU-h7T" customClass="EcommerceStyle16Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8o-fw-oRz" customClass="CPImageSlider" customModule="Material_Design_IOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="O8o-fw-oRz" firstAttribute="top" secondItem="Epf-VU-h7T" secondAttribute="top" id="Iah-Wq-V8t"/>
+                <constraint firstItem="O8o-fw-oRz" firstAttribute="leading" secondItem="Epf-VU-h7T" secondAttribute="leading" id="Tm2-0b-p8K"/>
+                <constraint firstAttribute="trailing" secondItem="O8o-fw-oRz" secondAttribute="trailing" id="df9-0C-gcB"/>
+                <constraint firstAttribute="bottom" secondItem="O8o-fw-oRz" secondAttribute="bottom" id="zqi-Wd-1Wx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="slider" destination="O8o-fw-oRz" id="KBW-3O-fhs"/>
+            </connections>
+            <point key="canvasLocation" x="-345" y="-427"/>
+        </view>
+    </objects>
+</document>

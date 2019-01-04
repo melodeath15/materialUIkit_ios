@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileFooterStyle9" id="FAg-48-wrV" customClass="ProfileFooterStyle9" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F27-93-4bl">
+                    <rect key="frame" x="16" y="15" width="130" height="50"/>
+                    <color key="backgroundColor" red="0.2615983784198761" green="0.73653393983840942" blue="0.25409471988677979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Kw0-HA-Jwf"/>
+                        <constraint firstAttribute="width" constant="130" id="Y3c-A9-za8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Follow">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnFollow:" destination="FAg-48-wrV" eventType="touchUpInside" id="jxn-qu-ULj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f68-Cq-pKi">
+                    <rect key="frame" x="229" y="15" width="130" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="OkL-QC-EXU"/>
+                        <constraint firstAttribute="height" constant="50" id="glg-4V-4fo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="View Profile">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnViewProfile:" destination="FAg-48-wrV" eventType="touchUpInside" id="GcX-Dj-NPg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F27-93-4bl" firstAttribute="leading" secondItem="FAg-48-wrV" secondAttribute="leading" constant="16" id="6gM-Rd-xTR"/>
+                <constraint firstItem="F27-93-4bl" firstAttribute="centerY" secondItem="FAg-48-wrV" secondAttribute="centerY" id="S4g-Qt-m5I"/>
+                <constraint firstItem="f68-Cq-pKi" firstAttribute="centerY" secondItem="FAg-48-wrV" secondAttribute="centerY" id="cZL-Ie-cMZ"/>
+                <constraint firstAttribute="trailing" secondItem="f68-Cq-pKi" secondAttribute="trailing" constant="16" id="pm2-HH-ieK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnFollow" destination="F27-93-4bl" id="dB0-cE-fkb"/>
+                <outlet property="btnViewProfile" destination="f68-Cq-pKi" id="F83-MZ-R5u"/>
+            </connections>
+            <point key="canvasLocation" x="-143" y="-296"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EcommerceStyle21Footer" id="gGc-HS-JwO" customClass="EcommerceStyle21Footer" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C36-9n-McY">
+                    <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSk-il-bjw">
+                            <rect key="frame" x="8" y="17.5" width="78.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heI-b7-DS3">
+                            <rect key="frame" x="349" y="17" width="17.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <color key="textColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="heI-b7-DS3" firstAttribute="centerY" secondItem="C36-9n-McY" secondAttribute="centerY" id="kYA-91-Ca7"/>
+                        <constraint firstItem="xSk-il-bjw" firstAttribute="centerY" secondItem="C36-9n-McY" secondAttribute="centerY" id="pPx-eR-Oix"/>
+                        <constraint firstAttribute="trailing" secondItem="heI-b7-DS3" secondAttribute="trailing" constant="8" id="vEv-1F-3A5"/>
+                        <constraint firstItem="xSk-il-bjw" firstAttribute="leading" secondItem="C36-9n-McY" secondAttribute="leading" constant="8" id="vWA-W7-5qc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-jb-DtD">
+                    <rect key="frame" x="8" y="8" width="358" height="50"/>
+                    <color key="backgroundColor" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1Hd-M2-9rP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="Proceed to Checkout">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBtnCheckout:" destination="gGc-HS-JwO" eventType="touchUpInside" id="nZs-oD-Z20"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="C36-9n-McY" firstAttribute="leading" secondItem="gGc-HS-JwO" secondAttribute="leading" id="5m9-U4-GXc"/>
+                <constraint firstItem="pQn-jb-DtD" firstAttribute="leading" secondItem="gGc-HS-JwO" secondAttribute="leading" constant="8" id="Ifs-ue-CKd"/>
+                <constraint firstAttribute="trailing" secondItem="C36-9n-McY" secondAttribute="trailing" id="UCb-Hu-jzp"/>
+                <constraint firstItem="C36-9n-McY" firstAttribute="top" secondItem="pQn-jb-DtD" secondAttribute="bottom" constant="12" id="pOF-Q0-dXc"/>
+                <constraint firstItem="pQn-jb-DtD" firstAttribute="top" secondItem="gGc-HS-JwO" secondAttribute="top" constant="8" id="r7a-rg-14p"/>
+                <constraint firstAttribute="bottom" secondItem="C36-9n-McY" secondAttribute="bottom" id="rmN-PP-oFS"/>
+                <constraint firstAttribute="trailing" secondItem="pQn-jb-DtD" secondAttribute="trailing" constant="9" id="u6x-li-B3z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCheckout" destination="pQn-jb-DtD" id="eby-vc-36T"/>
+                <outlet property="labelTotalPrice" destination="xSk-il-bjw" id="jl5-sM-gDH"/>
+                <outlet property="valuePrice" destination="heI-b7-DS3" id="TDw-BJ-e3b"/>
+            </connections>
+            <point key="canvasLocation" x="-456" y="-158"/>
+        </view>
+    </objects>
+</document>

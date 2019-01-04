@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileHeader2" id="eRT-AK-KmO" customClass="ProfileHeader2" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="EYf-iu-7E0">
+                    <rect key="frame" x="147" y="33" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="YYV-iN-3Uq"/>
+                        <constraint firstAttribute="height" constant="80" id="ba8-Vo-nYU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezr-x0-OW1">
+                    <rect key="frame" x="16" y="117" width="343" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Fransisco, CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-5C-oIk">
+                    <rect key="frame" x="16" y="145" width="343" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="V9L-tU-vtp">
+                    <rect key="frame" x="106" y="140" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="epA-G1-khy"/>
+                        <constraint firstAttribute="width" constant="25" id="lka-dR-XjQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="V9L-tU-vtp" firstAttribute="top" secondItem="Ezr-x0-OW1" secondAttribute="bottom" constant="3" id="9fd-Yq-XkG"/>
+                <constraint firstItem="Ezr-x0-OW1" firstAttribute="top" secondItem="EYf-iu-7E0" secondAttribute="bottom" constant="4" id="9s5-0q-6hH"/>
+                <constraint firstItem="qbP-5C-oIk" firstAttribute="leading" secondItem="V9L-tU-vtp" secondAttribute="trailing" constant="-115" id="I7I-IY-rVb"/>
+                <constraint firstAttribute="trailing" secondItem="qbP-5C-oIk" secondAttribute="trailing" constant="16" id="MEs-ve-WzD"/>
+                <constraint firstItem="qbP-5C-oIk" firstAttribute="leading" secondItem="eRT-AK-KmO" secondAttribute="leading" constant="16" id="NGO-Mp-nLx"/>
+                <constraint firstAttribute="trailing" secondItem="Ezr-x0-OW1" secondAttribute="trailing" constant="16" id="Qmn-dI-WBz"/>
+                <constraint firstItem="qbP-5C-oIk" firstAttribute="top" secondItem="Ezr-x0-OW1" secondAttribute="bottom" constant="8" id="aT3-kd-Cs5"/>
+                <constraint firstItem="EYf-iu-7E0" firstAttribute="centerX" secondItem="eRT-AK-KmO" secondAttribute="centerX" id="cIp-dg-UbD"/>
+                <constraint firstItem="EYf-iu-7E0" firstAttribute="centerY" secondItem="eRT-AK-KmO" secondAttribute="centerY" constant="-27" id="ky9-b5-z0E"/>
+                <constraint firstItem="Ezr-x0-OW1" firstAttribute="leading" secondItem="eRT-AK-KmO" secondAttribute="leading" constant="16" id="quC-NN-R2m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="city" destination="qbP-5C-oIk" id="Nvf-J9-lOL"/>
+                <outlet property="imgProfile" destination="EYf-iu-7E0" id="eHS-Im-cKP"/>
+                <outlet property="name" destination="Ezr-x0-OW1" id="Rtg-XG-fXw"/>
+            </connections>
+            <point key="canvasLocation" x="-699" y="-440"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location" width="93" height="94"/>
+        <image name="profile2" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle20Price" selectionStyle="default" indentationWidth="10" rowHeight="47" id="F4n-ku-eU0" customClass="EcommerceStyle20Price" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F4n-ku-eU0" id="ixH-WA-Z6g">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-dj-unV">
+                        <rect key="frame" x="8" y="8" width="359" height="112"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE RANGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRl-or-TuM">
+                                <rect key="frame" x="8" y="8" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-JM-daZ" customClass="MultiStepRangeSlider" customModule="Material_Design_IOS" customModuleProvider="target">
+                                <rect key="frame" x="15" y="32" width="329" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j9E-Ff-oyf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackLayerHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackTintColor">
+                                        <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackHighlightTintColor">
+                                        <color key="value" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbTintColor">
+                                        <color key="value" red="0.99589842559999997" green="0.63781148200000004" blue="0.089690722530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSliderChange:" destination="F4n-ku-eU0" eventType="valueChanged" id="ckN-2G-5aV"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeP-MO-sNm">
+                                <rect key="frame" x="10" y="70" width="8" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-DZ-tTz">
+                                <rect key="frame" x="341" y="70" width="8" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mt1-DZ-tTz" secondAttribute="trailing" constant="10" id="0D6-w7-xjb"/>
+                            <constraint firstAttribute="trailing" secondItem="bp9-JM-daZ" secondAttribute="trailing" constant="15" id="6ZK-V2-c3j"/>
+                            <constraint firstAttribute="trailing" secondItem="MRl-or-TuM" secondAttribute="trailing" constant="8" id="IM3-HV-cP6"/>
+                            <constraint firstItem="MRl-or-TuM" firstAttribute="leading" secondItem="b2f-dj-unV" secondAttribute="leading" constant="8" id="K7i-HH-DeG"/>
+                            <constraint firstItem="PeP-MO-sNm" firstAttribute="leading" secondItem="b2f-dj-unV" secondAttribute="leading" constant="10" id="fBD-Z4-5JH"/>
+                            <constraint firstItem="bp9-JM-daZ" firstAttribute="top" secondItem="MRl-or-TuM" secondAttribute="bottom" constant="8" id="i5o-hp-Lbe"/>
+                            <constraint firstItem="bp9-JM-daZ" firstAttribute="leading" secondItem="b2f-dj-unV" secondAttribute="leading" constant="15" id="kmC-9B-b3D"/>
+                            <constraint firstItem="mt1-DZ-tTz" firstAttribute="top" secondItem="bp9-JM-daZ" secondAttribute="bottom" constant="-2" id="rEv-dV-flR"/>
+                            <constraint firstItem="PeP-MO-sNm" firstAttribute="top" secondItem="bp9-JM-daZ" secondAttribute="bottom" constant="-2" id="ve9-sP-e6e"/>
+                            <constraint firstItem="MRl-or-TuM" firstAttribute="top" secondItem="b2f-dj-unV" secondAttribute="top" constant="8" id="z30-3h-d1F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="b2f-dj-unV" secondAttribute="leading" id="U6C-6l-muQ"/>
+                    <constraint firstAttribute="topMargin" secondItem="b2f-dj-unV" secondAttribute="top" id="V5D-Cf-XL1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="b2f-dj-unV" secondAttribute="bottom" constant="-8.5" id="ZFk-1d-XFC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="b2f-dj-unV" secondAttribute="trailing" id="alb-qm-nXd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maxmimumLabel" destination="mt1-DZ-tTz" id="FUQ-jg-fiK"/>
+                <outlet property="minimumLabel" destination="PeP-MO-sNm" id="dN1-WK-Qtd"/>
+                <outlet property="slider" destination="bp9-JM-daZ" id="jLz-DS-GjA"/>
+                <outlet property="title" destination="MRl-or-TuM" id="OKW-Fv-APC"/>
+                <outlet property="viewCell" destination="b2f-dj-unV" id="9od-WP-IBm"/>
+            </connections>
+            <point key="canvasLocation" x="-672.5" y="-16"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="GalleryStyle12View" id="myC-3F-CcE" customClass="GalleryStyle12View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-Sz-TAR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-zu-Re2">
+                    <rect key="frame" x="16" y="624.5" width="343" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8L-OM-z6x">
+                    <rect key="frame" x="16" y="597.5" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LYA-zu-Re2" secondAttribute="trailing" constant="16" id="4Ov-at-UNS"/>
+                <constraint firstItem="LYA-zu-Re2" firstAttribute="top" secondItem="m8L-OM-z6x" secondAttribute="bottom" constant="7.5" id="8Qo-ar-Qdy"/>
+                <constraint firstItem="LYA-zu-Re2" firstAttribute="leading" secondItem="myC-3F-CcE" secondAttribute="leading" constant="16" id="9D5-UY-Fep"/>
+                <constraint firstItem="pFu-Sz-TAR" firstAttribute="top" secondItem="myC-3F-CcE" secondAttribute="top" id="Id6-JO-MS2"/>
+                <constraint firstAttribute="trailing" secondItem="pFu-Sz-TAR" secondAttribute="trailing" id="Ity-ls-8Wi"/>
+                <constraint firstItem="m8L-OM-z6x" firstAttribute="leading" secondItem="myC-3F-CcE" secondAttribute="leading" constant="16" id="NPR-rg-Nl0"/>
+                <constraint firstItem="pFu-Sz-TAR" firstAttribute="leading" secondItem="myC-3F-CcE" secondAttribute="leading" id="SvF-sB-6iv"/>
+                <constraint firstAttribute="trailing" secondItem="m8L-OM-z6x" secondAttribute="trailing" constant="16" id="XEi-Nx-G1j"/>
+                <constraint firstAttribute="bottom" secondItem="pFu-Sz-TAR" secondAttribute="bottom" id="aGa-vl-21r"/>
+                <constraint firstAttribute="bottom" secondItem="LYA-zu-Re2" secondAttribute="bottom" constant="28" id="lxg-85-fCY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img" destination="pFu-Sz-TAR" id="Veq-wJ-MMR"/>
+                <outlet property="time" destination="LYA-zu-Re2" id="RwT-gD-Tah"/>
+                <outlet property="title" destination="m8L-OM-z6x" id="5KY-zk-2tI"/>
+            </connections>
+            <point key="canvasLocation" x="-195" y="-120"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkthroughStyle16View" id="C16-xg-NUL" customClass="WalkthroughStyle16View" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="564"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome14" translatesAutoresizingMaskIntoConstraints="NO" id="dek-MP-z2z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-ri-rUB">
+                    <rect key="frame" x="42" y="82" width="291" height="401"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalkthroughStyle11" translatesAutoresizingMaskIntoConstraints="NO" id="sHV-R1-PqJ">
+                            <rect key="frame" x="95" y="105" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="C3H-ZR-4VF"/>
+                                <constraint firstAttribute="height" constant="100" id="k2L-1t-1nw"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Des" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-G8-db9">
+                            <rect key="frame" x="26" y="280" width="239" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUG-So-YgO">
+                            <rect key="frame" x="26" y="255" width="239" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NUG-So-YgO" secondAttribute="trailing" constant="26" id="Ay7-HD-Ut5"/>
+                        <constraint firstItem="1ad-G8-db9" firstAttribute="leading" secondItem="KlR-ri-rUB" secondAttribute="leading" constant="26" id="B9q-du-SwG"/>
+                        <constraint firstAttribute="trailing" secondItem="1ad-G8-db9" secondAttribute="trailing" constant="26" id="Mrp-nj-qz6"/>
+                        <constraint firstItem="NUG-So-YgO" firstAttribute="leading" secondItem="KlR-ri-rUB" secondAttribute="leading" constant="26" id="aKm-RH-HkN"/>
+                        <constraint firstItem="NUG-So-YgO" firstAttribute="top" secondItem="sHV-R1-PqJ" secondAttribute="bottom" constant="50" id="c9G-Be-3mf"/>
+                        <constraint firstItem="sHV-R1-PqJ" firstAttribute="centerY" secondItem="KlR-ri-rUB" secondAttribute="centerY" constant="-45.5" id="vio-VU-8A3"/>
+                        <constraint firstItem="sHV-R1-PqJ" firstAttribute="centerX" secondItem="KlR-ri-rUB" secondAttribute="centerX" id="wvN-1O-RdT"/>
+                        <constraint firstItem="1ad-G8-db9" firstAttribute="top" secondItem="NUG-So-YgO" secondAttribute="bottom" constant="8" id="y5T-lQ-0v4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dek-MP-z2z" secondAttribute="bottom" constant="-1036" id="CJM-rz-V7X"/>
+                <constraint firstItem="KlR-ri-rUB" firstAttribute="top" secondItem="C16-xg-NUL" secondAttribute="top" constant="82" id="OKa-uo-3Po"/>
+                <constraint firstAttribute="trailing" secondItem="dek-MP-z2z" secondAttribute="trailing" id="THq-WU-E5S"/>
+                <constraint firstAttribute="trailing" secondItem="KlR-ri-rUB" secondAttribute="trailing" constant="42" id="ivm-Xb-fm3"/>
+                <constraint firstItem="dek-MP-z2z" firstAttribute="leading" secondItem="C16-xg-NUL" secondAttribute="leading" id="pBf-cl-azs"/>
+                <constraint firstItem="KlR-ri-rUB" firstAttribute="leading" secondItem="C16-xg-NUL" secondAttribute="leading" constant="42" id="pnF-Hn-9rq"/>
+                <constraint firstItem="dek-MP-z2z" firstAttribute="top" secondItem="C16-xg-NUL" secondAttribute="top" id="vpc-L7-Xi5"/>
+                <constraint firstAttribute="bottom" secondItem="KlR-ri-rUB" secondAttribute="bottom" constant="81" id="wQU-DX-fd0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bg" destination="dek-MP-z2z" id="TzC-ou-kc5"/>
+                <outlet property="des" destination="1ad-G8-db9" id="FEJ-dt-SwY"/>
+                <outlet property="img" destination="sHV-R1-PqJ" id="xec-8u-PpU"/>
+                <outlet property="title" destination="NUG-So-YgO" id="y8s-HZ-Wsl"/>
+                <outlet property="view" destination="KlR-ri-rUB" id="k10-Nw-iPZ"/>
+            </connections>
+            <point key="canvasLocation" x="-1019.5" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WalkthroughStyle11" width="314" height="307"/>
+        <image name="Welcome14" width="960" height="1600"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GalleryStyle3Cell" id="XA7-hu-dKs" customClass="GalleryStyle3Cell" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSs-V2-FIw">
+                        <rect key="frame" x="10" y="14" width="183" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        </variation>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ACh-Td-iD3">
+                        <rect key="frame" x="0.0" y="42" width="250" height="208"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-Qx-XQD">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <connections>
+                            <action selector="pushBtnCell:" destination="XA7-hu-dKs" eventType="touchUpInside" id="dhr-PC-IcK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2d-fj-eGe">
+                        <rect key="frame" x="201" y="6" width="40" height="31"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="ID2-n8-YuO"/>
+                            <constraint firstAttribute="width" constant="40" id="Ozm-OM-uwR"/>
+                        </constraints>
+                        <state key="normal" image="overflowIcon"/>
+                        <connections>
+                            <action selector="pushBtnOption:" destination="XA7-hu-dKs" eventType="touchUpInside" id="7zf-17-G0E"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ACh-Td-iD3" firstAttribute="leading" secondItem="XA7-hu-dKs" secondAttribute="leading" id="18u-SY-FFf"/>
+                <constraint firstItem="xwk-Qx-XQD" firstAttribute="top" secondItem="XA7-hu-dKs" secondAttribute="top" id="3TQ-6p-eIW"/>
+                <constraint firstItem="J2d-fj-eGe" firstAttribute="leading" secondItem="eSs-V2-FIw" secondAttribute="trailing" constant="8" id="F5K-uH-BZC"/>
+                <constraint firstAttribute="bottom" secondItem="xwk-Qx-XQD" secondAttribute="bottom" id="K5T-AF-aEl"/>
+                <constraint firstItem="J2d-fj-eGe" firstAttribute="top" secondItem="XA7-hu-dKs" secondAttribute="top" constant="6" id="Nds-xL-vlm"/>
+                <constraint firstItem="xwk-Qx-XQD" firstAttribute="leading" secondItem="XA7-hu-dKs" secondAttribute="leading" id="TSw-Yk-dSQ"/>
+                <constraint firstItem="ACh-Td-iD3" firstAttribute="top" secondItem="eSs-V2-FIw" secondAttribute="bottom" constant="16" id="XrQ-bF-VW8"/>
+                <constraint firstItem="eSs-V2-FIw" firstAttribute="top" secondItem="XA7-hu-dKs" secondAttribute="top" constant="14" id="gfS-s0-Wtt"/>
+                <constraint firstAttribute="bottom" secondItem="ACh-Td-iD3" secondAttribute="bottom" id="hOk-Ay-ve8"/>
+                <constraint firstAttribute="trailing" secondItem="J2d-fj-eGe" secondAttribute="trailing" constant="9" id="i1A-4F-WRK"/>
+                <constraint firstItem="eSs-V2-FIw" firstAttribute="leading" secondItem="XA7-hu-dKs" secondAttribute="leading" constant="10" id="jbv-wv-gEN"/>
+                <constraint firstAttribute="trailing" secondItem="ACh-Td-iD3" secondAttribute="trailing" id="n2b-Fm-hzo"/>
+                <constraint firstAttribute="trailing" secondItem="xwk-Qx-XQD" secondAttribute="trailing" id="uQO-Eu-61x"/>
+            </constraints>
+            <connections>
+                <outlet property="btnOption" destination="J2d-fj-eGe" id="c8K-U0-jRm"/>
+                <outlet property="img" destination="ACh-Td-iD3" id="cNx-SN-jau"/>
+                <outlet property="title" destination="eSs-V2-FIw" id="Vfh-Du-PvB"/>
+            </connections>
+            <point key="canvasLocation" x="-1445" y="-467"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="overflowIcon" width="6" height="24"/>
+    </resources>
+</document>

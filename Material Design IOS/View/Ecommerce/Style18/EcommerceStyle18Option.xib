@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EcommerceStyle18Option" selectionStyle="default" indentationWidth="10" id="AiE-Jr-u9t" customClass="EcommerceStyle18Option" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AiE-Jr-u9t" id="4ld-Tl-H5P">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZV-cM-lDV">
+                        <rect key="frame" x="186.5" y="3" width="2" height="44"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="EgX-Sp-5yh"/>
+                            <constraint firstAttribute="width" constant="2" id="oFr-L3-SEw"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-95-t0u">
+                        <rect key="frame" x="7" y="0.0" width="171" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Eis-ME-LUb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="COLOR">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnColor:" destination="AiE-Jr-u9t" eventType="touchUpInside" id="wEx-CZ-VRb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeQ-eV-cgO">
+                        <rect key="frame" x="196" y="-1" width="171" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="HIz-wC-OYx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="QUANTITY">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pushBtnQty:" destination="AiE-Jr-u9t" eventType="touchUpInside" id="1BX-y5-uFh"/>
+                        </connections>
+                    </button>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrz-JS-0m8">
+                        <rect key="frame" x="144" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.77425044779999996" green="0.89770162109999996" blue="0.86947184799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="EqK-5C-UEo"/>
+                            <constraint firstAttribute="height" constant="30" id="bn4-Za-tMH"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zHY-av-tua">
+                        <rect key="frame" x="355" y="16" width="8" height="17"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vrz-JS-0m8" firstAttribute="centerY" secondItem="0Va-95-t0u" secondAttribute="centerY" id="6z2-zT-rXw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UeQ-eV-cgO" secondAttribute="trailing" id="8vP-fI-8dh"/>
+                    <constraint firstItem="DZV-cM-lDV" firstAttribute="leading" secondItem="0Va-95-t0u" secondAttribute="trailing" constant="8.5" id="9Y0-TS-UAm"/>
+                    <constraint firstItem="DZV-cM-lDV" firstAttribute="leading" secondItem="Vrz-JS-0m8" secondAttribute="trailing" constant="12.5" id="G9i-dI-8wC"/>
+                    <constraint firstItem="0Va-95-t0u" firstAttribute="centerY" secondItem="4ld-Tl-H5P" secondAttribute="centerY" id="Gvi-pj-1YD"/>
+                    <constraint firstItem="0Va-95-t0u" firstAttribute="leading" secondItem="4ld-Tl-H5P" secondAttribute="leadingMargin" constant="-1" id="K8j-Wm-vEL"/>
+                    <constraint firstItem="UeQ-eV-cgO" firstAttribute="centerY" secondItem="4ld-Tl-H5P" secondAttribute="centerY" id="N1T-rC-opj"/>
+                    <constraint firstItem="UeQ-eV-cgO" firstAttribute="leading" secondItem="DZV-cM-lDV" secondAttribute="trailing" constant="7.5" id="RGT-ZH-ykw"/>
+                    <constraint firstItem="DZV-cM-lDV" firstAttribute="centerX" secondItem="4ld-Tl-H5P" secondAttribute="centerX" id="SxM-0i-sOC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zHY-av-tua" secondAttribute="trailing" constant="4" id="bB6-Ga-9QG"/>
+                    <constraint firstItem="zHY-av-tua" firstAttribute="centerY" secondItem="UeQ-eV-cgO" secondAttribute="centerY" id="oxU-pJ-KPw"/>
+                    <constraint firstItem="DZV-cM-lDV" firstAttribute="centerY" secondItem="4ld-Tl-H5P" secondAttribute="centerY" id="r6P-Ul-LJk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnColor" destination="0Va-95-t0u" id="mNa-kO-XXZ"/>
+                <outlet property="btnQty" destination="UeQ-eV-cgO" id="gE0-fP-wLH"/>
+                <outlet property="valueColor" destination="Vrz-JS-0m8" id="x0U-jx-zyj"/>
+            </connections>
+            <point key="canvasLocation" x="-446" y="-83"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nextIcon" width="8" height="17"/>
+    </resources>
+</document>

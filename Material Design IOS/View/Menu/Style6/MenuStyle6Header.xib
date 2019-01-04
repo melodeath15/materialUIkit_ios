@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuStyle6Header" id="eBJ-iu-uYX" customClass="MenuStyle6Header" customModule="Material_Design_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgMenu6" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-Rw-aGT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgQ-Qu-eZJ">
+                    <rect key="frame" x="16" y="32" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMS-j0-MY6">
+                    <rect key="frame" x="16" y="59" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile3" translatesAutoresizingMaskIntoConstraints="NO" id="HGL-MG-4XF">
+                    <rect key="frame" x="152" y="97" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="g36-nr-uGq"/>
+                        <constraint firstAttribute="height" constant="70" id="uby-up-Juy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hUb-Rw-aGT" secondAttribute="trailing" id="FCG-bF-agP"/>
+                <constraint firstItem="pgQ-Qu-eZJ" firstAttribute="top" secondItem="eBJ-iu-uYX" secondAttribute="top" constant="32" id="Fgo-Ki-gIU"/>
+                <constraint firstItem="xMS-j0-MY6" firstAttribute="top" secondItem="pgQ-Qu-eZJ" secondAttribute="bottom" constant="7.5" id="Gm1-LD-0M1"/>
+                <constraint firstItem="hUb-Rw-aGT" firstAttribute="top" secondItem="eBJ-iu-uYX" secondAttribute="top" id="Hw0-eZ-xhF"/>
+                <constraint firstAttribute="bottom" secondItem="HGL-MG-4XF" secondAttribute="bottom" constant="20" id="IMd-Mh-YuU"/>
+                <constraint firstAttribute="bottom" secondItem="hUb-Rw-aGT" secondAttribute="bottom" constant="53" id="K6a-jG-kJB"/>
+                <constraint firstItem="HGL-MG-4XF" firstAttribute="centerX" secondItem="eBJ-iu-uYX" secondAttribute="centerX" id="UlM-o2-nLm"/>
+                <constraint firstItem="hUb-Rw-aGT" firstAttribute="leading" secondItem="eBJ-iu-uYX" secondAttribute="leading" id="X49-HR-rWk"/>
+                <constraint firstAttribute="trailing" secondItem="xMS-j0-MY6" secondAttribute="trailing" constant="16" id="Xmn-Hf-TfA"/>
+                <constraint firstItem="xMS-j0-MY6" firstAttribute="leading" secondItem="eBJ-iu-uYX" secondAttribute="leading" constant="16" id="hU2-Yy-cUD"/>
+                <constraint firstItem="pgQ-Qu-eZJ" firstAttribute="leading" secondItem="eBJ-iu-uYX" secondAttribute="leading" constant="16" id="kBJ-2k-NF5"/>
+                <constraint firstAttribute="trailing" secondItem="pgQ-Qu-eZJ" secondAttribute="trailing" constant="16" id="qSj-1Y-u8y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="city" destination="xMS-j0-MY6" id="iCw-G4-clJ"/>
+                <outlet property="imgBg" destination="hUb-Rw-aGT" id="XgT-po-HOB"/>
+                <outlet property="imgProfile" destination="HGL-MG-4XF" id="7xp-1J-p1r"/>
+                <outlet property="name" destination="pgQ-Qu-eZJ" id="61G-fb-XbH"/>
+            </connections>
+            <point key="canvasLocation" x="-445.5" y="-298.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgMenu6" width="456" height="250"/>
+        <image name="profile3" width="300" height="300"/>
+    </resources>
+</document>
